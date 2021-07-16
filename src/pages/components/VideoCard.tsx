@@ -59,8 +59,7 @@ export function VideoCard({openInNewWindow}: IVideoCardProps) {
                     </li>
                 </ul>
                 <p className="card-text">
-                    You can find more detailed information about the main features
-                <Link {...newWindowProps} className="card-link" to="/features">&nbsp;here.</Link>
+                    You can find more detailed information about the main features <Link {...newWindowProps} className="card-link" to="/features">here</Link>.
                 </p>
 
                 <h5 className="card-title mt-4">
@@ -74,16 +73,14 @@ export function VideoCard({openInNewWindow}: IVideoCardProps) {
                     Additionally, users can upload their own tabular data to explore it within Ordino.
             </p>
                 <p className="card-text">
-                    You can find more detailed information about the datasets
-                <Link {...newWindowProps} className="card-link" to="/datasets">&nbsp;here.</Link>
+                    You can find more detailed information about the datasets <Link {...newWindowProps} className="card-link" to="/datasets">here</Link>.
                 </p>
                 <h5 className="card-title mt-4">
                     <i className="me-2 fas fa-mouse-pointer"></i>Tours
             </h5>
                 <p className="card-text">
                     To learn more about the main features of Ordino and how to use them we provide several interactive help tours that guide you through the application.<br />
-             You can find them
-                <Link {...newWindowProps} className="card-link" to="/tours">&nbsp;here.</Link>
+                    You can find them <Link {...newWindowProps} className="card-link" to="/tours">here</Link>.
                 </p>
                 <h5 className="card-title mt-4">
                     <i className="me-2 fas fa-book-open"></i>Publications
@@ -105,8 +102,7 @@ export function VideoCard({openInNewWindow}: IVideoCardProps) {
                 <p className="card-text">
                     Please cite the first article when using Ordino and publishing your results.</p>
                 <p className="card-text">
-                    You can find more information about the publications
-                    <Link {...newWindowProps} className="card-link" to="/publications">&nbsp;here.</Link></p>
+                    You can find more information about the publications <Link {...newWindowProps} className="card-link" to="/publications">here</Link>.</p>
             </div>
         </div>
     );
