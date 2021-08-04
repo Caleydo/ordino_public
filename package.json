@@ -53,7 +53,7 @@
     "dist"
   ],
   "dependencies": {
-    "ordino": "github:Caleydo/ordino#vstoiber/bootstrap_v5",
+    "ordino": "github:Caleydo/ordino#bootstrap-v5",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0"
