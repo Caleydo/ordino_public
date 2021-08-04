@@ -1,11 +1,12 @@
 import * as React from 'react';
 import {HeaderNavigation, OrdinoFooter} from 'ordino';
 import {FeatureCard} from './components/FeatureCard';
+import {headerNavigationLinks} from './config';
 
 export function FeaturesPage() {
   return (
     <>
-      <HeaderNavigation ></HeaderNavigation>
+      <HeaderNavigation links={headerNavigationLinks} />
       <div className="position-relative pt-6">
         <div className="ordino-container">
           <div className="p-6 container">

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import ordinoHero from 'ordino_public/dist/assets/ordino-hero.svg';
 import { HeaderNavigation } from 'ordino';
+import { headerNavigationLinks } from '../config';
 const INTRO_VIDEO_MODAL_ID = 'ordino-intro-video-modal';
 export function OrdinoHero() {
     const [modalIsClosed, setModalIsClosed] = React.useState(true);
@@ -15,7 +16,7 @@ export function OrdinoHero() {
     };
     return (React.createElement(React.Fragment, null,
         React.createElement("div", { className: "ordino-hero" },
-            React.createElement(HeaderNavigation, { bg: "transparent" }),
+            React.createElement(HeaderNavigation, { bg: "transparent", links: headerNavigationLinks }),
             React.createElement("div", { className: "container" },
                 React.createElement("div", { className: "row ordino-hero-claim my-4" },
                     React.createElement("div", { className: "col text-center" },

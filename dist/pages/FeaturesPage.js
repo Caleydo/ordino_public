@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { HeaderNavigation, OrdinoFooter } from 'ordino';
 import { FeatureCard } from './components/FeatureCard';
+import { headerNavigationLinks } from './config';
 export function FeaturesPage() {
     return (React.createElement(React.Fragment, null,
-        React.createElement(HeaderNavigation, null),
+        React.createElement(HeaderNavigation, { links: headerNavigationLinks }),
         React.createElement("div", { className: "position-relative pt-6" },
             React.createElement("div", { className: "ordino-container" },
                 React.createElement("div", { className: "p-6 container" },

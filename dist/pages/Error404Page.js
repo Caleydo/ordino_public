@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { HeaderNavigation, OrdinoFooter } from 'ordino';
+import { headerNavigationLinks } from './config';
 export function Error404Page() {
     return (React.createElement(React.Fragment, null,
-        React.createElement(HeaderNavigation, null),
+        React.createElement(HeaderNavigation, { links: headerNavigationLinks }),
         React.createElement("div", { className: "container" },
             React.createElement("div", { className: "row" },
                 React.createElement("div", { className: "col" },

@@ -9,6 +9,7 @@ import v900_start_menu from 'ordino_public/dist/assets/pages/news/v900_start_men
 import v900_start_menu_tabs from 'ordino_public/dist/assets/pages/news/v900_start_menu_tabs.png';
 import v900_application_help from 'ordino_public/dist/assets/pages/news/v900_application_help.png';
 import v900_ranking_redesign from 'ordino_public/dist/assets/pages/news/v900_ranking_redesign.png';
+import { headerNavigationLinks } from './config';
 const sections = [
     {
         id: 'v9-0',
@@ -238,7 +239,7 @@ const sections = [
 export function NewsPage() {
     useScrollToSlug();
     return (React.createElement(React.Fragment, null,
-        React.createElement(HeaderNavigation, null),
+        React.createElement(HeaderNavigation, { links: headerNavigationLinks }),
         React.createElement("div", { className: "position-relative py-6" },
             React.createElement(OrdinoScrollspy, { items: sections.map((section) => ({ id: section.id, name: section.name })) }, (handleOnChange) => React.createElement(React.Fragment, null,
                 React.createElement("div", { className: "container pb-6" },
