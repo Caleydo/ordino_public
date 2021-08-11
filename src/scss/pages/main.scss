@@ -1,0 +1,13 @@
+@import "./abstracts/variables";
+
+@import "./base/base";
+
+// pages
+@import "./HomePage";
+@import "./pages";
+
+// components
+@import "./components/OrdinoHero";
+@import "./components/GettingStarted";
+@import "./components/DevelopedByAffilitations";
+@import "./components/OrdinoTeaserCards";
