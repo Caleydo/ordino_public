@@ -1,9 +1,31 @@
 import { PluginRegistry } from 'phovea_core';
 import { EP_PHOVEA_CORE_LOCALE } from 'phovea_core';
-import { EP_ORDINO_START_MENU_TAB, EStartMenuSection, EP_ORDINO_FOOTER_MENU } from 'ordino';
+import { EP_ORDINO_START_MENU_TAB, EStartMenuSection, EP_ORDINO_FOOTER_MENU, EP_ORDINO_START_MENU_TAB_SHORTCUT } from 'ordino';
 export default function (registry) {
     //registry.push('extension-type', 'extension-id', function() { return import('./extension_impl'); }, {});
     // generator-phovea:begin
+    registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_dataset_tab', () => import('ordino/dist/internal/menu/tabs/DatasetsTab'), {
+        text: 'Datasets',
+        menu: EStartMenuSection.MAIN,
+        priority: 10
+    });
+    registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_sessions_tab', () => import('ordino/dist/internal/menu/tabs/SessionsTab'), {
+        text: 'Analysis Sessions',
+        menu: EStartMenuSection.MAIN,
+        priority: 20
+    });
+    registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_tours_tab', () => import('ordino/dist/internal/menu/tabs/ToursTab'), {
+        text: 'Onboarding Tours',
+        menu: EStartMenuSection.MAIN,
+        priority: 30
+    });
+    registry.push(EP_ORDINO_START_MENU_TAB_SHORTCUT, 'ordino_sessions_shortcut', () => ({}), {
+        text: 'Current Analysis Session',
+        icon: 'fas fa-history',
+        tabId: 'ordino_sessions_tab',
+        setHighlight: true,
+        priority: 10,
+    });
     registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_help_tab', () => import('./menu/HelpTab'), {
         icon: 'fas fa-question-circle fa-fw',
         menu: EStartMenuSection.RIGHT,
