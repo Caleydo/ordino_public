@@ -4,7 +4,7 @@ function OrdinoPublication() {
     return React.createElement("div", { className: "row" },
         React.createElement("div", { className: "shadow-sm card p-2 overflow-hidden" },
             React.createElement("div", { className: "card-body" },
-                React.createElement("iframe", { className: "mb-2", width: "100%", height: "100%", src: "https://www.youtube-nocookie.com/embed/TIDUsEOsI_Y?autoplay=0", frameBorder: "0", allow: "autoplay; clipboard-write; encrypted-media; picture-in-picture", allowFullScreen: true }),
+                React.createElement("iframe", { className: "mb-2", width: "100%", height: "100%", src: "https://www.youtube-nocookie.com/embed/JZIIf-k852g?autoplay=0", frameBorder: "0", allow: "autoplay; clipboard-write; encrypted-media; picture-in-picture", allowFullScreen: true }),
                 React.createElement("h5", { className: "card-title" }, "Abstract"),
                 React.createElement("p", { className: "card-text" }, "Ordino is a web-based analysis tool for cancer genomics that allows users to flexibly rank, filter and explore genes, cell lines and tissue samples based on pre-loaded data, including The Cancer Genome Atlas, the Cancer Cell Line Encyclopedia and manually uploaded information. Interactive tabular data visualization that facilitates the user-driven prioritization process forms a core component of Ordino. Detail views of selected items complement the exploration. Findings can be stored, shared and reproduced via the integrated session management."),
                 React.createElement("h5", { className: "card-title" }, "Citation"),

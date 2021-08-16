@@ -5,7 +5,7 @@ function OrdinoPublication() {
   return <div className="row">
     <div className="shadow-sm card p-2 overflow-hidden">
       <div className="card-body">
-        <iframe className="mb-2" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/TIDUsEOsI_Y?autoplay=0" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowFullScreen></iframe>
+        <iframe className="mb-2" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/JZIIf-k852g?autoplay=0" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowFullScreen></iframe>
 
         <h5 className="card-title">Abstract</h5>
         <p className="card-text">
