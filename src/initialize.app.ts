@@ -11,4 +11,5 @@ import {Ordino} from 'ordino';
 const _ = new Ordino({
   showCookieDisclaimer: true,
   showResearchDisclaimer: false,
+  showClueModeButtons: false
 });
