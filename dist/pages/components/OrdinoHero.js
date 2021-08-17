@@ -22,7 +22,7 @@ export function OrdinoHero() {
                         React.createElement("p", null, "Ordino is a browser-based visual data analysis solution to flexibly rank, filter, and explore genes, cell lines, and tissue samples based on a rich set of experimental and metadata."))),
                 React.createElement("div", { className: "row ordino-hero-actions my-4" },
                     React.createElement("div", { className: "col text-center" },
-                        React.createElement("button", { type: "button", className: "btn btn-link btn-lg", onClick: () => setModalIsClosed(false), "data-toggle": "modal", "data-target": `#${INTRO_VIDEO_MODAL_ID}` },
+                        React.createElement("button", { type: "button", className: "btn btn-link btn-lg", onClick: () => setModalIsClosed(false), "data-bs-toggle": "modal", "data-bs-target": `#${INTRO_VIDEO_MODAL_ID}` },
                             React.createElement("i", { className: "fas fa-play" }),
                             "Watch intro video")),
                     React.createElement("div", { className: "col text-center" },
@@ -37,8 +37,7 @@ export function OrdinoHero() {
                 React.createElement("div", { className: "modal-content" },
                     React.createElement("div", { className: "modal-header" },
                         React.createElement("div", { className: "modal-title h4" }, "Introduction to Ordino"),
-                        React.createElement("button", { type: "button", className: "close", onClick: () => setModalIsClosed(true), "data-dismiss": "modal", "aria-label": "Close" },
-                            React.createElement("span", { "aria-hidden": "true" }, "\u00D7"))),
+                        React.createElement("button", { type: "button", className: "btn-close", onClick: () => setModalIsClosed(true), "data-dismiss": "modal", "aria-label": "Close" })),
                     React.createElement("div", { className: "modal-body" },
                         React.createElement("p", null, "The video was produced with an earlier Ordino version and shows a slightly different user interface compared to the current app."),
                         !modalIsClosed && React.createElement("iframe", { ref: videoRef, width: "1280", height: "720", src: "https://www.youtube-nocookie.com/embed/TIDUsEOsI_Y?autoplay=0", frameBorder: "0", allow: "autoplay; clipboard-write; encrypted-media; picture-in-picture", allowFullScreen: true })))))));

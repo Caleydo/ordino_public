@@ -29,7 +29,7 @@ export function OrdinoHero() {
           </div>
           <div className="row ordino-hero-actions my-4">
             <div className="col text-center">
-              <button type="button" className="btn btn-link btn-lg" onClick={() => setModalIsClosed(false)} data-toggle="modal" data-target={`#${INTRO_VIDEO_MODAL_ID}`}>
+              <button type="button" className="btn btn-link btn-lg" onClick={() => setModalIsClosed(false)} data-bs-toggle="modal" data-bs-target={`#${INTRO_VIDEO_MODAL_ID}`}>
                 <i className="fas fa-play"></i>
               Watch intro video
             </button>
@@ -53,8 +53,7 @@ export function OrdinoHero() {
           <div className="modal-content">
             <div className="modal-header">
               <div className="modal-title h4" >Introduction to Ordino</div>
-              <button type="button" className="close" onClick={() => setModalIsClosed(true)} data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+              <button type="button" className="btn-close" onClick={() => setModalIsClosed(true)} data-dismiss="modal" aria-label="Close">
               </button>
             </div>
             <div className="modal-body">
