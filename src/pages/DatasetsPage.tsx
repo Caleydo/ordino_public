@@ -29,7 +29,7 @@ export function DatasetsPage() {
           <div className="dataset-page py-6 container">
             <div className="row">
               <div className="col">
-                <h4 className="text-left d-flex align-items-center mt-2 mb-3"><i className="mr-2 ordino-icon-1 fas fa-chevron-circle-right" ></i> Basic Datasets</h4>
+                <h4 className="text-start d-flex align-items-center mt-2 mb-3"><i className="me-2 ordino-icon-1 fas fa-chevron-circle-right" ></i> Basic Datasets</h4>
               </div>
             </div>
             <div className="row row-cols-md-2 row-cols-1">
@@ -57,7 +57,7 @@ export function DatasetsPage() {
             </div>
             <div className="row mt-4">
               <div className="col">
-                <h4 className="text-left d-flex align-items-center mt-2 mb-3"><i className="mr-2 fas ordino-icon-1 fa-chevron-circle-right" ></i> Depletion Sceen Data</h4>
+                <h4 className="text-start d-flex align-items-center mt-2 mb-3"><i className="me-2 fas ordino-icon-1 fa-chevron-circle-right" ></i> Depletion Sceen Data</h4>
               </div>
             </div>
 

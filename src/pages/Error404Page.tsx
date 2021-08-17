@@ -8,7 +8,7 @@ export function Error404Page() {
       <HeaderNavigation links={headerNavigationLinks} />
       <div className="container">
         <div className="row">
-          <div className="col"><h2>Page Not Found</h2></div>
+          <div className="col position-relative"><h2>Page Not Found</h2></div>
         </div>
       </div>
       <OrdinoFooter></OrdinoFooter>

@@ -12,7 +12,7 @@ export function FeaturesPage() {
           <div className="p-6 container">
             <div className="row">
               <div className="col">
-                <h4 className="text-left d-flex align-items-center mb-3"><i className="mr-2 ordino-icon-1 fas fa-chevron-circle-right" ></i> Define list of items</h4>
+                <h4 className="text-start d-flex align-items-center mb-3"><i className="me-2 ordino-icon-1 fas fa-chevron-circle-right" ></i> Define list of items</h4>
               </div>
             </div>
             <div className="row">
@@ -25,7 +25,7 @@ export function FeaturesPage() {
             </div>
             <div className="row mt-6">
               <div className="col">
-                <h4 className="text-left d-flex align-items-center mb-3"><i className="mr-2 ordino-icon-1 fas fa-chevron-circle-right"></i> Rank, filter, and select items</h4>
+                <h4 className="text-start d-flex align-items-center mb-3"><i className="me-2 ordino-icon-1 fas fa-chevron-circle-right"></i> Rank, filter, and select items</h4>
               </div>
             </div>
             <div className="row">
@@ -126,7 +126,7 @@ export function FeaturesPage() {
 
             <div className="row mt-6">
               <div className="col">
-                <h4 className="text-left d-flex align-items-center mb-3"><i className="mr-2 ordino-icon-1 fas fa-chevron-circle-right" ></i> Perform basic statistical analyses</h4>
+                <h4 className="text-start d-flex align-items-center mb-3"><i className="me-2 ordino-icon-1 fas fa-chevron-circle-right" ></i> Perform basic statistical analyses</h4>
               </div>
             </div>
             <div className="row">
@@ -143,7 +143,7 @@ export function FeaturesPage() {
 
             <div className="row mt-6">
               <div className="col">
-                <h4 className="text-left d-flex align-items-center mb-3"><i className="mr-2 ordino-icon-1 fas fa-chevron-circle-right" ></i> Obtain detailed information</h4>
+                <h4 className="text-start d-flex align-items-center mb-3"><i className="me-2 ordino-icon-1 fas fa-chevron-circle-right" ></i> Obtain detailed information</h4>
               </div>
             </div>
             <div className="row">
