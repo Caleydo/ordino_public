@@ -103,7 +103,7 @@ export function PublicationPage() {
                 React.createElement("div", { className: "ordino-publication-page container pb-6" },
                     React.createElement("div", { className: "row" },
                         React.createElement("div", { className: "col" },
-                            React.createElement("p", { className: "lead text-ordino-gray-4 pt-6" },
+                            React.createElement("p", { className: "lead text-gray-500 pt-6" },
                                 "Ordino and its components have been described in the following scientific publications.",
                                 React.createElement("br", null),
                                 "Please cite at least the first article when using Ordino and publishing your results."))),

@@ -8,8 +8,8 @@
 
       &::before {
         content: counter(getting-started-counter);
-        background-color: map-get($theme-colors, 'ordino-gray-2');
-        color: map-get($theme-colors, 'ordino-white');
+        background-color: $gray-600;
+        color: $white;
         display: inline-block;
         width: 2.8rem;
         height: 2.8rem;
@@ -23,7 +23,7 @@
 
       p {
         font-size: 1.2rem;
-        color: map-get($theme-colors, 'ordino-gray-3');
+        color: $gray-400;
       }
     }
   }

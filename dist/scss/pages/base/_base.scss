@@ -4,6 +4,6 @@
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background-color: map-get($theme-colors, 'ordino-gray-1');
-  color: map-get($theme-colors, 'ordino-gray-2');
+  background-color: $gray-600;
+  color: $gray-600;
 }

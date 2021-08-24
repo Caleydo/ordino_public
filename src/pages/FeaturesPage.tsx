@@ -16,7 +16,7 @@ export function FeaturesPage() {
             </div>
             <div className="row">
               <div className="col">
-                <p className="lead text-ordino-gray-4">
+                <p className="lead text-gray-500">
                   The user starts the analysis by defining a set of items. The item set can be determined by manually entering a list of identifiers
                   (e.g., a list of gene symbols), by selecting a previously saved or predefined
                list of items, or by uploading a comma-separated file.</p>
@@ -29,7 +29,7 @@ export function FeaturesPage() {
             </div>
             <div className="row">
               <div className="col">
-                <p className="lead text-ordino-gray-4">
+                <p className="lead text-gray-500">
                   A core component of the Ordino system is the interactive visualization technique <a href="http://lineup.js.org" target="_blank" rel="noopener noreferrer">LineUp</a>,
               which allows users to flexibly create and explore rankings of items based
               on a set of heterogeneous attributes. The exploration is supplemented with filtering features, such as
@@ -37,14 +37,14 @@ export function FeaturesPage() {
               columns, and specifying one or more categories in categorical attributes. In addition, users can change
               the visual representation of columns on demand. Numerical attributes, for instance, can be visualized
               using bars, varying brightness, or as circles whose sizes are proportional to the data values.</p>
-                <p className="lead text-ordino-gray-4">
+                <p className="lead text-gray-500">
                   As a starting point, Ordino presents the list of items as a table containing metadata
                   attributes specific to the item type. For genes, the default columns are gene symbol, Ensembl ID,
                   chromosome, and biotype. For cell lines and tissue samples, the default
                   columns are name, tumor type, organ, and gender. Initially, gene lists are
                   sorted alphabetically by gene symbol, and lists of cell lines and tissue samples by their name. Further
               columns can be added by clicking on the plus icon shown on the right-hand side of the interface.</p>
-                <p className="lead text-ordino-gray-4">
+                <p className="lead text-gray-500">
                   Ordino supports the following column types:
               </p>
               </div>
@@ -130,10 +130,10 @@ export function FeaturesPage() {
             </div>
             <div className="row">
               <div className="col">
-                <p className="lead text-ordino-gray-4">
+                <p className="lead text-gray-500">
                   Seeking relationships and patterns in tabular data is a common data exploration task. To confirm hypotheses that are based on visual patterns observed during exploratory data analysis,
                  users need to be able to quickly compare data subsets, and get further information on the significance of the result and the statistical test applied.</p>
-                <p className="lead text-ordino-gray-4">
+                <p className="lead text-gray-500">
                   The <b>statistical analysis</b> panel in each ranking enables users who are not experts in statistics to verify generated hypotheses and confirm insights gained during the exploration of tabular data.
                   Concretely, it presents an overview of the statistical significance of various row or column comparisons. On demand, it shows further details, including the <b>test score</b>, a <b>textual description</b>, and a <b>detail visualization</b> explaining the results.
                   </p>
@@ -147,7 +147,7 @@ export function FeaturesPage() {
             </div>
             <div className="row">
               <div className="col">
-                <p className="lead text-ordino-gray-4">
+                <p className="lead text-gray-500">
                   Users can select one or more items in a ranking table for exploration using a collection of detail views.
                   The detail views offered to the user depend on the type of items selected. Ordino includes the following detail views:
           </p>
