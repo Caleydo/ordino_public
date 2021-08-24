@@ -57,8 +57,7 @@ export function OrdinoHero() {
               </button>
             </div>
             <div className="modal-body">
-              <p>The video was produced with an earlier Ordino version and shows a slightly different user interface compared to the current app.</p>
-              {!modalIsClosed && <iframe ref={videoRef} width="1280" height="720" src="https://www.youtube-nocookie.com/embed/TIDUsEOsI_Y?autoplay=0" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowFullScreen></iframe>}
+              {!modalIsClosed && <iframe ref={videoRef} width="1280" height="720" src="https://www.youtube-nocookie.com/embed/JZIIf-k852g?autoplay=0" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowFullScreen></iframe>}
             </div>
           </div>
         </div>
