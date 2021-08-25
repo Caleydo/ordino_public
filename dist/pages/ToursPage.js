@@ -20,7 +20,7 @@ export function ToursPage() {
             React.createElement("div", { className: "ordino-container" },
                 status === 'success' ?
                     React.createElement("div", { className: "mt-9 mb-6 container tours-tab" },
-                        React.createElement("p", { className: "lead text-gray-500" }, "Learn more about Ordino by taking an interactive guided tour"),
+                        React.createElement("p", { className: "lead text-gray-600" }, "Learn more about Ordino by taking an interactive guided tour"),
                         beginnerTours ?
                             React.createElement(ToursSection, { level: "beginner", tours: beginnerTours, hrefBase: "/app/#tour={id}" })
                             : null,
