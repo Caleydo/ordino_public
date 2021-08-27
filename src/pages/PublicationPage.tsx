@@ -131,7 +131,7 @@ export function PublicationPage() {
               <div className="ordino-publication-page container pb-6">
                 <div className="row">
                   <div className="col">
-                    <p className="lead text-ordino-gray-4 pt-6">
+                    <p className="lead text-gray-600 pt-6">
                       Ordino and its components have been described in the following scientific publications.<br />
                       Please cite at least the first article when using Ordino and publishing your results.
                     </p>
