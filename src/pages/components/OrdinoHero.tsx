@@ -53,7 +53,7 @@ export function OrdinoHero() {
           <div className="modal-content">
             <div className="modal-header">
               <div className="modal-title h4" >Introduction to Ordino</div>
-              <button type="button" className="btn-close" onClick={() => setModalIsClosed(true)} data-dismiss="modal" aria-label="Close">
+              <button type="button" className="btn-close" onClick={() => setModalIsClosed(true)} data-bs-dismiss="modal" aria-label="Close">
               </button>
             </div>
             <div className="modal-body">
