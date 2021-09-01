@@ -63,7 +63,7 @@ const sections = [
                     " are now available for cell lines and tissue samples (including GTEx, TCGA, and PDX models). These can be added using the ",
                     React.createElement("i", null, "Add Column"),
                     " dialog:")),
-            React.createElement("img", { className: " img-fluid border border-ordino-gray-5", src: v800_gene_signature, alt: "Gene Signature Score" }),
+            React.createElement("img", { className: " img-fluid border border-gray-300", src: v800_gene_signature, alt: "Gene Signature Score" }),
             React.createElement("p", { className: "card-text mt-2" }, "Currently, the following gene signature scores are available:"),
             React.createElement("ul", null,
                 React.createElement("li", null, "NIBR_IFN (Novartis 38 Gene Interferon activity signature)"),
@@ -72,11 +72,11 @@ const sections = [
             React.createElement("h5", { className: "mt-4" }, "Annotation columns"),
             React.createElement("ul", null,
                 React.createElement("li", null, "It is now possible to add multiple \"Annotation Columns\" at once")),
-            React.createElement("img", { className: "img-fluid border border-ordino-gray-5", src: v800_annotation_column, alt: "Annotation Column" }),
+            React.createElement("img", { className: "img-fluid border border-gray-300", src: v800_annotation_column, alt: "Annotation Column" }),
             React.createElement("h5", { className: "mt-4" }, "Data download"),
             React.createElement("ul", { className: "mt-2" },
                 React.createElement("li", null, "The data download dialog has been improved")),
-            React.createElement("img", { className: "img-fluid border border-ordino-gray-5", src: v800_data_download, alt: "Download Data" })))
+            React.createElement("img", { className: "img-fluid border border-gray-300", src: v800_data_download, alt: "Download Data" })))
     },
     {
         id: 'v7-0',

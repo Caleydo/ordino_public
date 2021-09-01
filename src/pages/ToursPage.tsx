@@ -27,7 +27,7 @@ export function ToursPage() {
             <div className="ordino-container">
               {status === 'success' ?
                   <div className="mt-9 mb-6 container tours-tab">
-                    <p className="lead text-ordino-gray-4">Learn more about Ordino by taking an interactive guided tour</p>
+                    <p className="lead text-gray-600">Learn more about Ordino by taking an interactive guided tour</p>
                     {beginnerTours ?
                       <ToursSection level="beginner" tours={beginnerTours} hrefBase="/app/#tour={id}"></ToursSection>
                     : null}

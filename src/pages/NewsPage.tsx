@@ -93,7 +93,7 @@ const sections = [
             <i>Gene Signature Scores</i> are now available for cell lines and tissue samples (including GTEx, TCGA, and PDX models). These can be added using the <i>Add Column</i> dialog:
           </li>
         </ul>
-        <img className=" img-fluid border border-ordino-gray-5" src={v800_gene_signature} alt="Gene Signature Score" />
+        <img className=" img-fluid border border-gray-300" src={v800_gene_signature} alt="Gene Signature Score" />
 
         <p className="card-text mt-2">Currently, the following gene signature scores are available:</p>
         <ul>
@@ -113,7 +113,7 @@ const sections = [
             It is now possible to add multiple "Annotation Columns" at once
           </li>
         </ul>
-        <img className="img-fluid border border-ordino-gray-5" src={v800_annotation_column} alt="Annotation Column" />
+        <img className="img-fluid border border-gray-300" src={v800_annotation_column} alt="Annotation Column" />
 
         <h5 className="mt-4">Data download</h5>
         <ul className="mt-2">
@@ -122,7 +122,7 @@ const sections = [
           </li>
 
         </ul>
-        <img className="img-fluid border border-ordino-gray-5" src={v800_data_download} alt="Download Data" />
+        <img className="img-fluid border border-gray-300" src={v800_data_download} alt="Download Data" />
       </>
     )
   },
