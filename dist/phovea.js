@@ -1,6 +1,6 @@
 import { PluginRegistry } from 'phovea_core';
 import { EP_PHOVEA_CORE_LOCALE } from 'phovea_core';
-import { EP_ORDINO_START_MENU_TAB, EStartMenuSection, EP_ORDINO_FOOTER_MENU, EP_ORDINO_START_MENU_TAB_SHORTCUT } from 'ordino';
+import { EP_ORDINO_START_MENU_TAB, EStartMenuSection, EP_ORDINO_FOOTER_MENU, EP_ORDINO_START_MENU_TAB_SHORTCUT, EP_ORDINO_HEADER_MENU } from 'ordino';
 export default function (registry) {
     //registry.push('extension-type', 'extension-id', function() { return import('./extension_impl'); }, {});
     // generator-phovea:begin
@@ -29,6 +29,30 @@ export default function (registry) {
     registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_help_tab', () => import('./menu/HelpTab'), {
         icon: 'fas fa-question-circle fa-fw',
         menu: EStartMenuSection.RIGHT,
+    });
+    registry.push(EP_ORDINO_HEADER_MENU, 'ordino_header_menu', () => ({}), {
+        links: [
+            {
+                faIcon: 'fas fa-newspaper fa-fw',
+                text: 'What\'s new?',
+                page: '/news'
+            },
+            {
+                faIcon: 'fas fa-check fa-fw',
+                text: 'Features',
+                page: '/features'
+            },
+            {
+                faIcon: 'fas fa-database fa-fw',
+                text: 'Datasets',
+                page: '/datasets'
+            },
+            {
+                faIcon: 'fas fa-question-circle fa-fw',
+                text: 'Help',
+                page: '/help'
+            }
+        ]
     });
     registry.push(EP_ORDINO_FOOTER_MENU, 'ordino_footer_menu', () => ({}), {
         lists: [

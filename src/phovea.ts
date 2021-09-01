@@ -1,6 +1,6 @@
 import {IRegistry, PluginRegistry} from 'phovea_core';
 import {ILocaleEPDesc, EP_PHOVEA_CORE_LOCALE} from 'phovea_core';
-import {EP_ORDINO_START_MENU_TAB, EStartMenuSection, EP_ORDINO_FOOTER_MENU, IOrdinoFooterMenuDesc, EP_ORDINO_START_MENU_TAB_SHORTCUT, IStartMenuTabShortcutDesc} from 'ordino';
+import {EP_ORDINO_START_MENU_TAB, EStartMenuSection, EP_ORDINO_FOOTER_MENU, IOrdinoFooterMenuDesc, EP_ORDINO_START_MENU_TAB_SHORTCUT, IStartMenuTabShortcutDesc, EP_ORDINO_HEADER_MENU, IOrdinoHeaderMenuDesc} from 'ordino';
 
 export default function (registry: IRegistry) {
   //registry.push('extension-type', 'extension-id', function() { return import('./extension_impl'); }, {});
@@ -36,6 +36,32 @@ export default function (registry: IRegistry) {
     icon: 'fas fa-question-circle fa-fw',
     menu: EStartMenuSection.RIGHT,
   });
+
+  registry.push(EP_ORDINO_HEADER_MENU, 'ordino_header_menu', () => ({}), <IOrdinoHeaderMenuDesc>{
+    links: [
+      {
+        faIcon: 'fas fa-newspaper fa-fw',
+        text: 'What\'s new?',
+        page: '/news'
+      },
+      {
+        faIcon: 'fas fa-check fa-fw',
+        text: 'Features',
+        page: '/features'
+      },
+      {
+        faIcon: 'fas fa-database fa-fw',
+        text: 'Datasets',
+        page: '/datasets'
+      },
+      {
+        faIcon: 'fas fa-question-circle fa-fw',
+        text: 'Help',
+        page: '/help'
+      }
+    ]
+  });
+
 
   registry.push(EP_ORDINO_FOOTER_MENU, 'ordino_footer_menu', () => ({}), <IOrdinoFooterMenuDesc>{
     lists: [
