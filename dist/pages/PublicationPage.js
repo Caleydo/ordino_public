@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { HeaderNavigation, OrdinoFooter, OrdinoScrollspy, OrdinoScrollspyItem } from 'ordino';
-import { headerNavigationLinks } from './config';
 function OrdinoPublication() {
     return React.createElement("div", { className: "row" },
         React.createElement("div", { className: "shadow-sm card p-2 overflow-hidden" },
@@ -98,7 +97,7 @@ const publications = [
 ];
 export function PublicationPage() {
     return (React.createElement(React.Fragment, null,
-        React.createElement(HeaderNavigation, { links: headerNavigationLinks }),
+        React.createElement(HeaderNavigation, null),
         React.createElement("div", { className: "position-relative pt-6" },
             React.createElement(OrdinoScrollspy, { items: publications.map((publication) => ({ id: publication.id, name: publication.name })) }, (handleOnChange) => React.createElement(React.Fragment, null,
                 React.createElement("div", { className: "ordino-publication-page container pb-6" },

@@ -12,7 +12,6 @@ import v900_start_menu from 'ordino_public/dist/assets/pages/news/v900_start_men
 import v900_start_menu_tabs from 'ordino_public/dist/assets/pages/news/v900_start_menu_tabs.png';
 import v900_application_help from 'ordino_public/dist/assets/pages/news/v900_application_help.png';
 import v900_ranking_redesign from 'ordino_public/dist/assets/pages/news/v900_ranking_redesign.png';
-import {headerNavigationLinks} from './config';
 
 
 const sections = [
@@ -384,7 +383,7 @@ export function NewsPage() {
 
   return (
     <>
-      <HeaderNavigation links={headerNavigationLinks} />
+      <HeaderNavigation />
       <div className="position-relative py-6">
         <OrdinoScrollspy items={sections.map((section) => ({id: section.id, name: section.name}))}>
           {(handleOnChange) =>

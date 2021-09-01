@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { HeaderNavigation, OrdinoFooter } from 'ordino';
-import { headerNavigationLinks } from './config';
 export function DatasetPageCard({ title, children }) {
     return (React.createElement("div", { className: "card shadow-sm h-100" },
         React.createElement("div", { className: "card-body" },
@@ -9,7 +8,7 @@ export function DatasetPageCard({ title, children }) {
 }
 export function DatasetsPage() {
     return (React.createElement(React.Fragment, null,
-        React.createElement(HeaderNavigation, { links: headerNavigationLinks }),
+        React.createElement(HeaderNavigation, null),
         React.createElement("div", { className: "position-relative pt-6" },
             React.createElement("div", { className: "ordino-container" },
                 React.createElement("div", { className: "dataset-page py-6 container" },

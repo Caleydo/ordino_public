@@ -3,7 +3,6 @@ import { HeaderNavigation, OrdinoFooter, useAsync } from 'ordino';
 import { ToursSection } from 'ordino';
 import { PluginRegistry, I18nextManager } from 'phovea_core';
 import { TourUtils } from 'tdp_core';
-import { headerNavigationLinks } from './config';
 export function ToursPage() {
     const loadTours = React.useMemo(() => async () => {
         // initialize i18n now because it hasn't been initialized before on the homepage
@@ -16,7 +15,7 @@ export function ToursPage() {
     const beginnerTours = tours === null || tours === void 0 ? void 0 : tours.filter((tour) => tour.desc.level === 'beginner');
     const advancedTours = tours === null || tours === void 0 ? void 0 : tours.filter((tour) => tour.desc.level === 'advanced');
     return (React.createElement(React.Fragment, null,
-        React.createElement(HeaderNavigation, { links: headerNavigationLinks }),
+        React.createElement(HeaderNavigation, null),
         React.createElement("div", { className: "position-relative pt-6" },
             React.createElement("div", { className: "ordino-container" },
                 status === 'success' ?

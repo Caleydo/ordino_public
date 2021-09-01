@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {HeaderNavigation, OrdinoFooter, OrdinoScrollspy, OrdinoScrollspyItem} from 'ordino';
-import {headerNavigationLinks} from './config';
 
 function OrdinoPublication() {
   return <div className="row">
@@ -124,7 +123,7 @@ const publications = [
 export function PublicationPage() {
   return (
     <>
-      <HeaderNavigation links={headerNavigationLinks} />
+      <HeaderNavigation />
       <div className="position-relative pt-6">
         <OrdinoScrollspy items={publications.map((publication) => ({id: publication.id, name: publication.name}))}>
           {(handleOnChange) =>

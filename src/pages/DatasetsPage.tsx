@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {HeaderNavigation, OrdinoFooter} from 'ordino';
-import {headerNavigationLinks} from './config';
 
 interface IDatasetPageCardProps {
   title: string;
@@ -23,7 +22,7 @@ export function DatasetPageCard({title, children}: IDatasetPageCardProps) {
 export function DatasetsPage() {
   return (
     <>
-      <HeaderNavigation links={headerNavigationLinks} />
+      <HeaderNavigation />
       <div className="position-relative pt-6">
         <div className="ordino-container">
           <div className="dataset-page py-6 container">

@@ -3,7 +3,6 @@ import {HeaderNavigation, OrdinoFooter, useAsync} from 'ordino';
 import {ToursSection} from 'ordino';
 import {PluginRegistry, I18nextManager} from 'phovea_core';
 import {TourUtils, ITDPTourExtensionDesc} from 'tdp_core';
-import {headerNavigationLinks} from './config';
 
 export function ToursPage() {
     const loadTours = React.useMemo(() => async () => {
@@ -22,7 +21,7 @@ export function ToursPage() {
 
     return (
       <>
-          <HeaderNavigation links={headerNavigationLinks} />
+          <HeaderNavigation />
           <div className="position-relative pt-6">
             <div className="ordino-container">
               {status === 'success' ?
