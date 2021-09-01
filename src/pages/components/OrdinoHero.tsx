@@ -2,7 +2,6 @@ import * as React from 'react';
 import {Link} from 'react-router-dom';
 import ordinoHero from 'ordino_public/dist/assets/ordino-hero.svg';
 import {HeaderNavigation} from 'ordino';
-import {headerNavigationLinks} from '../config';
 
 const INTRO_VIDEO_MODAL_ID = 'ordino-intro-video-modal';
 
@@ -21,7 +20,7 @@ export function OrdinoHero() {
   return (
     <>
       <div className="ordino-hero">
-        <HeaderNavigation bg="transparent" links={headerNavigationLinks}></HeaderNavigation>
+        <HeaderNavigation bg="transparent"></HeaderNavigation>
         <div className="container">
           <div className="row ordino-hero-claim my-4">
             <div className="col text-center">
