@@ -2,8 +2,9 @@ import * as React from 'react';
 import { HeaderNavigation, OrdinoFooter } from 'ordino';
 import { FeatureCard } from './components/FeatureCard';
 export function FeaturesPage() {
+    const testId = 'features';
     return (React.createElement(React.Fragment, null,
-        React.createElement(HeaderNavigation, null),
+        React.createElement(HeaderNavigation, { testId: testId }),
         React.createElement("div", { className: "position-relative pt-6" },
             React.createElement("div", { className: "ordino-container" },
                 React.createElement("div", { className: "p-6 container" },
@@ -24,7 +25,7 @@ export function FeaturesPage() {
                         React.createElement("div", { className: "col" },
                             React.createElement("p", { className: "lead text-gray-600" },
                                 "A core component of the Ordino system is the interactive visualization technique ",
-                                React.createElement("a", { href: "http://lineup.js.org", target: "_blank", rel: "noopener noreferrer" }, "LineUp"),
+                                React.createElement("a", { href: "http://lineup.js.org", target: "_blank", rel: "noopener noreferrer", "data-testid": `${testId}-lineup-link` }, "LineUp"),
                                 ", which allows users to flexibly create and explore rankings of items based on a set of heterogeneous attributes. The exploration is supplemented with filtering features, such as setting cutoff values for numerical attributes, specifying a string or regular expression for textual columns, and specifying one or more categories in categorical attributes. In addition, users can change the visual representation of columns on demand. Numerical attributes, for instance, can be visualized using bars, varying brightness, or as circles whose sizes are proportional to the data values."),
                             React.createElement("p", { className: "lead text-gray-600" }, "As a starting point, Ordino presents the list of items as a table containing metadata attributes specific to the item type. For genes, the default columns are gene symbol, Ensembl ID, chromosome, and biotype. For cell lines and tissue samples, the default columns are name, tumor type, organ, and gender. Initially, gene lists are sorted alphabetically by gene symbol, and lists of cell lines and tissue samples by their name. Further columns can be added by clicking on the plus icon shown on the right-hand side of the interface."),
                             React.createElement("p", { className: "lead text-gray-600" }, "Ordino supports the following column types:"))),
@@ -116,7 +117,7 @@ export function FeaturesPage() {
                         React.createElement(FeatureCard, { title: "Expression view, copy number view and mutation view" },
                             React.createElement("p", null,
                                 "Expression view, Copy Number view, and Mutation view visualizing experimental data for the currently selected items with the ranking visualization technique ",
-                                React.createElement("a", { href: "http://lineup.js.org", target: "_blank", rel: "noopener noreferrer" }, "LineUp"),
+                                React.createElement("a", { href: "http://lineup.js.org", target: "_blank", rel: "noopener noreferrer", "data-testid": `${testId}-feature-card-lineup-link` }, "LineUp"),
                                 ".")),
                         React.createElement(FeatureCard, { title: "Combined view" },
                             React.createElement("p", null, "Combined view is a specialized ranking view that is able to show copy number, expression, and mutation data in combination.")),
@@ -129,18 +130,18 @@ export function FeaturesPage() {
                         React.createElement(FeatureCard, { title: "External resource views" },
                             React.createElement("p", null,
                                 "External resource views loading the content of external websites. For selected genes, the user can look at the information available on ",
-                                React.createElement("a", { href: "https://ensembl.org/", target: "_blank", rel: "noopener noreferrer" }, "Ensembl"),
+                                React.createElement("a", { href: "https://ensembl.org/", target: "_blank", rel: "noopener noreferrer", "data-testid": `${testId}-feature-card-ensembl-link` }, "Ensembl"),
                                 ", ",
-                                React.createElement("a", { href: "https://proteinatlas.org/", target: "_blank", rel: "noopener noreferrer" }, "Human Protein Atlas"),
+                                React.createElement("a", { href: "https://proteinatlas.org/", target: "_blank", rel: "noopener noreferrer", "data-testid": `${testId}-feature-card-proteinatlas-link` }, "Human Protein Atlas"),
                                 ", ",
-                                React.createElement("a", { href: "https://www.targetvalidation.org/", target: "_blank", rel: "noopener noreferrer" }, "Open Targets"),
+                                React.createElement("a", { href: "https://www.targetvalidation.org/", target: "_blank", rel: "noopener noreferrer", "data-testid": `${testId}-feature-card-targets-link` }, "Open Targets"),
                                 ", ",
-                                React.createElement("a", { href: "https://www.ncbi.nlm.nih.gov/pubmed", target: "_blank", rel: "noopener noreferrer" }, "PubMed"),
+                                React.createElement("a", { href: "https://www.ncbi.nlm.nih.gov/pubmed", target: "_blank", rel: "noopener noreferrer", "data-testid": `${testId}-feature-card-pubmed-link` }, "PubMed"),
                                 ", and ",
-                                React.createElement("a", { href: "https://www.ncbi.nlm.nih.gov/pubmed", target: "_blank", rel: "noopener noreferrer" }, "UniProt"),
+                                React.createElement("a", { href: "https://www.ncbi.nlm.nih.gov/pubmed", target: "_blank", rel: "noopener noreferrer", "data-testid": `${testId}-feature-card-uniprot-link` }, "UniProt"),
                                 ". For cell lines, the analyst can load the information available on ",
-                                React.createElement("a", { href: "https://cancer.sanger.ac.uk/cosmic/", target: "_blank", rel: "noopener noreferrer" }, "COSMIC"),
+                                React.createElement("a", { href: "https://cancer.sanger.ac.uk/cosmic/", target: "_blank", rel: "noopener noreferrer", "data-testid": `${testId}-feature-card-cosmic-link` }, "COSMIC"),
                                 " (Catalogue Of Somatic Mutations In Cancer).")))),
-                React.createElement(OrdinoFooter, null)))));
+                React.createElement(OrdinoFooter, { testId: testId })))));
 }
 //# sourceMappingURL=FeaturesPage.js.map

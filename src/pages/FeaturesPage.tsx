@@ -3,9 +3,10 @@ import {HeaderNavigation, OrdinoFooter} from 'ordino';
 import {FeatureCard} from './components/FeatureCard';
 
 export function FeaturesPage() {
+  const testId = 'features';
   return (
     <>
-      <HeaderNavigation />
+      <HeaderNavigation testId={testId} />
       <div className="position-relative pt-6">
         <div className="ordino-container">
           <div className="p-6 container">
@@ -30,7 +31,7 @@ export function FeaturesPage() {
             <div className="row">
               <div className="col">
                 <p className="lead text-gray-600">
-                  A core component of the Ordino system is the interactive visualization technique <a href="http://lineup.js.org" target="_blank" rel="noopener noreferrer">LineUp</a>,
+                  A core component of the Ordino system is the interactive visualization technique <a href="http://lineup.js.org" target="_blank" rel="noopener noreferrer" data-testid={`${testId}-lineup-link`}>LineUp</a>,
               which allows users to flexibly create and explore rankings of items based
               on a set of heterogeneous attributes. The exploration is supplemented with filtering features, such as
               setting cutoff values for numerical attributes, specifying a string or regular expression for textual
@@ -161,7 +162,7 @@ export function FeaturesPage() {
               </FeatureCard>
               <FeatureCard title="Expression view, copy number view and mutation view" >
                 <p>Expression view, Copy Number view, and Mutation view visualizing experimental data for the
-            currently selected items with the ranking visualization technique <a href="http://lineup.js.org" target="_blank" rel="noopener noreferrer">LineUp</a>.</p>
+            currently selected items with the ranking visualization technique <a href="http://lineup.js.org" target="_blank" rel="noopener noreferrer" data-testid={`${testId}-feature-card-lineup-link`}>LineUp</a>.</p>
               </FeatureCard>
               <FeatureCard title="Combined view" >
                 <p>Combined view is a specialized ranking view that is able to show copy number, expression, and
@@ -189,13 +190,13 @@ export function FeaturesPage() {
               </FeatureCard>
               <FeatureCard title="External resource views" >
                 <p>External resource views loading the content of external websites. For selected genes, the user
-            can look at the information available on <a href="https://ensembl.org/" target="_blank" rel="noopener noreferrer">Ensembl</a>, <a href="https://proteinatlas.org/" target="_blank" rel="noopener noreferrer">Human Protein Atlas</a>, <a href="https://www.targetvalidation.org/" target="_blank" rel="noopener noreferrer">Open Targets</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed" target="_blank" rel="noopener noreferrer">PubMed</a>, and <a href="https://www.ncbi.nlm.nih.gov/pubmed" target="_blank" rel="noopener noreferrer">UniProt</a>.
-            For cell lines, the analyst can load the information available on <a href="https://cancer.sanger.ac.uk/cosmic/" target="_blank" rel="noopener noreferrer">COSMIC</a> (Catalogue Of Somatic Mutations In Cancer).</p>
+            can look at the information available on <a href="https://ensembl.org/" target="_blank" rel="noopener noreferrer" data-testid={`${testId}-feature-card-ensembl-link`}>Ensembl</a>, <a href="https://proteinatlas.org/" target="_blank" rel="noopener noreferrer" data-testid={`${testId}-feature-card-proteinatlas-link`}>Human Protein Atlas</a>, <a href="https://www.targetvalidation.org/" target="_blank" rel="noopener noreferrer" data-testid={`${testId}-feature-card-targets-link`}>Open Targets</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed" target="_blank" rel="noopener noreferrer" data-testid={`${testId}-feature-card-pubmed-link`}>PubMed</a>, and <a href="https://www.ncbi.nlm.nih.gov/pubmed" target="_blank" rel="noopener noreferrer" data-testid={`${testId}-feature-card-uniprot-link`}>UniProt</a>.
+            For cell lines, the analyst can load the information available on <a href="https://cancer.sanger.ac.uk/cosmic/" target="_blank" rel="noopener noreferrer" data-testid={`${testId}-feature-card-cosmic-link`}>COSMIC</a> (Catalogue Of Somatic Mutations In Cancer).</p>
               </FeatureCard>
             </div>
           </div>
 
-          <OrdinoFooter></OrdinoFooter>
+          <OrdinoFooter testId={testId}></OrdinoFooter>
         </div>
       </div>
     </>
