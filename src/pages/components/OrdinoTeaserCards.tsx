@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Link} from 'react-router-dom';
 
 export function OrdinoTeaserCards({testId: parentTestId}: {testId?: string}) {
-  const testId = `${parentTestId}-teaser`
+  const testId = `${parentTestId}-teaser`;
   return (
     <div className="ordino-teaser-cards container">
       <div className="row row-cols-1 row-cols-md-2 my-5">

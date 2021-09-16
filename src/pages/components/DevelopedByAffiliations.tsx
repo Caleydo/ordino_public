@@ -4,7 +4,7 @@ import logoJKU from 'ordino_public/dist/assets/logos/johannes-kepler-university-
 import logoDatavisyn from 'ordino_public/dist/assets/logos/datavisyn.svg';
 
 export function DevelopedByAffiliations({testId: parentTestId}: {testId?: string}) {
-  const testId = `${parentTestId}-affiliations`
+  const testId = `${parentTestId}-affiliations`;
   return (
     <section className="container ordino-developed-by-affiliations py-6">
       <div className="row">

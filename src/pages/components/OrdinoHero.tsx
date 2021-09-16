@@ -6,7 +6,7 @@ import {HeaderNavigation} from 'ordino';
 const INTRO_VIDEO_MODAL_ID = 'ordino-intro-video-modal';
 
 export function OrdinoHero({testId: parentTestId}: {testId?: string}) {
-  const testId = `${parentTestId}-hero`
+  const testId = `${parentTestId}-hero`;
   const [modalIsClosed, setModalIsClosed] = React.useState(true);
   const videoRef = React.useRef(null);
 

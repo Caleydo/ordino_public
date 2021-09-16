@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 export function GettingStarted({testId: parentTestId}: {testId?: string}) {
-  const testId = `${parentTestId}-getting-started`
+  const testId = `${parentTestId}-getting-started`;
   return (
     <section className="container ordino-getting-started py-5">
       <div className="row">
