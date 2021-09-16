@@ -6,17 +6,18 @@ import {OrdinoFooter} from 'ordino';
 import {OrdinoTeaserCards} from './components/OrdinoTeaserCards';
 
 export function HomePage() {
+  const testId = 'home';
 
   return (
     <>
-      <OrdinoHero></OrdinoHero>
+      <OrdinoHero testId={testId}></OrdinoHero>
       <div className="ordino-getting-started-wrapper">
-        <GettingStarted></GettingStarted>
+        <GettingStarted testId={testId}></GettingStarted>
         <hr className="m-0" />
-        <DevelopedByAffiliations></DevelopedByAffiliations>
+        <DevelopedByAffiliations testId={testId}></DevelopedByAffiliations>
       </div>
-      <OrdinoTeaserCards></OrdinoTeaserCards>
-      <OrdinoFooter></OrdinoFooter>
+      <OrdinoTeaserCards testId={testId}></OrdinoTeaserCards>
+      <OrdinoFooter testId={testId}></OrdinoFooter>
     </>
   );
 }

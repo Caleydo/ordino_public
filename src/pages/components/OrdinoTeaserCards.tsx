@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {Link} from 'react-router-dom';
 
-export function OrdinoTeaserCards() {
+export function OrdinoTeaserCards({testId: parentTestId}: {testId?: string}) {
+  const testId = `${parentTestId}-teaser`
   return (
     <div className="ordino-teaser-cards container">
       <div className="row row-cols-1 row-cols-md-2 my-5">
@@ -13,14 +14,14 @@ export function OrdinoTeaserCards() {
                 With Ordino v9.0 we have launched a whole new homepage, start menu, and various usability improvements.
               </p>
               <p className="card-text">
-                The new homepage welcomes new and recurring users and provides an overview of the Ordino <Link to="/features">features</Link>, <Link to="/datasets">loaded datasets</Link>, and <Link to="/publications">publications</Link>.
+                The new homepage welcomes new and recurring users and provides an overview of the Ordino <Link to="/features" data-testid={`${testId}-new-features-link`}>features</Link>, <Link to="/datasets" data-testid={`${testId}-new-datasets-link`}>loaded datasets</Link>, and <Link to="/publications" data-testid={`${testId}-new-publications-link`}>publications</Link>.
               </p>
               <p className="card-text">
                 In addition to the new homepage we designed an entirely new Ordino start menu which provides quick access to datasets, sessions and tours.
               </p>
             </div>
             <div className="card-footer">
-              <Link to="/news" className="btn btn-light"><i className="me-1 fas fa-angle-right"></i> Read the release notes</Link>
+              <Link to="/news" className="btn btn-light" data-testid={`${testId}-new-release-notes-link`}><i className="me-1 fas fa-angle-right"></i> Read the release notes</Link>
             </div>
           </div>
         </div>
@@ -35,11 +36,11 @@ export function OrdinoTeaserCards() {
                 Marc Streit, Samuel Gratzl, Holger Stitz, Andreas Wernitznig, Thomas Zichner, Christian Haslinger.<br />
                 <b>Ordino: visual analysis tool for ranking and exploring genes, cell lines, and tissue samples.</b><br />
                 <i> Bioinformatics, 35(17): 3140-3142, 2019. </i>
-                <a href="http://dx.doi.org/10.1093/bioinformatics/btz009" target="_blank" rel="noopener noreferrer">dx.doi.org/10.1093/bioinformatics/btz009</a>
+                <a href="http://dx.doi.org/10.1093/bioinformatics/btz009" target="_blank" rel="noopener noreferrer" data-testid={`${testId}-publication-card-body-link`}>dx.doi.org/10.1093/bioinformatics/btz009</a>
               </p>
             </div>
             <div className="card-footer">
-              <Link to="/publications" className="btn btn-light"><i className="me-1 fas fa-angle-right"></i> List of all publications</Link>
+              <Link to="/publications" className="btn btn-light" data-testid={`${testId}-publication-card-footer-link`}><i className="me-1 fas fa-angle-right"></i> List of all publications</Link>
             </div>
           </div>
         </div>

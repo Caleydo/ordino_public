@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-export function OrdinoTeaserCards() {
+export function OrdinoTeaserCards({ testId: parentTestId }) {
+    const testId = `${parentTestId}-teaser`;
     return (React.createElement("div", { className: "ordino-teaser-cards container" },
         React.createElement("div", { className: "row row-cols-1 row-cols-md-2 my-5" },
             React.createElement("div", { className: "col position-relative mb-4" },
@@ -12,15 +13,15 @@ export function OrdinoTeaserCards() {
                         React.createElement("p", { className: "card-text" }, "With Ordino v9.0 we have launched a whole new homepage, start menu, and various usability improvements."),
                         React.createElement("p", { className: "card-text" },
                             "The new homepage welcomes new and recurring users and provides an overview of the Ordino ",
-                            React.createElement(Link, { to: "/features" }, "features"),
+                            React.createElement(Link, { to: "/features", "data-testid": `${testId}-new-features-link` }, "features"),
                             ", ",
-                            React.createElement(Link, { to: "/datasets" }, "loaded datasets"),
+                            React.createElement(Link, { to: "/datasets", "data-testid": `${testId}-new-datasets-link` }, "loaded datasets"),
                             ", and ",
-                            React.createElement(Link, { to: "/publications" }, "publications"),
+                            React.createElement(Link, { to: "/publications", "data-testid": `${testId}-new-publications-link` }, "publications"),
                             "."),
                         React.createElement("p", { className: "card-text" }, "In addition to the new homepage we designed an entirely new Ordino start menu which provides quick access to datasets, sessions and tours.")),
                     React.createElement("div", { className: "card-footer" },
-                        React.createElement(Link, { to: "/news", className: "btn btn-light" },
+                        React.createElement(Link, { to: "/news", className: "btn btn-light", "data-testid": `${testId}-new-release-notes-link` },
                             React.createElement("i", { className: "me-1 fas fa-angle-right" }),
                             " Read the release notes")))),
             React.createElement("div", { className: "col position-relative mb-4" },
@@ -36,9 +37,9 @@ export function OrdinoTeaserCards() {
                             React.createElement("b", null, "Ordino: visual analysis tool for ranking and exploring genes, cell lines, and tissue samples."),
                             React.createElement("br", null),
                             React.createElement("i", null, " Bioinformatics, 35(17): 3140-3142, 2019. "),
-                            React.createElement("a", { href: "http://dx.doi.org/10.1093/bioinformatics/btz009", target: "_blank", rel: "noopener noreferrer" }, "dx.doi.org/10.1093/bioinformatics/btz009"))),
+                            React.createElement("a", { href: "http://dx.doi.org/10.1093/bioinformatics/btz009", target: "_blank", rel: "noopener noreferrer", "data-testid": `${testId}-publication-card-body-link` }, "dx.doi.org/10.1093/bioinformatics/btz009"))),
                     React.createElement("div", { className: "card-footer" },
-                        React.createElement(Link, { to: "/publications", className: "btn btn-light" },
+                        React.createElement(Link, { to: "/publications", className: "btn btn-light", "data-testid": `${testId}-publication-card-footer-link` },
                             React.createElement("i", { className: "me-1 fas fa-angle-right" }),
                             " List of all publications")))))));
 }

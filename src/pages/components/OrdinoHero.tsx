@@ -5,7 +5,8 @@ import {HeaderNavigation} from 'ordino';
 
 const INTRO_VIDEO_MODAL_ID = 'ordino-intro-video-modal';
 
-export function OrdinoHero() {
+export function OrdinoHero({testId: parentTestId}: {testId?: string}) {
+  const testId = `${parentTestId}-hero`
   const [modalIsClosed, setModalIsClosed] = React.useState(true);
   const videoRef = React.useRef(null);
 
@@ -20,7 +21,7 @@ export function OrdinoHero() {
   return (
     <>
       <div className="ordino-hero">
-        <HeaderNavigation bg="transparent"></HeaderNavigation>
+        <HeaderNavigation bg="transparent" testId={testId}></HeaderNavigation>
         <div className="container">
           <div className="row ordino-hero-claim my-4">
             <div className="col text-center">
@@ -29,13 +30,13 @@ export function OrdinoHero() {
           </div>
           <div className="row ordino-hero-actions my-4">
             <div className="col text-center">
-              <button type="button" className="btn btn-link btn-lg" onClick={() => setModalIsClosed(false)} data-bs-toggle="modal" data-bs-target={`#${INTRO_VIDEO_MODAL_ID}`}>
+              <button type="button" className="btn btn-link btn-lg" onClick={() => setModalIsClosed(false)} data-bs-toggle="modal" data-bs-target={`#${INTRO_VIDEO_MODAL_ID}`} data-testid={`${testId}-play-button`}>
                 <i className="fas fa-play"></i>
               Watch intro video
             </button>
             </div>
             <div className="col text-center">
-              <Link to="/help" className="btn btn-link btn-lg">
+              <Link to="/help" className="btn btn-link btn-lg" data-testid={`${testId}-info-link`}>
                 <i className="fas fa-question"></i>
               Learn more about Ordino
             </Link>
@@ -53,7 +54,7 @@ export function OrdinoHero() {
           <div className="modal-content">
             <div className="modal-header">
               <div className="modal-title h4" >Introduction to Ordino</div>
-              <button type="button" className="btn-close" onClick={() => setModalIsClosed(true)} data-bs-dismiss="modal" aria-label="Close">
+              <button type="button" className="btn-close" onClick={() => setModalIsClosed(true)} data-bs-dismiss="modal" aria-label="Close" data-testid={`${testId}-close-video-button`}>
               </button>
             </div>
             <div className="modal-body">

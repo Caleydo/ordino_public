@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-export function GettingStarted() {
+export function GettingStarted({testId: parentTestId}: {testId?: string}) {
+  const testId = `${parentTestId}-getting-started`
   return (
     <section className="container ordino-getting-started py-5">
       <div className="row">
@@ -24,7 +25,7 @@ export function GettingStarted() {
       </ol>
       <div className="row">
         <div className="col position-relative text-center">
-          <a href="/app/" className="btn btn-outline-secondary btn-lg">Start Analysis</a>
+          <a href="/app/" className="btn btn-outline-secondary btn-lg" data-testid={`${testId}-analysis-link`}>Start Analysis</a>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import * as React from 'react';
-export function GettingStarted() {
+export function GettingStarted({ testId: parentTestId }) {
+    const testId = `${parentTestId}-getting-started`;
     return (React.createElement("section", { className: "container ordino-getting-started py-5" },
         React.createElement("div", { className: "row" },
             React.createElement("div", { className: "col position-relative text-center" },
@@ -16,6 +17,6 @@ export function GettingStarted() {
                 React.createElement("p", null, "Dive deeper into the selected entities and obtain further information or visualize selected entities."))),
         React.createElement("div", { className: "row" },
             React.createElement("div", { className: "col position-relative text-center" },
-                React.createElement("a", { href: "/app/", className: "btn btn-outline-secondary btn-lg" }, "Start Analysis")))));
+                React.createElement("a", { href: "/app/", className: "btn btn-outline-secondary btn-lg", "data-testid": `${testId}-analysis-link` }, "Start Analysis")))));
 }
 //# sourceMappingURL=GettingStarted.js.map

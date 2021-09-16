@@ -1,2 +1,4 @@
 /// <reference types="react" />
-export declare function OrdinoTeaserCards(): JSX.Element;
+export declare function OrdinoTeaserCards({ testId: parentTestId }: {
+    testId?: string;
+}): JSX.Element;

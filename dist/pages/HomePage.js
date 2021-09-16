@@ -5,13 +5,14 @@ import { DevelopedByAffiliations } from './components/DevelopedByAffiliations';
 import { OrdinoFooter } from 'ordino';
 import { OrdinoTeaserCards } from './components/OrdinoTeaserCards';
 export function HomePage() {
+    const testId = 'home';
     return (React.createElement(React.Fragment, null,
-        React.createElement(OrdinoHero, null),
+        React.createElement(OrdinoHero, { testId: testId }),
         React.createElement("div", { className: "ordino-getting-started-wrapper" },
-            React.createElement(GettingStarted, null),
+            React.createElement(GettingStarted, { testId: testId }),
             React.createElement("hr", { className: "m-0" }),
-            React.createElement(DevelopedByAffiliations, null)),
-        React.createElement(OrdinoTeaserCards, null),
-        React.createElement(OrdinoFooter, null)));
+            React.createElement(DevelopedByAffiliations, { testId: testId })),
+        React.createElement(OrdinoTeaserCards, { testId: testId }),
+        React.createElement(OrdinoFooter, { testId: testId })));
 }
 //# sourceMappingURL=HomePage.js.map
