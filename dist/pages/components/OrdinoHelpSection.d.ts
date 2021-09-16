@@ -5,6 +5,7 @@ interface IOrdinoHelpSectionProps {
      */
     openInNewWindow?: boolean;
     children?: React.ReactNode;
+    testId?: string;
 }
 export declare function OrdinoHelpSection(props: IOrdinoHelpSectionProps): JSX.Element;
 export {};

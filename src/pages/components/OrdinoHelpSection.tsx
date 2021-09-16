@@ -18,14 +18,14 @@ const cards = [
     id: 'contact-us',
     name: 'Contact us',
     icon: 'fas fa-at',
-    factory: () => <OrdinoContactForm />
+    factory: ({testId}: {testId?: string}) => <OrdinoContactForm testId={testId} />
 
   },
   {
     id: 'disclaimer',
     name: 'Disclaimer',
     icon: 'fas fa-exclamation-triangle',
-    factory: () => <DisclaimerCard />
+    factory: ({testId}: {testId?: string}) => <DisclaimerCard testId={testId} />
 
   },
   {
@@ -49,11 +49,13 @@ interface IOrdinoHelpSectionProps {
    */
   openInNewWindow?: boolean;
   children?: React.ReactNode;
+  testId?: string;
 }
 
 export function OrdinoHelpSection(props: IOrdinoHelpSectionProps) {
+  const testId = `${props.testId}-helpsection`;
   return (<>
-    <OrdinoScrollspy items={cards.map((item) => ({id: item.id, name: item.name}))}>
+    <OrdinoScrollspy items={cards.map((item) => ({id: item.id, name: item.name}))} testId={testId}>
       {(handleOnChange) =>
         <>
           <div className="container pb-5">
@@ -65,7 +67,7 @@ export function OrdinoHelpSection(props: IOrdinoHelpSectionProps) {
                     <OrdinoScrollspyItem className="pt-6" id={item.id} key={item.name} index={index} handleOnChange={handleOnChange}>
                       <>
                         <h4 className="text-start  mt-2 mb-3"><i className={`me-2 ordino-icon-2 ${item.icon}`}></i> {item.name}</h4>
-                        <item.factory {...{openInNewWindow: props.openInNewWindow}} />
+                        <item.factory {...{openInNewWindow: props.openInNewWindow, testId}} />
                       </>
                     </OrdinoScrollspyItem>
                   );

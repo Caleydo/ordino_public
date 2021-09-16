@@ -16,13 +16,13 @@ const cards = [
         id: 'contact-us',
         name: 'Contact us',
         icon: 'fas fa-at',
-        factory: () => React.createElement(OrdinoContactForm, null)
+        factory: ({ testId }) => React.createElement(OrdinoContactForm, { testId: testId })
     },
     {
         id: 'disclaimer',
         name: 'Disclaimer',
         icon: 'fas fa-exclamation-triangle',
-        factory: () => React.createElement(DisclaimerCard, null)
+        factory: ({ testId }) => React.createElement(DisclaimerCard, { testId: testId })
     },
     {
         id: 'terms-of-use',
@@ -38,8 +38,9 @@ const cards = [
     },
 ];
 export function OrdinoHelpSection(props) {
+    const testId = `${props.testId}-helpsection`;
     return (React.createElement(React.Fragment, null,
-        React.createElement(OrdinoScrollspy, { items: cards.map((item) => ({ id: item.id, name: item.name })) }, (handleOnChange) => React.createElement(React.Fragment, null,
+        React.createElement(OrdinoScrollspy, { items: cards.map((item) => ({ id: item.id, name: item.name })), testId: testId }, (handleOnChange) => React.createElement(React.Fragment, null,
             React.createElement("div", { className: "container pb-5" },
                 React.createElement("div", { className: "row" },
                     React.createElement("div", { className: "col" }, cards.map((item, index) => {
@@ -51,7 +52,7 @@ export function OrdinoHelpSection(props) {
                                     React.createElement("i", { className: `me-2 ordino-icon-2 ${item.icon}` }),
                                     " ",
                                     item.name),
-                                React.createElement(item.factory, Object.assign({}, { openInNewWindow: props.openInNewWindow })))));
+                                React.createElement(item.factory, Object.assign({}, { openInNewWindow: props.openInNewWindow, testId })))));
                     })))),
             props.children))));
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 
-export function TermsOfUseCard() {
+export function TermsOfUseCard({testId: parentTestId}: {testId?: string}) {
+  const testId = `${parentTestId}-terms-of-use`;
   return (
     <div className="shadow-sm card p-2">
       <div className="card-body">

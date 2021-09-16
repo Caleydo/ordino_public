@@ -1,2 +1,4 @@
 /// <reference types="react" />
-export declare function TermsOfUseCard(): JSX.Element;
+export declare function TermsOfUseCard({ testId: parentTestId }: {
+    testId?: string;
+}): JSX.Element;

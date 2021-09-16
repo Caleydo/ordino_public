@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-export function VideoCard({ openInNewWindow }) {
+export function VideoCard({ openInNewWindow, testId: parentTestId }) {
+    const testId = `${parentTestId}-videocard`;
     const newWindowProps = openInNewWindow ? {
         target: '_blank',
         rel: 'noopener noreferrer'
@@ -35,7 +36,7 @@ export function VideoCard({ openInNewWindow }) {
                 React.createElement("li", null, "Embedded external resources (e.g., Ensembl and Open Targets)")),
             React.createElement("p", { className: "card-text" },
                 "You can find more detailed information about the main features ",
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/features" }), "here"),
+                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/features", "data-testid": `${testId}-main-features-link` }), "here"),
                 "."),
             React.createElement("h5", { className: "card-title mt-4" },
                 React.createElement("i", { className: "me-2 fas fa-database" }),
@@ -47,7 +48,7 @@ export function VideoCard({ openInNewWindow }) {
             React.createElement("p", { className: "card-text" }, "Additionally, users can upload their own tabular data to explore it within Ordino."),
             React.createElement("p", { className: "card-text" },
                 "You can find more detailed information about the datasets ",
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/datasets" }), "here"),
+                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/datasets", "data-testid": `${testId}-info-datasets-link` }), "here"),
                 "."),
             React.createElement("h5", { className: "card-title mt-4" },
                 React.createElement("i", { className: "me-2 fas fa-mouse-pointer" }),
@@ -56,7 +57,7 @@ export function VideoCard({ openInNewWindow }) {
                 "To learn more about the main features of Ordino and how to use them we provide several interactive help tours that guide you through the application.",
                 React.createElement("br", null),
                 "You can find them ",
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/tours" }), "here"),
+                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/tours", "data-testid": `${testId}-tours-link` }), "here"),
                 "."),
             React.createElement("h5", { className: "card-title mt-4" },
                 React.createElement("i", { className: "me-2 fas fa-book-open" }),
@@ -83,7 +84,7 @@ export function VideoCard({ openInNewWindow }) {
             React.createElement("p", { className: "card-text" }, "Please cite the first article when using Ordino and publishing your results."),
             React.createElement("p", { className: "card-text" },
                 "You can find more information about the publications ",
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/publications" }), "here"),
+                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/publications", "data-testid": `${testId}-publications-link` }), "here"),
                 "."))));
 }
 //# sourceMappingURL=VideoCard.js.map

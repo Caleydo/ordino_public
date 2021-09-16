@@ -1,5 +1,6 @@
 import React from 'react';
-export function TermsOfUseCard() {
+export function TermsOfUseCard({ testId: parentTestId }) {
+    const testId = `${parentTestId}-terms-of-use`;
     return (React.createElement("div", { className: "shadow-sm card p-2" },
         React.createElement("div", { className: "card-body" },
             React.createElement("div", { className: "list-group list-group-flush" },

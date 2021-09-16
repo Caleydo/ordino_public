@@ -2,7 +2,8 @@ import * as React from 'react';
 
 const CONTACT_FORM_EMAIL = 'ordino@caleydo.org';
 
-export function OrdinoContactForm() {
+export function OrdinoContactForm({testId: parentTestId}: {testId?: string}) {
+    const testId = `${parentTestId}-contact`;
     const handleSubmit = React.useCallback((event: React.SyntheticEvent) => {
         event.preventDefault();
         const form = event.currentTarget as HTMLFormElement;
@@ -25,26 +26,26 @@ export function OrdinoContactForm() {
             <div className="card-body">
                 <p className="card-text">
                     {'Do you have questions or found a bug, do not hesitate to contact us using the contact form below. You can also contact us by writing an email to '}
-                    <a className="card-link" href="mailto:ordino@caleydo.org.">ordino@caleydo.org</a>. We are glad to help you.
+                    <a className="card-link" href="mailto:ordino@caleydo.org." data-testid={`${testId}-ordino-email`}>ordino@caleydo.org</a>. We are glad to help you.
                  </p>
                 <form onSubmit={handleSubmit}>
                     <div className="row-cols-md-3 mb-3">
                         <label className="form-label">Type of contact</label>
-                        <select name="subject" className="form-select">
-                            <option>I have some general feedback</option>
-                            <option>I have a question</option>
-                            <option>I want to report a bug</option>
+                        <select name="subject" className="form-select" data-testid={`${testId}-type-select`}>
+                            <option data-testid={`${testId}-type-feedback-option`}>I have some general feedback</option>
+                            <option data-testid={`${testId}-type-question-option`}>I have a question</option>
+                            <option data-testid={`${testId}-type-bug-option`}>I want to report a bug</option>
                         </select>
                     </div>
 
                     <div className="mb-3">
                         <label className="form-label">Message</label>
-                        <textarea className="form-control" name="message" rows={5}></textarea>
+                        <textarea className="form-control" name="message" rows={5} data-testid={`${testId}-message-textarea`}></textarea>
                     </div>
 
                     <div className="justify-content-end row">
                         <div className="col-md-auto">
-                            <button title="Send Message" type="submit" className="btn btn-secondary" >
+                            <button title="Send Message" type="submit" className="btn btn-secondary" data-testid={`${testId}-send-button`} >
                                 Send Message
                             </button>
                         </div>

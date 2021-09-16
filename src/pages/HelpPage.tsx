@@ -5,15 +5,16 @@ import {OrdinoHelpSection} from './components/OrdinoHelpSection';
 import {useScrollToSlug} from 'ordino';
 
 export function HelpPage() {
+  const testId = 'help';
   useScrollToSlug();
 
   return (
     <>
-      <HeaderNavigation />
+      <HeaderNavigation testId={testId} />
       <div className="container-fluid ordino-help-page h-100 position-relative pt-6">
-        <OrdinoHelpSection>
-          <DevelopedByAffiliations />
-          <OrdinoFooter />
+        <OrdinoHelpSection testId={testId}>
+          <DevelopedByAffiliations testId={testId} />
+          <OrdinoFooter testId={testId} />
         </OrdinoHelpSection>
       </div>
     </>
