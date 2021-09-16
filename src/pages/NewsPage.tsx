@@ -379,7 +379,7 @@ const sections = [
 
 
 export function NewsPage() {
-  const testId = 'newsPage';
+  const testId = 'newspage';
   useScrollToSlug();
 
   return (

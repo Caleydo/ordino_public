@@ -20,7 +20,7 @@ export function DatasetPageCard({title, children}: IDatasetPageCardProps) {
 
 
 export function DatasetsPage() {
-  const testId = 'datasets';
+  const testId = 'datasetspage';
   return (
     <>
       <HeaderNavigation testId={testId}/>

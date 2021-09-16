@@ -5,7 +5,7 @@ import {OrdinoHelpSection} from './components/OrdinoHelpSection';
 import {useScrollToSlug} from 'ordino';
 
 export function HelpPage() {
-  const testId = 'help';
+  const testId = 'helppage';
   useScrollToSlug();
 
   return (

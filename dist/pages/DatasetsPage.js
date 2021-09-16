@@ -7,7 +7,7 @@ export function DatasetPageCard({ title, children }) {
             children)));
 }
 export function DatasetsPage() {
-    const testId = 'datasets';
+    const testId = 'datasetspage';
     return (React.createElement(React.Fragment, null,
         React.createElement(HeaderNavigation, { testId: testId }),
         React.createElement("div", { className: "position-relative pt-6" },

@@ -5,7 +5,7 @@ import { DevelopedByAffiliations } from './components/DevelopedByAffiliations';
 import { OrdinoFooter } from 'ordino';
 import { OrdinoTeaserCards } from './components/OrdinoTeaserCards';
 export function HomePage() {
-    const testId = 'home';
+    const testId = 'homepage';
     return (React.createElement(React.Fragment, null,
         React.createElement(OrdinoHero, { testId: testId }),
         React.createElement("div", { className: "ordino-getting-started-wrapper" },

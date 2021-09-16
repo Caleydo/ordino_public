@@ -236,7 +236,7 @@ const sections = [
     }
 ];
 export function NewsPage() {
-    const testId = 'newsPage';
+    const testId = 'newspage';
     useScrollToSlug();
     return (React.createElement(React.Fragment, null,
         React.createElement(HeaderNavigation, { testId: testId }),

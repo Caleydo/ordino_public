@@ -3,7 +3,7 @@ import {HeaderNavigation, OrdinoFooter} from 'ordino';
 import {FeatureCard} from './components/FeatureCard';
 
 export function FeaturesPage() {
-  const testId = 'features';
+  const testId = 'featurespage';
   return (
     <>
       <HeaderNavigation testId={testId} />

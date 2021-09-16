@@ -6,7 +6,7 @@ import {OrdinoFooter} from 'ordino';
 import {OrdinoTeaserCards} from './components/OrdinoTeaserCards';
 
 export function HomePage() {
-  const testId = 'home';
+  const testId = 'homepage';
 
   return (
     <>

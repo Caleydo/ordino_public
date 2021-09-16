@@ -2,7 +2,7 @@ import * as React from 'react';
 import { HeaderNavigation, OrdinoFooter } from 'ordino';
 import { FeatureCard } from './components/FeatureCard';
 export function FeaturesPage() {
-    const testId = 'features';
+    const testId = 'featurespage';
     return (React.createElement(React.Fragment, null,
         React.createElement(HeaderNavigation, { testId: testId }),
         React.createElement("div", { className: "position-relative pt-6" },
