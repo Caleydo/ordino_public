@@ -379,13 +379,14 @@ const sections = [
 
 
 export function NewsPage() {
+  const testId = 'newsPage';
   useScrollToSlug();
 
   return (
     <>
-      <HeaderNavigation />
+      <HeaderNavigation testId={testId}/>
       <div className="position-relative py-6">
-        <OrdinoScrollspy items={sections.map((section) => ({id: section.id, name: section.name}))}>
+        <OrdinoScrollspy items={sections.map((section) => ({id: section.id, name: section.name}))} testId={testId}>
           {(handleOnChange) =>
             <>
               <div className="container pb-6">
@@ -409,7 +410,7 @@ export function NewsPage() {
                   </div>
                 </div>
               </div>
-              <OrdinoFooter></OrdinoFooter>
+              <OrdinoFooter testId={testId}></OrdinoFooter>
             </>
           }
         </OrdinoScrollspy>

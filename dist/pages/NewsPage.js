@@ -236,11 +236,12 @@ const sections = [
     }
 ];
 export function NewsPage() {
+    const testId = 'newsPage';
     useScrollToSlug();
     return (React.createElement(React.Fragment, null,
-        React.createElement(HeaderNavigation, null),
+        React.createElement(HeaderNavigation, { testId: testId }),
         React.createElement("div", { className: "position-relative py-6" },
-            React.createElement(OrdinoScrollspy, { items: sections.map((section) => ({ id: section.id, name: section.name })) }, (handleOnChange) => React.createElement(React.Fragment, null,
+            React.createElement(OrdinoScrollspy, { items: sections.map((section) => ({ id: section.id, name: section.name })), testId: testId }, (handleOnChange) => React.createElement(React.Fragment, null,
                 React.createElement("div", { className: "container pb-6" },
                     React.createElement("div", { className: "row" },
                         React.createElement("div", { className: "col" }, sections.map((item, index) => {
@@ -255,6 +256,6 @@ export function NewsPage() {
                                     React.createElement("div", { className: "card shadow-sm h-100" },
                                         React.createElement("div", { className: "card-body" }, item.markup())))));
                         })))),
-                React.createElement(OrdinoFooter, null))))));
+                React.createElement(OrdinoFooter, { testId: testId }))))));
 }
 //# sourceMappingURL=NewsPage.js.map
