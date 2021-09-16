@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {HeaderNavigation, OrdinoFooter, OrdinoScrollspy, OrdinoScrollspyItem} from 'ordino';
 
-function OrdinoPublication() {
+function OrdinoPublication({testId: parentTestId}: {testId?: string}) {
+  const testId = `${parentTestId}-ordino`;
   return <div className="row">
     <div className="shadow-sm card p-2 overflow-hidden">
       <div className="card-body">
@@ -26,15 +27,16 @@ function OrdinoPublication() {
         </p>
       </div>
       <div className="card-footer">
-        <a href="https://dx.doi.org/10.1093/bioinformatics/btz009" target="_blank" rel="noopener noreferrer" className="btn btn-light me-2"><i className="me-1 fas fa-globe-americas"></i> Publisher</a>
-        <a href="https://academic.oup.com/bioinformatics/article-pdf/35/17/3140/29591819/btz009.pdf" target="_blank" className="btn btn-light me-2"><i className="me-1 fas fa-file-pdf"></i> Download</a>
-        <a href="https://github.com/Caleydo/ordino_public" target="_blank" rel="noopener noreferrer" className="btn btn-light"><i className="me-1 fab fa-github"></i> Source code</a>
+        <a href="https://dx.doi.org/10.1093/bioinformatics/btz009" target="_blank" rel="noopener noreferrer" className="btn btn-light me-2" data-testid={`${testId}-publisher-link`}><i className="me-1 fas fa-globe-americas"></i> Publisher</a>
+        <a href="https://academic.oup.com/bioinformatics/article-pdf/35/17/3140/29591819/btz009.pdf" target="_blank" className="btn btn-light me-2" data-testid={`${testId}-download-link`}><i className="me-1 fas fa-file-pdf"></i> Download</a>
+        <a href="https://github.com/Caleydo/ordino_public" target="_blank" rel="noopener noreferrer" className="btn btn-light" data-testid={`${testId}-code-link`}><i className="me-1 fab fa-github"></i> Source code</a>
       </div>
     </div>
   </div>;
 }
 
-function TourdinoPublication() {
+function TourdinoPublication({testId: parentTestId}: {testId?: string}) {
+  const testId = `${parentTestId}-tourdino`;
   return <div className="row">
     <div className="shadow-sm card p-2 overflow-hidden">
       <div className="card-body">
@@ -59,15 +61,16 @@ function TourdinoPublication() {
         </p>
       </div>
       <div className="card-footer">
-        <a href="https://diglib.eg.org/handle/10.2312/eurova20191117" target="_blank" rel="noopener noreferrer" className="btn btn-light me-2"><i className="me-1 fas fa-globe-americas"></i>Publisher</a>
-        <a href="https://diglib.eg.org/bitstream/handle/10.2312/eurova20191117/007-011.pdf?sequence=1&amp;isAllowed=y" target="_blank" className="btn btn-light me-2"><i className="me-1 fas fa-file-pdf"></i> Download</a>
-        <a href="https://github.com/Caleydo/tourdino" target="_blank" rel="noopener noreferrer" className="btn btn-light"><i className="me-1 fab fa-github"></i> Source code</a>
+        <a href="https://diglib.eg.org/handle/10.2312/eurova20191117" target="_blank" rel="noopener noreferrer" className="btn btn-light me-2" data-testid={`${testId}-publisher-link`}><i className="me-1 fas fa-globe-americas"></i>Publisher</a>
+        <a href="https://diglib.eg.org/bitstream/handle/10.2312/eurova20191117/007-011.pdf?sequence=1&amp;isAllowed=y" target="_blank" className="btn btn-light me-2" data-testid={`${testId}-download-link`}><i className="me-1 fas fa-file-pdf"></i> Download</a>
+        <a href="https://github.com/Caleydo/tourdino" target="_blank" rel="noopener noreferrer" className="btn btn-light" data-testid={`${testId}-code-link`}><i className="me-1 fab fa-github"></i> Source code</a>
       </div>
     </div>
   </div>;
 }
 
-function TagglePublication() {
+function TagglePublication({testId: parentTestId}: {testId?: string}) {
+  const testId = `${parentTestId}-taggle`;
   return <div className="row">
     <div className="shadow-sm card p-2 overflow-hidden">
       <div className="card-body">
@@ -88,9 +91,9 @@ function TagglePublication() {
         </p>
       </div>
       <div className="card-footer">
-        <a href="https://dx.doi.org/10.1177/1473871619878085" target="_blank" rel="noopener noreferrer" className="btn btn-light me-2"><i className="me-1 fas fa-globe-americas"></i> Publisher</a>
-        <a href="https://journals.sagepub.com/doi/pdf/10.1177/1473871619878085" target="_blank" className="btn btn-light me-2"><i className="me-1 fas fa-file-pdf"></i> Download</a>
-        <a href="https://github.com/lineupjs/lineupjs" target="_blank" rel="noopener noreferrer" className="btn btn-light"><i className="me-1 fab fa-github"></i> Source code</a>
+        <a href="https://dx.doi.org/10.1177/1473871619878085" target="_blank" rel="noopener noreferrer" className="btn btn-light me-2" data-testid={`${testId}-publisher-link`}><i className="me-1 fas fa-globe-americas"></i> Publisher</a>
+        <a href="https://journals.sagepub.com/doi/pdf/10.1177/1473871619878085" target="_blank" className="btn btn-light me-2" data-testid={`${testId}-download-link`}><i className="me-1 fas fa-file-pdf"></i> Download</a>
+        <a href="https://github.com/lineupjs/lineupjs" target="_blank" rel="noopener noreferrer" className="btn btn-light" data-testid={`${testId}-code-link`}><i className="me-1 fab fa-github"></i> Source code</a>
       </div>
     </div>
   </div>;
@@ -101,31 +104,32 @@ const publications = [
     id: 'ordino-publication',
     name: 'Ordino',
     icon: 'fas fa-book-open',
-    factory: () => <OrdinoPublication />
+    factory: () => <OrdinoPublication testId={'publicationspage'}/>
 
   },
   {
     id: 'tourdino-publication',
     name: 'Tourdino',
     icon: 'fas fa-book-open',
-    factory: () => <TourdinoPublication />
+    factory: () => <TourdinoPublication testId={'publicationspage'}/>
 
   },
   {
     id: 'taggle-publication',
     name: 'Taggle',
     icon: 'fas fa-book-open',
-    factory: () => <TagglePublication />
+    factory: () => <TagglePublication testId={'publicationspage'}/>
   },
 ];
 
 
 export function PublicationPage() {
+  const testId = 'publicationspage';
   return (
     <>
-      <HeaderNavigation />
+      <HeaderNavigation testId={testId} />
       <div className="position-relative pt-6">
-        <OrdinoScrollspy items={publications.map((publication) => ({id: publication.id, name: publication.name}))}>
+        <OrdinoScrollspy items={publications.map((publication) => ({id: publication.id, name: publication.name}))} testId={testId}>
           {(handleOnChange) =>
             <>
               <div className="ordino-publication-page container pb-6">
@@ -153,7 +157,7 @@ export function PublicationPage() {
                   </div>
                 </div>
               </div>
-              <OrdinoFooter></OrdinoFooter>
+              <OrdinoFooter testId={testId}></OrdinoFooter>
             </>
           }
         </OrdinoScrollspy>

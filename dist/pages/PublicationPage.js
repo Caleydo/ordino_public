@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { HeaderNavigation, OrdinoFooter, OrdinoScrollspy, OrdinoScrollspyItem } from 'ordino';
-function OrdinoPublication() {
+function OrdinoPublication({ testId: parentTestId }) {
+    const testId = `${parentTestId}-ordino`;
     return React.createElement("div", { className: "row" },
         React.createElement("div", { className: "shadow-sm card p-2 overflow-hidden" },
             React.createElement("div", { className: "card-body" },
@@ -15,17 +16,18 @@ function OrdinoPublication() {
                     React.createElement("br", null),
                     React.createElement("i", null, "Bioinformatics, 35(17): 3140-3142, 2019."))),
             React.createElement("div", { className: "card-footer" },
-                React.createElement("a", { href: "https://dx.doi.org/10.1093/bioinformatics/btz009", target: "_blank", rel: "noopener noreferrer", className: "btn btn-light me-2" },
+                React.createElement("a", { href: "https://dx.doi.org/10.1093/bioinformatics/btz009", target: "_blank", rel: "noopener noreferrer", className: "btn btn-light me-2", "data-testid": `${testId}-publisher-link` },
                     React.createElement("i", { className: "me-1 fas fa-globe-americas" }),
                     " Publisher"),
-                React.createElement("a", { href: "https://academic.oup.com/bioinformatics/article-pdf/35/17/3140/29591819/btz009.pdf", target: "_blank", className: "btn btn-light me-2" },
+                React.createElement("a", { href: "https://academic.oup.com/bioinformatics/article-pdf/35/17/3140/29591819/btz009.pdf", target: "_blank", className: "btn btn-light me-2", "data-testid": `${testId}-download-link` },
                     React.createElement("i", { className: "me-1 fas fa-file-pdf" }),
                     " Download"),
-                React.createElement("a", { href: "https://github.com/Caleydo/ordino_public", target: "_blank", rel: "noopener noreferrer", className: "btn btn-light" },
+                React.createElement("a", { href: "https://github.com/Caleydo/ordino_public", target: "_blank", rel: "noopener noreferrer", className: "btn btn-light", "data-testid": `${testId}-code-link` },
                     React.createElement("i", { className: "me-1 fab fa-github" }),
                     " Source code"))));
 }
-function TourdinoPublication() {
+function TourdinoPublication({ testId: parentTestId }) {
+    const testId = `${parentTestId}-tourdino`;
     return React.createElement("div", { className: "row" },
         React.createElement("div", { className: "shadow-sm card p-2 overflow-hidden" },
             React.createElement("div", { className: "card-body" },
@@ -40,17 +42,18 @@ function TourdinoPublication() {
                     React.createElement("br", null),
                     React.createElement("i", null, "EuroVis Workshop on Visual Analytics (EuroVA '19), 2019."))),
             React.createElement("div", { className: "card-footer" },
-                React.createElement("a", { href: "https://diglib.eg.org/handle/10.2312/eurova20191117", target: "_blank", rel: "noopener noreferrer", className: "btn btn-light me-2" },
+                React.createElement("a", { href: "https://diglib.eg.org/handle/10.2312/eurova20191117", target: "_blank", rel: "noopener noreferrer", className: "btn btn-light me-2", "data-testid": `${testId}-publisher-link` },
                     React.createElement("i", { className: "me-1 fas fa-globe-americas" }),
                     "Publisher"),
-                React.createElement("a", { href: "https://diglib.eg.org/bitstream/handle/10.2312/eurova20191117/007-011.pdf?sequence=1&isAllowed=y", target: "_blank", className: "btn btn-light me-2" },
+                React.createElement("a", { href: "https://diglib.eg.org/bitstream/handle/10.2312/eurova20191117/007-011.pdf?sequence=1&isAllowed=y", target: "_blank", className: "btn btn-light me-2", "data-testid": `${testId}-download-link` },
                     React.createElement("i", { className: "me-1 fas fa-file-pdf" }),
                     " Download"),
-                React.createElement("a", { href: "https://github.com/Caleydo/tourdino", target: "_blank", rel: "noopener noreferrer", className: "btn btn-light" },
+                React.createElement("a", { href: "https://github.com/Caleydo/tourdino", target: "_blank", rel: "noopener noreferrer", className: "btn btn-light", "data-testid": `${testId}-code-link` },
                     React.createElement("i", { className: "me-1 fab fa-github" }),
                     " Source code"))));
 }
-function TagglePublication() {
+function TagglePublication({ testId: parentTestId }) {
+    const testId = `${parentTestId}-taggle`;
     return React.createElement("div", { className: "row" },
         React.createElement("div", { className: "shadow-sm card p-2 overflow-hidden" },
             React.createElement("div", { className: "card-body" },
@@ -65,13 +68,13 @@ function TagglePublication() {
                     React.createElement("br", null),
                     React.createElement("i", null, "Information Visualization, 19(2): 114-136, 2019."))),
             React.createElement("div", { className: "card-footer" },
-                React.createElement("a", { href: "https://dx.doi.org/10.1177/1473871619878085", target: "_blank", rel: "noopener noreferrer", className: "btn btn-light me-2" },
+                React.createElement("a", { href: "https://dx.doi.org/10.1177/1473871619878085", target: "_blank", rel: "noopener noreferrer", className: "btn btn-light me-2", "data-testid": `${testId}-publisher-link` },
                     React.createElement("i", { className: "me-1 fas fa-globe-americas" }),
                     " Publisher"),
-                React.createElement("a", { href: "https://journals.sagepub.com/doi/pdf/10.1177/1473871619878085", target: "_blank", className: "btn btn-light me-2" },
+                React.createElement("a", { href: "https://journals.sagepub.com/doi/pdf/10.1177/1473871619878085", target: "_blank", className: "btn btn-light me-2", "data-testid": `${testId}-download-link` },
                     React.createElement("i", { className: "me-1 fas fa-file-pdf" }),
                     " Download"),
-                React.createElement("a", { href: "https://github.com/lineupjs/lineupjs", target: "_blank", rel: "noopener noreferrer", className: "btn btn-light" },
+                React.createElement("a", { href: "https://github.com/lineupjs/lineupjs", target: "_blank", rel: "noopener noreferrer", className: "btn btn-light", "data-testid": `${testId}-code-link` },
                     React.createElement("i", { className: "me-1 fab fa-github" }),
                     " Source code"))));
 }
@@ -80,26 +83,27 @@ const publications = [
         id: 'ordino-publication',
         name: 'Ordino',
         icon: 'fas fa-book-open',
-        factory: () => React.createElement(OrdinoPublication, null)
+        factory: () => React.createElement(OrdinoPublication, { testId: 'publicationspage' })
     },
     {
         id: 'tourdino-publication',
         name: 'Tourdino',
         icon: 'fas fa-book-open',
-        factory: () => React.createElement(TourdinoPublication, null)
+        factory: () => React.createElement(TourdinoPublication, { testId: 'publicationspage' })
     },
     {
         id: 'taggle-publication',
         name: 'Taggle',
         icon: 'fas fa-book-open',
-        factory: () => React.createElement(TagglePublication, null)
+        factory: () => React.createElement(TagglePublication, { testId: 'publicationspage' })
     },
 ];
 export function PublicationPage() {
+    const testId = 'publicationspage';
     return (React.createElement(React.Fragment, null,
-        React.createElement(HeaderNavigation, null),
+        React.createElement(HeaderNavigation, { testId: testId }),
         React.createElement("div", { className: "position-relative pt-6" },
-            React.createElement(OrdinoScrollspy, { items: publications.map((publication) => ({ id: publication.id, name: publication.name })) }, (handleOnChange) => React.createElement(React.Fragment, null,
+            React.createElement(OrdinoScrollspy, { items: publications.map((publication) => ({ id: publication.id, name: publication.name })), testId: testId }, (handleOnChange) => React.createElement(React.Fragment, null,
                 React.createElement("div", { className: "ordino-publication-page container pb-6" },
                     React.createElement("div", { className: "row" },
                         React.createElement("div", { className: "col" },
@@ -119,6 +123,6 @@ export function PublicationPage() {
                                         item.name),
                                     React.createElement(item.factory, null))));
                         })))),
-                React.createElement(OrdinoFooter, null))))));
+                React.createElement(OrdinoFooter, { testId: testId }))))));
 }
 //# sourceMappingURL=PublicationPage.js.map
