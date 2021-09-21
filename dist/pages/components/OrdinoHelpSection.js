@@ -38,7 +38,7 @@ const cards = [
     },
 ];
 export function OrdinoHelpSection(props) {
-    const testId = `${props.testId}-helpsection`;
+    const testId = props.testId ? `${props.testId}-helpsection` : 'helptab-helpsection';
     return (React.createElement(React.Fragment, null,
         React.createElement(OrdinoScrollspy, { items: cards.map((item) => ({ id: item.id, name: item.name })), testId: testId }, (handleOnChange) => React.createElement(React.Fragment, null,
             React.createElement("div", { className: "container pb-5" },
