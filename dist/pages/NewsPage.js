@@ -9,8 +9,8 @@ import v900_start_menu from 'ordino_public/dist/assets/pages/news/v900_start_men
 import v900_start_menu_tabs from 'ordino_public/dist/assets/pages/news/v900_start_menu_tabs.png';
 import v900_application_help from 'ordino_public/dist/assets/pages/news/v900_application_help.png';
 import v900_ranking_redesign from 'ordino_public/dist/assets/pages/news/v900_ranking_redesign.png';
-import v901_auto_complete from 'ordino_public/dist/assets/pages/news/v901_auto_complete.png';
-import v901_usability_improvements from 'ordino_public/dist/assets/pages/news/v901_usability_improvements.png';
+import v910_auto_complete from 'ordino_public/dist/assets/pages/news/v910_auto_complete.png';
+import v910_usability_improvements from 'ordino_public/dist/assets/pages/news/v910_usability_improvements.png';
 const sections = [
     {
         if: 'v9-1',
@@ -25,11 +25,11 @@ const sections = [
             React.createElement("h5", { className: "mt-4" }, "Usability improvements"),
             React.createElement("ul", null,
                 React.createElement("li", null, "We have continued with our design and usability improvements of the whole application. The overall appearance of the application changed slightly. Additionally, the add column button is now more prominent and easier to find.")),
-            React.createElement("img", { className: " img-fluid border border-gray-300", src: v901_usability_improvements, alt: "Usability Improvements" }),
+            React.createElement("img", { className: " img-fluid border border-gray-300", src: v910_usability_improvements, alt: "Usability Improvements" }),
             React.createElement("h5", { className: "mt-4" }, "Auto-complete when filtering text columns"),
             React.createElement("ul", null,
                 React.createElement("li", null, "When filtering a text column, a list of items is now suggested while typing.")),
-            React.createElement("img", { className: " img-fluid border border-gray-300", src: v901_auto_complete, alt: "Auto Complete" }),
+            React.createElement("img", { className: " img-fluid border border-gray-300", src: v910_auto_complete, alt: "Auto Complete" }),
             React.createElement("h5", { className: "mt-4" }, "Briefly noted"),
             React.createElement("ul", null,
                 React.createElement("li", null, "Added scroll bars to dataset and session lists"),
