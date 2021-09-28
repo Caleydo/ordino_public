@@ -14,7 +14,7 @@ import v910_usability_improvements from 'ordino_public/dist/assets/pages/news/v9
 const sections = [
     {
         if: 'v9-1',
-        name: 'Version 9.1 (2021-09-29)',
+        name: 'Version 9.1 (2021-10-06)',
         markup: () => (React.createElement(React.Fragment, null,
             React.createElement("p", { className: "lead text-muted" },
                 "This update contains various ",
@@ -23,12 +23,10 @@ const sections = [
                 React.createElement("b", null, "bug fixes"),
                 ". The most important changes are:"),
             React.createElement("h5", { className: "mt-4" }, "Usability improvements"),
-            React.createElement("ul", null,
-                React.createElement("li", null, "We have continued with our design and usability improvements of the whole application. The overall appearance of the application changed slightly. Additionally, the add column button is now more prominent and easier to find.")),
+            React.createElement("p", null, "We have continued with our design and usability improvements of the whole application. The overall appearance of the application changed slightly. Additionally, the add column button is now more prominent and easier to find."),
             React.createElement("img", { className: " img-fluid border border-gray-300", src: v910_usability_improvements, alt: "Usability Improvements" }),
             React.createElement("h5", { className: "mt-4" }, "Auto-complete when filtering text columns"),
-            React.createElement("ul", null,
-                React.createElement("li", null, "When filtering a text column, a list of items is now suggested while typing.")),
+            React.createElement("p", null, "When filtering a text column, a list of items is now suggested while typing."),
             React.createElement("img", { className: " img-fluid border border-gray-300", src: v910_auto_complete, alt: "Auto Complete" }),
             React.createElement("h5", { className: "mt-4" }, "Briefly noted"),
             React.createElement("ul", null,
