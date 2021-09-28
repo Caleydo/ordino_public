@@ -56,7 +56,7 @@ export function DatasetsPage() {
             </div>
             <div className="row mt-4">
               <div className="col">
-                <h4 className="text-start d-flex align-items-center mt-2 mb-3"><i className="me-2 fas ordino-icon-1 fa-chevron-circle-right" ></i> Depletion Sceen Data</h4>
+                <h4 className="text-start d-flex align-items-center mt-2 mb-3"><i className="me-2 fas ordino-icon-1 fa-chevron-circle-right" ></i> Depletion Screen Data</h4>
               </div>
             </div>
 
