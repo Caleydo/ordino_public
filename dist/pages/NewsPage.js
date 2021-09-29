@@ -13,7 +13,7 @@ import v910_auto_complete from 'ordino_public/dist/assets/pages/news/v910_auto_c
 import v910_usability_improvements from 'ordino_public/dist/assets/pages/news/v910_usability_improvements.png';
 const sections = [
     {
-        if: 'v9-1',
+        id: 'v9-1',
         name: 'Version 9.1 (2021-10-06)',
         markup: () => (React.createElement(React.Fragment, null,
             React.createElement("p", { className: "lead text-muted" },

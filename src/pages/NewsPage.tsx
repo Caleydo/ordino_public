@@ -18,7 +18,7 @@ import v910_usability_improvements from 'ordino_public/dist/assets/pages/news/v9
 
 const sections = [
   {
-    if: 'v9-1',
+    id: 'v9-1',
     name: 'Version 9.1 (2021-10-06)',
     markup: () => (
       <>
