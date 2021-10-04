@@ -5,6 +5,7 @@ import {IVideoCardProps, VideoCard} from './VideoCard';
 import {OrdinoScrollspy, OrdinoScrollspyItem} from 'ordino';
 import {SourceCodeCard} from './SourceCodeCard';
 import {TermsOfUseCard} from './TermsOfUseCard';
+import {DevelopedByAffiliations} from './DevelopedByAffiliations';
 
 const cards = [
   {
@@ -40,6 +41,13 @@ const cards = [
     icon: 'fas fa-code',
     factory: () => <SourceCodeCard />
   },
+  {
+    id: 'team',
+    name: 'Team',
+    icon: 'fas fa-users',
+    factory: () => <div className="card shadow-sm p-2">
+      <div className="card-body"><DevelopedByAffiliations /></div></div>
+  },
 ];
 
 
@@ -56,7 +64,7 @@ export function OrdinoHelpSection(props: IOrdinoHelpSectionProps) {
     <OrdinoScrollspy items={cards.map((item) => ({id: item.id, name: item.name}))}>
       {(handleOnChange) =>
         <>
-          <div className="container pb-5">
+          <div className="container pb-6">
             <div className="row">
               <div className="col">
                 {cards.map((item, index) => {

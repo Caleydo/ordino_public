@@ -5,6 +5,7 @@ import { VideoCard } from './VideoCard';
 import { OrdinoScrollspy, OrdinoScrollspyItem } from 'ordino';
 import { SourceCodeCard } from './SourceCodeCard';
 import { TermsOfUseCard } from './TermsOfUseCard';
+import { DevelopedByAffiliations } from './DevelopedByAffiliations';
 const cards = [
     {
         id: 'ordino-at-a-glance',
@@ -36,11 +37,19 @@ const cards = [
         icon: 'fas fa-code',
         factory: () => React.createElement(SourceCodeCard, null)
     },
+    {
+        id: 'team',
+        name: 'Team',
+        icon: 'fas fa-users',
+        factory: () => React.createElement("div", { className: "card shadow-sm p-2" },
+            React.createElement("div", { className: "card-body" },
+                React.createElement(DevelopedByAffiliations, null)))
+    },
 ];
 export function OrdinoHelpSection(props) {
     return (React.createElement(React.Fragment, null,
         React.createElement(OrdinoScrollspy, { items: cards.map((item) => ({ id: item.id, name: item.name })) }, (handleOnChange) => React.createElement(React.Fragment, null,
-            React.createElement("div", { className: "container pb-5" },
+            React.createElement("div", { className: "container pb-6" },
                 React.createElement("div", { className: "row" },
                     React.createElement("div", { className: "col" }, cards.map((item, index) => {
                         return (

@@ -104,6 +104,11 @@ export default function (registry) {
                     faIcon: 'fas fa-fw fa-code',
                     text: `Source code & licenses`,
                 },
+                {
+                    page: '/help/team',
+                    faIcon: 'fas fa-fw fa-users',
+                    text: `Team`,
+                },
             ]
         ]
     });

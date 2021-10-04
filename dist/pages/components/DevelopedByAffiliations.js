@@ -3,10 +3,10 @@ import logoBI from 'ordino_public/dist/assets/logos/boehringer-ingelheim.svg';
 import logoJKU from 'ordino_public/dist/assets/logos/johannes-kepler-university-linz.svg';
 import logoDatavisyn from 'ordino_public/dist/assets/logos/datavisyn.svg';
 export function DevelopedByAffiliations() {
-    return (React.createElement("section", { className: "container ordino-developed-by-affiliations py-6" },
+    return (React.createElement("section", { className: "container" },
         React.createElement("div", { className: "row" },
             React.createElement("div", { className: "col position-relative mb-3 text-center" },
-                React.createElement("p", null, "Ordino is developed by"))),
+                React.createElement("p", { className: "text-gray fs-5" }, "Ordino is developed by"))),
         React.createElement("div", { className: "row" },
             React.createElement("div", { className: "col position-relative text-center" },
                 React.createElement("a", { href: "https://jku.at", target: "_blank", rel: "noopener noreferrer" },

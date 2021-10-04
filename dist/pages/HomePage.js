@@ -10,7 +10,8 @@ export function HomePage() {
         React.createElement("div", { className: "ordino-getting-started-wrapper" },
             React.createElement(GettingStarted, null),
             React.createElement("hr", { className: "m-0" }),
-            React.createElement(DevelopedByAffiliations, null)),
+            React.createElement("div", { className: "py-6" },
+                React.createElement(DevelopedByAffiliations, null))),
         React.createElement(OrdinoTeaserCards, null),
         React.createElement(OrdinoFooter, null)));
 }

@@ -113,6 +113,11 @@ export default function (registry: IRegistry) {
           faIcon: 'fas fa-fw fa-code',
           text: `Source code & licenses`,
         },
+        {
+          page: '/help/team',
+          faIcon: 'fas fa-fw fa-users',
+          text: `Team`,
+        },
       ]
     ]
   });
