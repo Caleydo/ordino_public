@@ -14,6 +14,14 @@ const cards = [
         factory: (props) => React.createElement(VideoCard, Object.assign({}, props))
     },
     {
+        id: 'team',
+        name: 'Team',
+        icon: 'fas fa-users',
+        factory: () => React.createElement("div", { className: "card shadow-sm p-5" },
+            React.createElement("div", { className: "card-body" },
+                React.createElement(DevelopedByAffiliations, null)))
+    },
+    {
         id: 'contact-us',
         name: 'Contact us',
         icon: 'fas fa-at',
@@ -36,14 +44,6 @@ const cards = [
         name: 'Source code',
         icon: 'fas fa-code',
         factory: () => React.createElement(SourceCodeCard, null)
-    },
-    {
-        id: 'team',
-        name: 'Team',
-        icon: 'fas fa-users',
-        factory: () => React.createElement("div", { className: "card shadow-sm p-2" },
-            React.createElement("div", { className: "card-body" },
-                React.createElement(DevelopedByAffiliations, null)))
     },
 ];
 export function OrdinoHelpSection(props) {

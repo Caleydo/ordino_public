@@ -16,6 +16,13 @@ const cards = [
 
   },
   {
+    id: 'team',
+    name: 'Team',
+    icon: 'fas fa-users',
+    factory: () => <div className="card shadow-sm p-5">
+      <div className="card-body"><DevelopedByAffiliations /></div></div>
+  },
+  {
     id: 'contact-us',
     name: 'Contact us',
     icon: 'fas fa-at',
@@ -40,13 +47,6 @@ const cards = [
     name: 'Source code',
     icon: 'fas fa-code',
     factory: () => <SourceCodeCard />
-  },
-  {
-    id: 'team',
-    name: 'Team',
-    icon: 'fas fa-users',
-    factory: () => <div className="card shadow-sm p-2">
-      <div className="card-body"><DevelopedByAffiliations /></div></div>
   },
 ];
 
