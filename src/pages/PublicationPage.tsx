@@ -106,7 +106,7 @@ const publications = [
   },
   {
     id: 'tourdino-publication',
-    name: 'Tourdino',
+    name: 'TourDino',
     icon: 'fas fa-book-open',
     factory: () => <TourdinoPublication />
 
