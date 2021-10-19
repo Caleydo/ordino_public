@@ -92,6 +92,10 @@ export default function (registry: IRegistry) {
           page: '/help/ordino-at-a-glance',
           faIcon: 'fas fa-fw fa-mountain',
           text: `Ordino at a glance`,
+        }, {
+          page: '/help/team',
+          faIcon: 'fas fa-fw fa-users',
+          text: `Team`,
         },
         {
           page: '/help/contact-us',
@@ -112,7 +116,7 @@ export default function (registry: IRegistry) {
           page: '/help/source-code-licenses',
           faIcon: 'fas fa-fw fa-code',
           text: `Source code & licenses`,
-        },
+        }
       ]
     ]
   });
