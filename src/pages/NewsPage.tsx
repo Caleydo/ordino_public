@@ -12,16 +12,61 @@ import v900_start_menu from 'ordino_public/dist/assets/pages/news/v900_start_men
 import v900_start_menu_tabs from 'ordino_public/dist/assets/pages/news/v900_start_menu_tabs.png';
 import v900_application_help from 'ordino_public/dist/assets/pages/news/v900_application_help.png';
 import v900_ranking_redesign from 'ordino_public/dist/assets/pages/news/v900_ranking_redesign.png';
+import v910_auto_complete from 'ordino_public/dist/assets/pages/news/v910_auto_complete.png';
+import v910_usability_improvements from 'ordino_public/dist/assets/pages/news/v910_usability_improvements.png';
 
 
 const sections = [
+  {
+    id: 'v9-1',
+    name: 'Version 9.1 (2021-10-06)',
+    markup: () => (
+      <>
+        <p className="lead text-muted">
+          This update contains various <b>usability improvements</b>, and several <b>bug fixes</b>. The most important changes are:
+        </p>
+        <h5 className="mt-4">Usability improvements</h5>
+        <p>
+          We have continued with our design and usability improvements of the whole application. The overall appearance of the application changed slightly. Additionally, the add column button is now more prominent and easier to find.
+        </p>
+        <img className=" img-fluid border border-gray-300" src={v910_usability_improvements} alt="Usability Improvements" />
+        <h5 className="mt-4">Auto-complete when filtering text columns</h5>
+        <p>
+          When filtering a text column, a list of items is now suggested while typing.
+        </p>
+        <img className=" img-fluid border border-gray-300" src={v910_auto_complete} alt="Auto Complete" />
+
+        <h5 className="mt-4">Briefly noted</h5>
+        <ul>
+          <li>
+            Added scroll bars to dataset and session lists
+          </li>
+          <li>
+            Relative date was not correct for old sessions
+          </li>
+          <li>
+            Display list of uploaded data sets in reverse order
+          </li>
+          <li>
+            Side panel input field for filtering a text column lost focus while typing
+          </li>
+          <li>
+            Dialogs in rankings are now confirmed with click on background (previously it canceled the dialog)
+          </li>
+          <li>
+            Ranking: Display a dash (i.e., missing value indicator) for combined columns when at least one value of the nested columns is missing
+          </li>
+        </ul>
+      </>
+    )
+  },
   {
     id: 'v9-0',
     name: 'Version 9.0 (2021-07-12)',
     markup: () => (
       <>
         <p className="lead text-muted">
-          This update contains more a <b>whole new homepage</b>, <b>start menu</b>, and various <b>usability improvements</b>.
+          This update contains a <b>whole new homepage</b>, <b>start menu</b>, and various <b>usability improvements</b>.
         </p>
 
         <h4 className="my-4">Hello Ordino! 👋</h4>
@@ -98,10 +143,10 @@ const sections = [
         <ul>
           <li>
             NIBR_IFN (Novartis 38 Gene Interferon activity signature)
-              </li>
+          </li>
           <li>
             MERCK18 (MERCK's 18 gene signature for PD1-inhibitor response)
-              </li>
+          </li>
         </ul>
 
 
@@ -132,7 +177,7 @@ const sections = [
       <>
         <p className="lead text-muted">
           This update contains more <b>data</b>, many <b>new features</b>, various <b>improvements</b>, and a large number of <b>bug fixes</b>. The most important changes are:
-      </p>
+        </p>
 
         <h4 className="my-4">New data</h4>
 
@@ -158,7 +203,7 @@ const sections = [
         <ul>
           <li>
             It is now possible to do basic statistical analyses, like calculating the correlation of two columns, directly in Ordino.
-                    </li>
+          </li>
           <li>
             <i>How to access</i>: Click on the calculator icon on the right. This opens a new side-panel (highlighted in red in the screenshot above).<br />
             There you can select which columns to compare and then get detailed information about the result.
@@ -220,7 +265,7 @@ const sections = [
       <>
         <p className="lead text-muted">
           This update contains new <b>features</b>, various <b>improvements</b>, and many <b>bug fixes</b>. The most important changes are:
-      </p>
+        </p>
         <h5 className="mt-4">Session management</h5>
         <ul>
           <li>
@@ -258,7 +303,7 @@ const sections = [
       <>
         <p className="lead text-muted">
           This update contains new <b>features</b>, <b>improvements</b>, and <b>bug fixes</b>. The most important changes are:
-      </p>
+        </p>
         <h5 className="mt-4">Briefly noted</h5>
         <ul>
           <li>
@@ -269,7 +314,7 @@ const sections = [
           </li>
           <li>
             A guided tour explains the basic features of Ordino. You can start the tour by clicking on the '?' in the upper right corner.<br />
-          More detailed tours will follow. Let us know if you have specific wishes.
+            More detailed tours will follow. Let us know if you have specific wishes.
           </li>
           <li>
             You can now copy gene and cell line lists from almost everywhere (e.g., comma or line separated) and paste them into the text field on the welcome page.
@@ -291,7 +336,7 @@ const sections = [
       <>
         <p className="lead text-muted">
           This update contains more <b>data</b>, various <b>usability improvements</b>, and several <b>bug fixes</b>. The most important changes are:
-      </p>
+        </p>
         <h5 className="mt-4">Improved column headers and column menus</h5>
         <ul>
           <li>

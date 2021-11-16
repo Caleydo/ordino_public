@@ -14,7 +14,9 @@ export function HomePage() {
       <div className="ordino-getting-started-wrapper">
         <GettingStarted testId={testId}></GettingStarted>
         <hr className="m-0" />
-        <DevelopedByAffiliations testId={testId}></DevelopedByAffiliations>
+        <div className="py-6">
+        <DevelopedByAffiliations testId={testId} ></DevelopedByAffiliations>
+        </div>
       </div>
       <OrdinoTeaserCards testId={testId}></OrdinoTeaserCards>
       <OrdinoFooter testId={testId}></OrdinoFooter>
