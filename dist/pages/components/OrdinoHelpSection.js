@@ -5,12 +5,21 @@ import { VideoCard } from './VideoCard';
 import { OrdinoScrollspy, OrdinoScrollspyItem } from 'ordino';
 import { SourceCodeCard } from './SourceCodeCard';
 import { TermsOfUseCard } from './TermsOfUseCard';
+import { DevelopedByAffiliations } from './DevelopedByAffiliations';
 const cards = [
     {
         id: 'ordino-at-a-glance',
         name: 'Ordino at a glance',
         icon: 'fas fa-mountain',
         factory: (props) => React.createElement(VideoCard, Object.assign({}, props))
+    },
+    {
+        id: 'team',
+        name: 'Team',
+        icon: 'fas fa-users',
+        factory: () => React.createElement("div", { className: "card shadow-sm p-5" },
+            React.createElement("div", { className: "card-body" },
+                React.createElement(DevelopedByAffiliations, null)))
     },
     {
         id: 'contact-us',
@@ -41,7 +50,7 @@ export function OrdinoHelpSection(props) {
     const testId = props.testId ? `${props.testId}-helpsection` : 'helptab-helpsection';
     return (React.createElement(React.Fragment, null,
         React.createElement(OrdinoScrollspy, { items: cards.map((item) => ({ id: item.id, name: item.name })), testId: testId }, (handleOnChange) => React.createElement(React.Fragment, null,
-            React.createElement("div", { className: "container pb-5" },
+            React.createElement("div", { className: "container pb-6" },
                 React.createElement("div", { className: "row" },
                     React.createElement("div", { className: "col" }, cards.map((item, index) => {
                         return (

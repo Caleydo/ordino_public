@@ -9,13 +9,40 @@ import v900_start_menu from 'ordino_public/dist/assets/pages/news/v900_start_men
 import v900_start_menu_tabs from 'ordino_public/dist/assets/pages/news/v900_start_menu_tabs.png';
 import v900_application_help from 'ordino_public/dist/assets/pages/news/v900_application_help.png';
 import v900_ranking_redesign from 'ordino_public/dist/assets/pages/news/v900_ranking_redesign.png';
+import v910_auto_complete from 'ordino_public/dist/assets/pages/news/v910_auto_complete.png';
+import v910_usability_improvements from 'ordino_public/dist/assets/pages/news/v910_usability_improvements.png';
 const sections = [
+    {
+        id: 'v9-1',
+        name: 'Version 9.1 (2021-10-06)',
+        markup: () => (React.createElement(React.Fragment, null,
+            React.createElement("p", { className: "lead text-muted" },
+                "This update contains various ",
+                React.createElement("b", null, "usability improvements"),
+                ", and several ",
+                React.createElement("b", null, "bug fixes"),
+                ". The most important changes are:"),
+            React.createElement("h5", { className: "mt-4" }, "Usability improvements"),
+            React.createElement("p", null, "We have continued with our design and usability improvements of the whole application. The overall appearance of the application changed slightly. Additionally, the add column button is now more prominent and easier to find."),
+            React.createElement("img", { className: " img-fluid border border-gray-300", src: v910_usability_improvements, alt: "Usability Improvements" }),
+            React.createElement("h5", { className: "mt-4" }, "Auto-complete when filtering text columns"),
+            React.createElement("p", null, "When filtering a text column, a list of items is now suggested while typing."),
+            React.createElement("img", { className: " img-fluid border border-gray-300", src: v910_auto_complete, alt: "Auto Complete" }),
+            React.createElement("h5", { className: "mt-4" }, "Briefly noted"),
+            React.createElement("ul", null,
+                React.createElement("li", null, "Added scroll bars to dataset and session lists"),
+                React.createElement("li", null, "Relative date was not correct for old sessions"),
+                React.createElement("li", null, "Display list of uploaded data sets in reverse order"),
+                React.createElement("li", null, "Side panel input field for filtering a text column lost focus while typing"),
+                React.createElement("li", null, "Dialogs in rankings are now confirmed with click on background (previously it canceled the dialog)"),
+                React.createElement("li", null, "Ranking: Display a dash (i.e., missing value indicator) for combined columns when at least one value of the nested columns is missing"))))
+    },
     {
         id: 'v9-0',
         name: 'Version 9.0 (2021-07-12)',
         markup: () => (React.createElement(React.Fragment, null,
             React.createElement("p", { className: "lead text-muted" },
-                "This update contains more a ",
+                "This update contains a ",
                 React.createElement("b", null, "whole new homepage"),
                 ", ",
                 React.createElement("b", null, "start menu"),

@@ -36,7 +36,7 @@ export function DatasetsPage() {
                         React.createElement("div", { className: "col" },
                             React.createElement("h4", { className: "text-start d-flex align-items-center mt-2 mb-3" },
                                 React.createElement("i", { className: "me-2 fas ordino-icon-1 fa-chevron-circle-right" }),
-                                " Depletion Sceen Data"))),
+                                " Depletion Screen Data"))),
                     React.createElement("div", { className: "row row-cols-md-2 row-cols-1" },
                         React.createElement("div", { className: "col" },
                             React.createElement(DatasetPageCard, { title: "Project DRIVE" },
