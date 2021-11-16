@@ -62,7 +62,6 @@ interface IOrdinoHelpSectionProps {
 
 export function OrdinoHelpSection(props: IOrdinoHelpSectionProps) {
   const testId = props.testId ? `${props.testId}-helpsection` : 'helptab-helpsection';
-  
   return (<>
     <OrdinoScrollspy items={cards.map((item) => ({id: item.id, name: item.name}))} testId={testId}>
       {(handleOnChange) =>
