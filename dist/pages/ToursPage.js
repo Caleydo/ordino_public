@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { HeaderNavigation, OrdinoFooter, useAsync } from 'ordino';
 import { ToursSection } from 'ordino';
-import { PluginRegistry, I18nextManager } from 'phovea_core';
+import { PluginRegistry, I18nextManager } from 'tdp_core';
 import { TourUtils } from 'tdp_core';
 export function ToursPage() {
     const loadTours = React.useMemo(() => async () => {
