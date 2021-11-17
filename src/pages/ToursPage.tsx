@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {HeaderNavigation, OrdinoFooter} from 'ordino';
 import {ToursSection} from 'ordino';
-import {PluginRegistry, I18nextManager} from 'phovea_core';
+import {PluginRegistry, I18nextManager} from 'tdp_core';
 import {TourUtils, ITDPTourExtensionDesc, useAsync} from 'tdp_core';
 
 export function ToursPage() {

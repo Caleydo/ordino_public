@@ -1,5 +1,5 @@
-import {IRegistry, PluginRegistry} from 'phovea_core';
-import {ILocaleEPDesc, EP_PHOVEA_CORE_LOCALE} from 'phovea_core';
+import {IRegistry, PluginRegistry} from 'tdp_core';
+import {ILocaleEPDesc, EP_PHOVEA_CORE_LOCALE} from 'tdp_core';
 import {EP_ORDINO_START_MENU_TAB, EStartMenuSection, EP_ORDINO_FOOTER_MENU, IOrdinoFooterMenuDesc, EP_ORDINO_START_MENU_TAB_SHORTCUT, IStartMenuTabShortcutDesc, EP_ORDINO_HEADER_MENU, IOrdinoHeaderMenuDesc} from 'ordino';
 
 export default function (registry: IRegistry) {
