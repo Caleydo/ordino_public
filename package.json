@@ -54,6 +54,7 @@
   ],
   "dependencies": {
     "ordino": "github:Caleydo/ordino#develop",
+    "tdp_core": "github:datavisyn/tdp_core#develop",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0"

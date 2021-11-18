@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {HeaderNavigation, OrdinoFooter, useAsync} from 'ordino';
+import {HeaderNavigation, OrdinoFooter} from 'ordino';
 import {ToursSection} from 'ordino';
 import {PluginRegistry, I18nextManager} from 'tdp_core';
-import {TourUtils, ITDPTourExtensionDesc} from 'tdp_core';
+import {TourUtils, ITDPTourExtensionDesc, useAsync} from 'tdp_core';
 
 export function ToursPage() {
     const loadTours = React.useMemo(() => async () => {
@@ -14,7 +14,7 @@ export function ToursPage() {
       return Promise.all(tourEntries.map((tour) => tour.load()));
     }, []);
 
-    const {status, value: tours} = useAsync(loadTours);
+    const {status, value: tours} = useAsync(loadTours, []);
 
     const beginnerTours = tours?.filter((tour) => tour.desc.level === 'beginner');
     const advancedTours = tours?.filter((tour) => tour.desc.level === 'advanced');
