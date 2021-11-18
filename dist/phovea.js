@@ -1,5 +1,5 @@
-import { PluginRegistry } from 'phovea_core';
-import { EP_PHOVEA_CORE_LOCALE } from 'phovea_core';
+import { PluginRegistry } from 'tdp_core';
+import { EP_PHOVEA_CORE_LOCALE } from 'tdp_core';
 import { EP_ORDINO_START_MENU_TAB, EStartMenuSection, EP_ORDINO_FOOTER_MENU, EP_ORDINO_START_MENU_TAB_SHORTCUT, EP_ORDINO_HEADER_MENU } from 'ordino';
 export default function (registry) {
     //registry.push('extension-type', 'extension-id', function() { return import('./extension_impl'); }, {});
@@ -83,6 +83,10 @@ export default function (registry) {
                     page: '/help/ordino-at-a-glance',
                     faIcon: 'fas fa-fw fa-mountain',
                     text: `Ordino at a glance`,
+                }, {
+                    page: '/help/team',
+                    faIcon: 'fas fa-fw fa-users',
+                    text: `Team`,
                 },
                 {
                     page: '/help/contact-us',
@@ -103,7 +107,7 @@ export default function (registry) {
                     page: '/help/source-code-licenses',
                     faIcon: 'fas fa-fw fa-code',
                     text: `Source code & licenses`,
-                },
+                }
             ]
         ]
     });

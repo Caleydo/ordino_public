@@ -13,7 +13,9 @@ export function HomePage() {
       <div className="ordino-getting-started-wrapper">
         <GettingStarted></GettingStarted>
         <hr className="m-0" />
+        <div className="py-6">
         <DevelopedByAffiliations></DevelopedByAffiliations>
+        </div>
       </div>
       <OrdinoTeaserCards></OrdinoTeaserCards>
       <OrdinoFooter></OrdinoFooter>
