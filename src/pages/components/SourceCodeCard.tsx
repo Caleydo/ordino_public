@@ -1,6 +1,5 @@
 import {AppMetaDataUtils, useAsync} from 'tdp_core';
 import React from 'react';
-import {useAsync} from 'tdp_core';
 
 export function SourceCodeCard() {
   const loadMetaData = React.useMemo(() => () => AppMetaDataUtils.getMetaData(), []);
