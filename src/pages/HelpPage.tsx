@@ -9,7 +9,7 @@ export function HelpPage() {
 
   return (
     <>
-      <HeaderNavigation />
+      <HeaderNavigation testId="helppage" />
       <div className="container-fluid ordino-help-page h-100 position-relative pt-6">
         <OrdinoHelpSection>
           <OrdinoFooter />

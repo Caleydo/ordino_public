@@ -265,7 +265,7 @@ const sections = [
 export function NewsPage() {
     useScrollToSlug();
     return (React.createElement(React.Fragment, null,
-        React.createElement(HeaderNavigation, null),
+        React.createElement(HeaderNavigation, { testId: "newspage" }),
         React.createElement("div", { className: "position-relative py-6" },
             React.createElement(OrdinoScrollspy, { items: sections.map((section) => ({ id: section.id, name: section.name })) }, (handleOnChange) => React.createElement(React.Fragment, null,
                 React.createElement("div", { className: "container pb-6" },

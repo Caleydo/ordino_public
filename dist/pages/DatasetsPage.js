@@ -8,7 +8,7 @@ export function DatasetPageCard({ title, children }) {
 }
 export function DatasetsPage() {
     return (React.createElement(React.Fragment, null,
-        React.createElement(HeaderNavigation, null),
+        React.createElement(HeaderNavigation, { testId: "datasetspage" }),
         React.createElement("div", { className: "position-relative pt-6" },
             React.createElement("div", { className: "ordino-container" },
                 React.createElement("div", { className: "dataset-page py-6 container" },

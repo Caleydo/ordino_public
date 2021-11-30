@@ -5,7 +5,7 @@ import {FeatureCard} from './components/FeatureCard';
 export function FeaturesPage() {
   return (
     <>
-      <HeaderNavigation />
+      <HeaderNavigation testId="featurespage" />
       <div className="position-relative pt-6">
         <div className="ordino-container">
           <div className="p-6 container">

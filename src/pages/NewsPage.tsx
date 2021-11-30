@@ -428,7 +428,7 @@ export function NewsPage() {
 
   return (
     <>
-      <HeaderNavigation />
+      <HeaderNavigation testId="newspage" />
       <div className="position-relative py-6">
         <OrdinoScrollspy items={sections.map((section) => ({id: section.id, name: section.name}))}>
           {(handleOnChange) =>
