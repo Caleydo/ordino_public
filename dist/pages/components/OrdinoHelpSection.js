@@ -49,7 +49,7 @@ const cards = [
 export function OrdinoHelpSection(props) {
     return (React.createElement(React.Fragment, null,
         React.createElement(OrdinoScrollspy, { items: cards.map((item) => ({ id: item.id, name: item.name })) }, (handleOnChange) => React.createElement(React.Fragment, null,
-            React.createElement("div", { className: "container pb-6" },
+            React.createElement("div", { className: "container pb-6", "data-testid": "helpsection" },
                 React.createElement("div", { className: "row" },
                     React.createElement("div", { className: "col" }, cards.map((item, index) => {
                         return (

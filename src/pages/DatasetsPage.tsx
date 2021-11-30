@@ -22,8 +22,8 @@ export function DatasetPageCard({title, children}: IDatasetPageCardProps) {
 export function DatasetsPage() {
   return (
     <>
-      <HeaderNavigation testId="datasetspage" />
-      <div className="position-relative pt-6">
+      <HeaderNavigation />
+      <div className="position-relative pt-6" data-testid="datasetspage">
         <div className="ordino-container">
           <div className="dataset-page py-6 container">
             <div className="row">
@@ -35,13 +35,13 @@ export function DatasetsPage() {
               <div className="col">
                 <DatasetPageCard title="Cancer Cell Line Encyclopedia (CCLE)">
                   <p className="card-text">Sample annotation, gene expression, mutation, and copy number data</p>
-                  <a className="card-link" href="https://portals.broadinstitute.org/ccle" target="_blank" rel="noopener">portals.broadinstitute.org/ccle</a>
+                  <a className="card-link" href="https://portals.broadinstitute.org/ccle" data-testid="ccle-link" target="_blank" rel="noopener">portals.broadinstitute.org/ccle</a>
                 </DatasetPageCard>
               </div>
               <div className="col">
                 <DatasetPageCard title="The Cancer Genome Atlas (TCGA)">
                   <p className="card-text">Sample annotation, gene expression, mutation, and copy number data </p>
-                  <a className="card-link" href="https://cancergenome.nih.gov" target="_blank" rel="noopener">cancergenome.nih.gov</a>
+                  <a className="card-link" href="https://cancergenome.nih.gov" data-testid="tcga-link" target="_blank" rel="noopener">cancergenome.nih.gov</a>
                 </DatasetPageCard>
               </div>
             </div>
@@ -50,7 +50,7 @@ export function DatasetsPage() {
               <div className="col">
                 <DatasetPageCard title="Gene Annotation">
                   <p className="card-text">Based on Ensembl 86</p>
-                  <a className="card-link" href=" http://oct2016.archive.ensembl.org/index.html" target="_blank" rel="noopener">oct2016.archive.ensembl.org</a>
+                  <a className="card-link" href=" http://oct2016.archive.ensembl.org/index.html" data-testid="gene-annotation-link" target="_blank" rel="noopener">oct2016.archive.ensembl.org</a>
                 </DatasetPageCard>
               </div>
             </div>
@@ -64,7 +64,7 @@ export function DatasetsPage() {
               <div className="col">
                 <DatasetPageCard title="Project DRIVE">
                   <p className="card-text">RNAi depletion screen data (RSA and ATARiS)</p>
-                  <a className="card-link" href="https://doi.org/10.1016/j.cell.2017.07.005" target="_blank" rel="noopener"> McDonald III, E. R. et. al.
+                  <a className="card-link" href="https://doi.org/10.1016/j.cell.2017.07.005" data-testid="drive-link" target="_blank" rel="noopener"> McDonald III, E. R. et. al.
                   Project DRIVE: A Compen- dium of Cancer Dependencies and Synthetic Lethal Relationships Uncovered by Large-Scale, Deep RNAi Screening.
              Cell 170, Pages 577-592.e10 (2017).</a>
                 </DatasetPageCard>
@@ -72,7 +72,7 @@ export function DatasetsPage() {
               <div className="col">
                 <DatasetPageCard title="Avana CERES">
                   <p className="card-text">CRISPR-Cas9 depletion screen data</p>
-                  <a className="card-link" href="https://doi.org/10.1038/ng.3984" target="_blank" rel="noopener">Meyers, R. M. et. al. Computational correction of copy
+                  <a className="card-link" href="https://doi.org/10.1038/ng.3984" data-testid="ceres-link" target="_blank" rel="noopener">Meyers, R. M. et. al. Computational correction of copy
              number effect improves specificity of CRISPR–Cas9 essentiality screens in cancer cells. Nature Genetics 49, 1779–1784 (2017).</a>
                 </DatasetPageCard>
               </div>

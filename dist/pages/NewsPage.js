@@ -54,7 +54,7 @@ const sections = [
             React.createElement("img", { className: "img-fluid mb-4", src: v900_homepage, alt: "The new Ordino Hompage welcomes its user." }),
             React.createElement("p", null,
                 "The application itself was moved to the ",
-                React.createElement("a", { href: "./app", target: "_blank", rel: "noopener noreferrer" },
+                React.createElement("a", { href: "./app", target: "_blank", rel: "noopener noreferrer", "data-testid": "app-directory-link" },
                     React.createElement("code", null, "/app"),
                     " directory"),
                 ". Please update your bookmarks if you want to access Ordino directly and to skip the homepage."),
@@ -265,8 +265,8 @@ const sections = [
 export function NewsPage() {
     useScrollToSlug();
     return (React.createElement(React.Fragment, null,
-        React.createElement(HeaderNavigation, { testId: "newspage" }),
-        React.createElement("div", { className: "position-relative py-6" },
+        React.createElement(HeaderNavigation, null),
+        React.createElement("div", { className: "position-relative py-6", "data-testid": "newspage" },
             React.createElement(OrdinoScrollspy, { items: sections.map((section) => ({ id: section.id, name: section.name })) }, (handleOnChange) => React.createElement(React.Fragment, null,
                 React.createElement("div", { className: "container pb-6" },
                     React.createElement("div", { className: "row" },

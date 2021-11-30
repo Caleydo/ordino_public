@@ -15,7 +15,7 @@ export function OrdinoHero() {
     };
     return (React.createElement(React.Fragment, null,
         React.createElement("div", { className: "ordino-hero" },
-            React.createElement(HeaderNavigation, { bg: "transparent", testId: "homepage" }),
+            React.createElement(HeaderNavigation, { bg: "transparent" }),
             React.createElement("div", { className: "container", "data-testid": "ordino-hero" },
                 React.createElement("div", { className: "row ordino-hero-claim my-4" },
                     React.createElement("div", { className: "col text-center" },

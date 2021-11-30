@@ -80,7 +80,7 @@ const sections = [
         <img className="img-fluid mb-4" src={v900_homepage} alt="The new Ordino Hompage welcomes its user." />
 
         <p>
-          The application itself was moved to the <a href="./app" target="_blank" rel="noopener noreferrer"><code>/app</code> directory</a>.
+          The application itself was moved to the <a href="./app" target="_blank" rel="noopener noreferrer" data-testid="app-directory-link"><code>/app</code> directory</a>.
           Please update your bookmarks if you want to access Ordino directly and to skip the homepage.
         </p>
 
@@ -428,8 +428,8 @@ export function NewsPage() {
 
   return (
     <>
-      <HeaderNavigation testId="newspage" />
-      <div className="position-relative py-6">
+      <HeaderNavigation />
+      <div className="position-relative py-6" data-testid="newspage">
         <OrdinoScrollspy items={sections.map((section) => ({id: section.id, name: section.name}))}>
           {(handleOnChange) =>
             <>

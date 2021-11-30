@@ -20,7 +20,7 @@ export function OrdinoHero() {
   return (
     <>
       <div className="ordino-hero">
-        <HeaderNavigation bg="transparent" testId="homepage"></HeaderNavigation>
+        <HeaderNavigation bg="transparent"></HeaderNavigation>
         <div className="container" data-testid="ordino-hero">
           <div className="row ordino-hero-claim my-4">
             <div className="col text-center">

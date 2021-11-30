@@ -64,7 +64,7 @@ export function OrdinoHelpSection(props: IOrdinoHelpSectionProps) {
     <OrdinoScrollspy items={cards.map((item) => ({id: item.id, name: item.name}))}>
       {(handleOnChange) =>
         <>
-          <div className="container pb-6">
+          <div className="container pb-6" data-testid="helpsection">
             <div className="row">
               <div className="col">
                 {cards.map((item, index) => {
