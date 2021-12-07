@@ -45,6 +45,6 @@ export function DatasetsPage() {
                             React.createElement(DatasetPageCard, { title: "Avana CERES" },
                                 React.createElement("p", { className: "card-text" }, "CRISPR-Cas9 depletion screen data"),
                                 React.createElement("a", { className: "card-link", href: "https://doi.org/10.1038/ng.3984", "data-testid": "ceres-link", target: "_blank", rel: "noopener" }, "Meyers, R. M. et. al. Computational correction of copy number effect improves specificity of CRISPR\u2013Cas9 essentiality screens in cancer cells. Nature Genetics 49, 1779\u20131784 (2017)."))))),
-                React.createElement(OrdinoFooter, null)))));
+                React.createElement(OrdinoFooter, { testId: "datasets-page" })))));
 }
 //# sourceMappingURL=DatasetsPage.js.map

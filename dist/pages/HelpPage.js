@@ -8,6 +8,6 @@ export function HelpPage() {
         React.createElement(HeaderNavigation, null),
         React.createElement("div", { className: "container-fluid ordino-help-page h-100 position-relative pt-6", "data-testid": "helppage" },
             React.createElement(OrdinoHelpSection, null,
-                React.createElement(OrdinoFooter, null)))));
+                React.createElement(OrdinoFooter, { testid: "help-page" })))));
 }
 //# sourceMappingURL=HelpPage.js.map

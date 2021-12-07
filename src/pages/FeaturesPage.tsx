@@ -195,7 +195,7 @@ export function FeaturesPage() {
             </div>
           </div>
 
-          <OrdinoFooter></OrdinoFooter>
+          <OrdinoFooter testId="features-page"></OrdinoFooter>
         </div>
       </div>
     </>

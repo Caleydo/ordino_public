@@ -282,6 +282,6 @@ export function NewsPage() {
                                     React.createElement("div", { className: "card shadow-sm h-100" },
                                         React.createElement("div", { className: "card-body" }, item.markup())))));
                         })))),
-                React.createElement(OrdinoFooter, null))))));
+                React.createElement(OrdinoFooter, { testId: "news-page" }))))));
 }
 //# sourceMappingURL=NewsPage.js.map

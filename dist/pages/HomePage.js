@@ -13,6 +13,6 @@ export function HomePage() {
             React.createElement("div", { className: "py-6" },
                 React.createElement(DevelopedByAffiliations, null))),
         React.createElement(OrdinoTeaserCards, null),
-        React.createElement(OrdinoFooter, null)));
+        React.createElement(OrdinoFooter, { testId: "homepage" })));
 }
 //# sourceMappingURL=HomePage.js.map

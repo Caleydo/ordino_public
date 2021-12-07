@@ -454,7 +454,7 @@ export function NewsPage() {
                   </div>
                 </div>
               </div>
-              <OrdinoFooter></OrdinoFooter>
+              <OrdinoFooter testId="news-page"></OrdinoFooter>
             </>
           }
         </OrdinoScrollspy>

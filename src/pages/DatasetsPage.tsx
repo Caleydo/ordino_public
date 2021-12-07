@@ -78,7 +78,7 @@ export function DatasetsPage() {
               </div>
             </div>
           </div>
-          <OrdinoFooter></OrdinoFooter>
+          <OrdinoFooter testId="datasets-page"></OrdinoFooter>
         </div>
       </div>
     </>

@@ -141,6 +141,6 @@ export function FeaturesPage() {
                                 ". For cell lines, the analyst can load the information available on ",
                                 React.createElement("a", { href: "https://cancer.sanger.ac.uk/cosmic/", target: "_blank", rel: "noopener noreferrer", "data-testid": "cosmic-link" }, "COSMIC"),
                                 " (Catalogue Of Somatic Mutations In Cancer).")))),
-                React.createElement(OrdinoFooter, null)))));
+                React.createElement(OrdinoFooter, { testId: "features-page" })))));
 }
 //# sourceMappingURL=FeaturesPage.js.map

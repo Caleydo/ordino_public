@@ -18,7 +18,7 @@ export function HomePage() {
         </div>
       </div>
       <OrdinoTeaserCards></OrdinoTeaserCards>
-      <OrdinoFooter></OrdinoFooter>
+      <OrdinoFooter testId="homepage"></OrdinoFooter>
     </>
   );
 }
