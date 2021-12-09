@@ -37,7 +37,7 @@ const cards = [
         id: 'terms-of-use',
         name: 'Terms of use',
         icon: 'fas fa-smile',
-        factory: () => React.createElement(TermsOfUseCard, null)
+        factory: (props) => React.createElement(TermsOfUseCard, Object.assign({}, props))
     },
     {
         id: 'source-code-licenses',
