@@ -1,7 +1,7 @@
 import React from 'react';
 import {DisclaimerCard} from './DisclaimerCard';
 import {OrdinoContactForm} from './OrdinoContactForm';
-import {IVideoCardProps, VideoCard} from './VideoCard';
+import {VideoCard} from './VideoCard';
 import {OrdinoScrollspy, OrdinoScrollspyItem} from 'ordino';
 import {SourceCodeCard} from './SourceCodeCard';
 import {TermsOfUseCard} from './TermsOfUseCard';
@@ -12,7 +12,7 @@ const cards = [
     id: 'ordino-at-a-glance',
     name: 'Ordino at a glance',
     icon: 'fas fa-mountain',
-    factory: (props: IVideoCardProps) => <VideoCard {...props} />
+    factory: (props: IHelpPageCardProps) => <VideoCard {...props} />
 
   },
   {
@@ -40,7 +40,7 @@ const cards = [
     id: 'terms-of-use',
     name: 'Terms of use',
     icon: 'fas fa-smile',
-    factory: () => <TermsOfUseCard />
+    factory: (props:IHelpPageCardProps) => <TermsOfUseCard {...props} />
   },
   {
     id: 'source-code-licenses',
@@ -50,6 +50,9 @@ const cards = [
   },
 ];
 
+export interface IHelpPageCardProps {
+  openInNewWindow?: boolean;
+}
 
 interface IOrdinoHelpSectionProps {
   /**
