@@ -18,8 +18,8 @@ export function TermsOfUseCard({openInNewWindow = false}: IHelpPageCardProps) {
             We expect attribution (e.g. in publications, services or products)
             for any of Ordino's online services, databases or software in
             accordance with good scientific practice.<br />
-            Please see the  {openInNewWindow ? <Link to="/publications" target="_blank" rel="noopener noreferrer" >publication page</Link> :
-              <Link to="/publications">publication page</Link>} for more information.
+            Please see the  {openInNewWindow ? <Link to="/publications" target="_blank" rel="noopener noreferrer" >Publications page</Link> :
+              <Link to="/publications">Publications page</Link>} for more information.
         </div>
           <div className="list-group-item">
             Ordino provides data collated from the public domain with references

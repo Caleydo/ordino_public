@@ -10,8 +10,8 @@ export function TermsOfUseCard({ openInNewWindow = false }) {
                     "We expect attribution (e.g. in publications, services or products) for any of Ordino's online services, databases or software in accordance with good scientific practice.",
                     React.createElement("br", null),
                     "Please see the  ",
-                    openInNewWindow ? React.createElement(Link, { to: "/publications", target: "_blank", rel: "noopener noreferrer" }, "publication page") :
-                        React.createElement(Link, { to: "/publications" }, "publication page"),
+                    openInNewWindow ? React.createElement(Link, { to: "/publications", target: "_blank", rel: "noopener noreferrer" }, "Publications page") :
+                        React.createElement(Link, { to: "/publications" }, "Publications page"),
                     " for more information."),
                 React.createElement("div", { className: "list-group-item" }, "Ordino provides data collated from the public domain with references to their sources. We cannot guarantee the accuracy of any data or databases nor their suitability for user purposes."),
                 React.createElement("div", { className: "list-group-item" }, "The original data in Ordino may be subject to rights claimed by third parties, including but not limited to, patent, copyright, other intellectual property rights, biodiversity-related access and benefit-sharing rights. It is the responsibility of users of Ordino to ensure that their exploitation of the data does not infringe any of the rights of such third parties."),
