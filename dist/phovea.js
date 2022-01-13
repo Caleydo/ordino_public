@@ -48,6 +48,11 @@ export default function (registry) {
                 page: '/datasets'
             },
             {
+                page: '/publications',
+                faIcon: 'fas fa-book-open fa-fw',
+                text: `Publications`,
+            },
+            {
                 faIcon: 'fas fa-question-circle fa-fw',
                 text: 'Help',
                 page: '/help'
