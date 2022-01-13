@@ -8,7 +8,6 @@ export default function HelpTab() {
     return <>
         <BrowserRouter basename="/#">
             <OrdinoHelpSection openInNewWindow>
-                <DevelopedByAffiliations></DevelopedByAffiliations>
                 <OrdinoFooter openInNewWindow></OrdinoFooter>
             </OrdinoHelpSection>
         </BrowserRouter>
