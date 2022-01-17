@@ -1,6 +1,8 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import {IHelpPageCardProps} from './OrdinoHelpSection';
 
-export function TermsOfUseCard() {
+export function TermsOfUseCard({openInNewWindow = false}: IHelpPageCardProps) {
   return (
     <div className="shadow-sm card p-2">
       <div className="card-body">
@@ -15,7 +17,9 @@ export function TermsOfUseCard() {
           <div className="list-group-item">
             We expect attribution (e.g. in publications, services or products)
             for any of Ordino's online services, databases or software in
-            accordance with good scientific practice.
+            accordance with good scientific practice.<br />
+            Please see the  {openInNewWindow ? <Link to="/publications" target="_blank" rel="noopener noreferrer" >Publications page</Link> :
+              <Link to="/publications">Publications page</Link>} for more information.
         </div>
           <div className="list-group-item">
             Ordino provides data collated from the public domain with references

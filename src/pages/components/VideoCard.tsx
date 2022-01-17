@@ -1,11 +1,8 @@
 import * as React from 'react';
 import {Link} from 'react-router-dom';
+import {IHelpPageCardProps} from './OrdinoHelpSection';
 
-export interface IVideoCardProps {
-    openInNewWindow?: boolean;
-}
-
-export function VideoCard({openInNewWindow}: IVideoCardProps) {
+export function VideoCard({openInNewWindow}: IHelpPageCardProps) {
 
     const newWindowProps = openInNewWindow ? {
         target: '_blank',

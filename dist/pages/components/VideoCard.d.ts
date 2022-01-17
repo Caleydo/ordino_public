@@ -1,5 +1,3 @@
 /// <reference types="react" />
-export interface IVideoCardProps {
-    openInNewWindow?: boolean;
-}
-export declare function VideoCard({ openInNewWindow }: IVideoCardProps): JSX.Element;
+import { IHelpPageCardProps } from './OrdinoHelpSection';
+export declare function VideoCard({ openInNewWindow }: IHelpPageCardProps): JSX.Element;
