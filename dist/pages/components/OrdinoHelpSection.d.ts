@@ -11,3 +11,4 @@ interface IOrdinoHelpSectionProps {
 }
 export declare function OrdinoHelpSection(props: IOrdinoHelpSectionProps): JSX.Element;
 export {};
+//# sourceMappingURL=OrdinoHelpSection.d.ts.map

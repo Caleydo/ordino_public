@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {HeaderNavigation, OrdinoFooter, OrdinoScrollspy, OrdinoScrollspyItem, useScrollToSlug} from 'ordino';
+import { HeaderNavigation, OrdinoFooter, OrdinoScrollspy, OrdinoScrollspyItem, useScrollToSlug } from 'ordino';
 
 import v700_tourdino from 'ordino_public/dist/assets/pages/news/v700_tourdino.jpg';
 
@@ -15,7 +15,6 @@ import v900_ranking_redesign from 'ordino_public/dist/assets/pages/news/v900_ran
 import v910_auto_complete from 'ordino_public/dist/assets/pages/news/v910_auto_complete.png';
 import v910_usability_improvements from 'ordino_public/dist/assets/pages/news/v910_usability_improvements.png';
 
-
 const sections = [
   {
     id: 'v9-1',
@@ -27,38 +26,25 @@ const sections = [
         </p>
         <h5 className="mt-4">Usability improvements</h5>
         <p>
-          We have continued with our design and usability improvements of the whole application. The overall appearance of the application changed slightly. Additionally, the add column button is now more prominent and easier to find.
+          We have continued with our design and usability improvements of the whole application. The overall appearance of the application changed slightly.
+          Additionally, the add column button is now more prominent and easier to find.
         </p>
         <img className=" img-fluid border border-gray-300" src={v910_usability_improvements} alt="Usability Improvements" />
         <h5 className="mt-4">Auto-complete when filtering text columns</h5>
-        <p>
-          When filtering a text column, a list of items is now suggested while typing.
-        </p>
+        <p>When filtering a text column, a list of items is now suggested while typing.</p>
         <img className=" img-fluid border border-gray-300" src={v910_auto_complete} alt="Auto Complete" />
 
         <h5 className="mt-4">Briefly noted</h5>
         <ul>
-          <li>
-            Added scroll bars to dataset and session lists
-          </li>
-          <li>
-            Relative date was not correct for old sessions
-          </li>
-          <li>
-            Display list of uploaded data sets in reverse order
-          </li>
-          <li>
-            Side panel input field for filtering a text column lost focus while typing
-          </li>
-          <li>
-            Dialogs in rankings are now confirmed with click on background (previously it canceled the dialog)
-          </li>
-          <li>
-            Ranking: Display a dash (i.e., missing value indicator) for combined columns when at least one value of the nested columns is missing
-          </li>
+          <li>Added scroll bars to dataset and session lists</li>
+          <li>Relative date was not correct for old sessions</li>
+          <li>Display list of uploaded data sets in reverse order</li>
+          <li>Side panel input field for filtering a text column lost focus while typing</li>
+          <li>Dialogs in rankings are now confirmed with click on background (previously it canceled the dialog)</li>
+          <li>Ranking: Display a dash (i.e., missing value indicator) for combined columns when at least one value of the nested columns is missing</li>
         </ul>
       </>
-    )
+    ),
   },
   {
     id: 'v9-0',
@@ -72,54 +58,47 @@ const sections = [
         <h4 className="my-4">Hello Ordino! 👋</h4>
 
         <p>
-          With this release we provide a dedicated homepage for Ordino to welcome new and recurring users.
-          The modern pages provide an overview of the Ordino features, loaded datasets, and publications.
-          We also inform about the most recent changes and developments on this page.
+          With this release we provide a dedicated homepage for Ordino to welcome new and recurring users. The modern pages provide an overview of the Ordino
+          features, loaded datasets, and publications. We also inform about the most recent changes and developments on this page.
         </p>
 
         <img className="img-fluid mb-4" src={v900_homepage} alt="The new Ordino Hompage welcomes its user." />
 
         <p>
-          The application itself was moved to the <a href="./app" target="_blank" rel="noopener noreferrer"><code>/app</code> directory</a>.
-          Please update your bookmarks if you want to access Ordino directly and to skip the homepage.
+          The application itself was moved to the{' '}
+          <a href="./app" target="_blank" rel="noopener noreferrer">
+            <code>/app</code> directory
+          </a>
+          . Please update your bookmarks if you want to access Ordino directly and to skip the homepage.
         </p>
-
 
         <h4 className="my-4">Start menu overhaul</h4>
 
         <p>
-          In addition to the new homepage we designed an entirely new Ordino start menu.
-          The new start menu is divided into three main tabs: datasets, sessions, and tours.
-          Each tab has now more space and is structured into different sections to select or upload datasets,
-          save a session, or start a tour.
+          In addition to the new homepage we designed an entirely new Ordino start menu. The new start menu is divided into three main tabs: datasets, sessions,
+          and tours. Each tab has now more space and is structured into different sections to select or upload datasets, save a session, or start a tour.
         </p>
-
 
         <img className="img-fluid mb-4" src={v900_start_menu} alt="The new Ordino start menu." />
 
-        <p>
-          From an analysis you can now directly access these tab from the application header.
-        </p>
+        <p>From an analysis you can now directly access these tab from the application header.</p>
 
         <img className="img-fluid mb-4" src={v900_start_menu_tabs} alt="Access the start menu tabs from the application header in your analysis." />
 
-
-        <p>
-          In case you need help or want give feedback or report a bug, click on the ?-icon in the application header.
-        </p>
+        <p>In case you need help or want give feedback or report a bug, click on the ?-icon in the application header.</p>
 
         <img className="img-fluid mb-4" src={v900_application_help} alt="Ordino at a glance integrated in the application." />
 
         <h4 className="my-4">A new look</h4>
 
         <p>
-          We have improved the design and usability of the whole application in general
-          and the ranking views in specific to make the usage easier and more appealing.
+          We have improved the design and usability of the whole application in general and the ranking views in specific to make the usage easier and more
+          appealing.
         </p>
 
         <img className="img-fluid mb-4" src={v900_ranking_redesign} alt="Face-lift of the ranking views and application user interface." />
       </>
-    )
+    ),
   },
   {
     id: 'v8-0',
@@ -134,41 +113,32 @@ const sections = [
         <h5 className="mt-4">Gene Signature Scores</h5>
         <ul>
           <li>
-            <i>Gene Signature Scores</i> are now available for cell lines and tissue samples (including GTEx, TCGA, and PDX models). These can be added using the <i>Add Column</i> dialog:
+            <i>Gene Signature Scores</i> are now available for cell lines and tissue samples (including GTEx, TCGA, and PDX models). These can be added using
+            the <i>Add Column</i> dialog:
           </li>
         </ul>
         <img className=" img-fluid border border-gray-300" src={v800_gene_signature} alt="Gene Signature Score" />
 
         <p className="card-text mt-2">Currently, the following gene signature scores are available:</p>
         <ul>
-          <li>
-            NIBR_IFN (Novartis 38 Gene Interferon activity signature)
-          </li>
-          <li>
-            MERCK18 (MERCK's 18 gene signature for PD1-inhibitor response)
-          </li>
+          <li>NIBR_IFN (Novartis 38 Gene Interferon activity signature)</li>
+          <li>MERCK18 (MERCK&apos;s 18 gene signature for PD1-inhibitor response)</li>
         </ul>
-
 
         <h4 className="my-4">Usability improvements</h4>
         <h5 className="mt-4">Annotation columns</h5>
         <ul>
-          <li>
-            It is now possible to add multiple "Annotation Columns" at once
-          </li>
+          <li>It is now possible to add multiple &quot;Annotation Columns&quot; at once</li>
         </ul>
         <img className="img-fluid border border-gray-300" src={v800_annotation_column} alt="Annotation Column" />
 
         <h5 className="mt-4">Data download</h5>
         <ul className="mt-2">
-          <li>
-            The data download dialog has been improved
-          </li>
-
+          <li>The data download dialog has been improved</li>
         </ul>
         <img className="img-fluid border border-gray-300" src={v800_data_download} alt="Download Data" />
       </>
-    )
+    ),
   },
   {
     id: 'v7-0',
@@ -176,24 +146,22 @@ const sections = [
     markup: () => (
       <>
         <p className="lead text-muted">
-          This update contains more <b>data</b>, many <b>new features</b>, various <b>improvements</b>, and a large number of <b>bug fixes</b>. The most important changes are:
+          This update contains more <b>data</b>, many <b>new features</b>, various <b>improvements</b>, and a large number of <b>bug fixes</b>. The most
+          important changes are:
         </p>
 
         <h4 className="my-4">New data</h4>
 
         <h5 className="mt-4">Database</h5>
         <ul>
-          <li>
-            All data has be been updated from hg19 to hg38!
-          </li>
+          <li>All data has be been updated from hg19 to hg38!</li>
         </ul>
         <h5 className="mt-4">HLA-A type, Mutational Burden and MSI Status</h5>
         <ul>
+          <li>Now, HLA-A type, Mutational Burden and MSI Status data is available for many cell line and tissue samples.</li>
           <li>
-            Now, HLA-A type, Mutational Burden and MSI Status data is available for many cell line and tissue samples.
-          </li>
-          <li>
-            <i> How to access</i>: Open a list of cell lines 	&#8594; click on “+” to open the “add column” dialog 	&#8594; select "Annotation Columns" 	&#8594; select the data of interest.
+            <i> How to access</i>: Open a list of cell lines &#8594; click on “+” to open the “add column” dialog &#8594; select &quot;Annotation Columns&quot;
+            &#8594; select the data of interest.
           </li>
         </ul>
 
@@ -201,11 +169,10 @@ const sections = [
         <h5 className="mt-4">Basic statistical analyses</h5>
         <img className="img-fluid mb-2" src={v700_tourdino} alt="Tourdino" />
         <ul>
+          <li>It is now possible to do basic statistical analyses, like calculating the correlation of two columns, directly in Ordino.</li>
           <li>
-            It is now possible to do basic statistical analyses, like calculating the correlation of two columns, directly in Ordino.
-          </li>
-          <li>
-            <i>How to access</i>: Click on the calculator icon on the right. This opens a new side-panel (highlighted in red in the screenshot above).<br />
+            <i>How to access</i>: Click on the calculator icon on the right. This opens a new side-panel (highlighted in red in the screenshot above).
+            <br />
             There you can select which columns to compare and then get detailed information about the result.
           </li>
         </ul>
@@ -217,17 +184,18 @@ const sections = [
           <li>
             <i>How to access</i>: click on any of the icons in the column headers.
           </li>
+          <li>The column dialogs were harmonized.</li>
           <li>
-            The column dialogs were harmonized.
+            There is now a live preview. For instance, if you modify the filter setting of a column, you can see in the background how this will affect your
+            list of genes, cell lines, and tissue samples.
           </li>
           <li>
-            There is now a live preview. For instance, if you modify the filter setting of a column, you can see in the background how this will affect your list of genes, cell lines, and tissue samples.
+            It is now possible to reset all filters at once in the right side-panel.{' '}
+            <i>Access side-panel by clicking on the left-facing arrow in the menu on the right</i>.
           </li>
           <li>
-            It is now possible to reset all filters at once in the right side-panel. <i>Access side-panel by clicking on the left-facing arrow in the menu on the right</i>.
-          </li>
-          <li>
-            The grouping of text columns (like mutations) is now working much better (e.g., allowing you to split your cell lines by specific mutations). <i>How to access: click the “…” in the column header and then select “Group By”</i>.
+            The grouping of text columns (like mutations) is now working much better (e.g., allowing you to split your cell lines by specific mutations).{' '}
+            <i>How to access: click the “…” in the column header and then select “Group By”</i>.
           </li>
         </ul>
 
@@ -243,20 +211,16 @@ const sections = [
         <h5 className="mt-4">Briefly noted</h5>
 
         <ul>
+          <li>Improved look and feel of the list of cell lines, genes, and tissue samples.</li>
+          <li>Collapsing and expanding of sample / gene groups is now recorded in the session history.</li>
           <li>
-            Improved look and feel of the list of cell lines, genes, and tissue samples.
+            The columns &quot;AA mutated&quot; and &quot;DNA mutated&quot; have been harmonized. There is now no category &quot;Unknown&quot; anymore, but
+            missing values are handled the same way as in all other columns.
           </li>
-          <li>
-            Collapsing and expanding of sample / gene groups is now recorded in the session history.
-          </li>
-          <li>
-            The columns "AA mutated" and "DNA mutated" have been harmonized. There is now no category "Unknown" anymore, but missing values are handled the same way as in all other columns.
-          </li>
-          <li>
-            File upload has been improved and now supports boolean (i.e., true/false) columns.
-          </li>
+          <li>File upload has been improved and now supports boolean (i.e., true/false) columns.</li>
         </ul>
-      </>)
+      </>
+    ),
   },
   {
     id: 'v6-0',
@@ -268,12 +232,10 @@ const sections = [
         </p>
         <h5 className="mt-4">Session management</h5>
         <ul>
+          <li>There is now an Improved menu for saving and loading of analysis sessions.</li>
           <li>
-            There is now an Improved menu for saving and loading of analysis sessions.
-          </li>
-          <li>
-            This menu is now called "Analysis Session Management" and is available in the upper right corner.
-            Advanced session sharing possibilities have been added. It is now possible to share an analysis session with individual people or a group of people.
+            This menu is now called &quot;Analysis Session Management&quot; and is available in the upper right corner. Advanced session sharing possibilities
+            have been added. It is now possible to share an analysis session with individual people or a group of people.
           </li>
         </ul>
 
@@ -282,19 +244,15 @@ const sections = [
           <li>
             Advanced session sharing possibilities have been added. It is now possible to share an analysis session with individual people or a group of people.
           </li>
-          <li>
-            To do so, click on "Advanced" in the "Save Session" menu. The same is now possible for sharing uploaded data sets.
-          </li>
+          <li>To do so, click on &quot;Advanced&quot; in the &quot;Save Session&quot; menu. The same is now possible for sharing uploaded data sets.</li>
         </ul>
 
         <h5 className="mt-4">Download data</h5>
         <ul>
-          <li>
-            The "Download Data" menu has been simplified.
-          </li>
+          <li>The &quot;Download Data&quot; menu has been simplified.</li>
         </ul>
       </>
-    )
+    ),
   },
   {
     id: 'v5-1',
@@ -306,28 +264,22 @@ const sections = [
         </p>
         <h5 className="mt-4">Briefly noted</h5>
         <ul>
+          <li>File upload is working again.</li>
+          <li>The data up- and download now supports Excel files (*.xlsx).</li>
           <li>
-            File upload is working again.
-          </li>
-          <li>
-            The data up- and download now supports Excel files (*.xlsx).
-          </li>
-          <li>
-            A guided tour explains the basic features of Ordino. You can start the tour by clicking on the '?' in the upper right corner.<br />
+            A guided tour explains the basic features of Ordino. You can start the tour by clicking on the &apos;?&apos; in the upper right corner.
+            <br />
             More detailed tours will follow. Let us know if you have specific wishes.
           </li>
           <li>
-            You can now copy gene and cell line lists from almost everywhere (e.g., comma or line separated) and paste them into the text field on the welcome page.
+            You can now copy gene and cell line lists from almost everywhere (e.g., comma or line separated) and paste them into the text field on the welcome
+            page.
           </li>
-          <li>
-            The overview mode (last button on the right site) is now working for very large lists.
-          </li>
-          <li>
-            Spearman correlation computation has been added to the "Co-expression" Detail View.
-          </li>
+          <li>The overview mode (last button on the right site) is now working for very large lists.</li>
+          <li>Spearman correlation computation has been added to the &quot;Co-expression&quot; Detail View.</li>
         </ul>
       </>
-    )
+    ),
   },
   {
     id: 'v5-0',
@@ -339,70 +291,46 @@ const sections = [
         </p>
         <h5 className="mt-4">Improved column headers and column menus</h5>
         <ul>
-          <li>
-            Column headers start with gene/cell line name and information about data type.
-          </li>
-          <li>
-            New filter and value mapping dialog for numeric columns (e.g., it is now possible to copy the value range from one column to another).
-          </li>
-          <li>
-            Extended coloring options for numeric columns.
-          </li>
+          <li>Column headers start with gene/cell line name and information about data type.</li>
+          <li>New filter and value mapping dialog for numeric columns (e.g., it is now possible to copy the value range from one column to another).</li>
+          <li>Extended coloring options for numeric columns.</li>
         </ul>
 
         <h5 className="mt-4">Improved column sorting and grouping</h5>
         <ul>
           <li>
-            The order of multiple sorting/grouping columns can now be explicitly specified in the side panel on the right (can be opened by clicking on the arrow on the right).
+            The order of multiple sorting/grouping columns can now be explicitly specified in the side panel on the right (can be opened by clicking on the
+            arrow on the right).
           </li>
-          <li>
-            The values of numeric columns can be grouped into an arbitrary number of bins.
-          </li>
-          <li>
-            The values of text columns can now be grouped.
-          </li>
+          <li>The values of numeric columns can be grouped into an arbitrary number of bins.</li>
+          <li>The values of text columns can now be grouped.</li>
         </ul>
 
         <h5 className="mt-4"> Improved aggregated columns</h5>
         <ul>
-          <li>
-            Boxplot columns now show outliers.
-          </li>
-          <li>
-            Heatmap columns now support mouse over to identify individual genes/cell lines/values.
-          </li>
-          <li>
-            Heatmap columns now support complex color and value mapping.
-          </li>
+          <li>Boxplot columns now show outliers.</li>
+          <li>Heatmap columns now support mouse over to identify individual genes/cell lines/values.</li>
+          <li>Heatmap columns now support complex color and value mapping.</li>
         </ul>
 
         <h5 className="mt-4"> Improved column types</h5>
         <ul>
-          <li>
-            Chromosomes are now correctly sorted.
-          </li>
-          <li>
-            Gene start and end coordinates are now numeric columns allowing correct sorting (can for instance be used to draw copy number profiles).
-          </li>
+          <li>Chromosomes are now correctly sorted.</li>
+          <li>Gene start and end coordinates are now numeric columns allowing correct sorting (can for instance be used to draw copy number profiles).</li>
         </ul>
 
         <h5 className="mt-4"> Improved performance</h5>
         <ul>
-          <li>
-            The overview mode (last button on the right panel) is now faster and works even with a larger number of columns.
-          </li>
+          <li>The overview mode (last button on the right panel) is now faster and works even with a larger number of columns.</li>
         </ul>
 
         <h5 className="mt-4"> Improved user interface</h5>
         <ul>
+          <li>&quot;Add column&quot; menu simplified.</li>
+          <li>Some features renamed to make it clearer what they do.</li>
           <li>
-            "Add column" menu simplified.
-          </li>
-          <li>
-            Some features renamed to make it clearer what they do.
-          </li>
-          <li>
-            A "Submit Feedback" button was added: By clicking on the button in the upper right corner (the life belt icon), you can easily provide feedback about Ordino (bug reports, features requests, etc).
+            A &quot;Submit Feedback&quot; button was added: By clicking on the button in the upper right corner (the life belt icon), you can easily provide
+            feedback about Ordino (bug reports, features requests, etc).
           </li>
         </ul>
 
@@ -412,16 +340,13 @@ const sections = [
             <p> A few external detail views have been added.</p>
           </li>
           <li>
-            <p> Extended "Data download" functionality.</p>
+            <p> Extended &quot;Data download&quot; functionality.</p>
           </li>
         </ul>
-
       </>
-    )
-  }
+    ),
+  },
 ];
-
-
 
 export function NewsPage() {
   useScrollToSlug();
@@ -430,8 +355,8 @@ export function NewsPage() {
     <>
       <HeaderNavigation />
       <div className="position-relative py-6">
-        <OrdinoScrollspy items={sections.map((section) => ({id: section.id, name: section.name}))}>
-          {(handleOnChange) =>
+        <OrdinoScrollspy items={sections.map((section) => ({ id: section.id, name: section.name }))}>
+          {(handleOnChange) => (
             <>
               <div className="container pb-6">
                 <div className="row">
@@ -441,11 +366,11 @@ export function NewsPage() {
                         // `id` attribute must match the one in the scrollspy
                         <OrdinoScrollspyItem className="pt-6" id={item.id} key={item.name} index={index} handleOnChange={handleOnChange}>
                           <>
-                            <h4 className="text-start mt-2 d-flex align-items-center mb-3"><i className="me-2 ordino-icon-1 fas fa-chevron-circle-right"></i> {item.name}</h4>
+                            <h4 className="text-start mt-2 d-flex align-items-center mb-3">
+                              <i className="me-2 ordino-icon-1 fas fa-chevron-circle-right" /> {item.name}
+                            </h4>
                             <div className="card shadow-sm h-100">
-                              <div className="card-body">
-                                {item.markup()}
-                              </div>
+                              <div className="card-body">{item.markup()}</div>
                             </div>
                           </>
                         </OrdinoScrollspyItem>
@@ -454,9 +379,9 @@ export function NewsPage() {
                   </div>
                 </div>
               </div>
-              <OrdinoFooter></OrdinoFooter>
+              <OrdinoFooter />
             </>
-          }
+          )}
         </OrdinoScrollspy>
       </div>
     </>

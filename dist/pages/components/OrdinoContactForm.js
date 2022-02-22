@@ -15,7 +15,7 @@ export function OrdinoContactForm() {
             parameters += `${subject ? '&' : ''}body=${encodeURIComponent(message)}`;
         }
         form.reset();
-        window.location.href = 'mailto:' + CONTACT_FORM_EMAIL + parameters;
+        window.location.href = `mailto:${CONTACT_FORM_EMAIL}${parameters}`;
     }, []);
     return (React.createElement("div", { className: "card shadow-sm p-2" },
         React.createElement("div", { className: "card-body" },
