@@ -24,7 +24,9 @@ export function GettingStarted() {
       </ol>
       <div className="row">
         <div className="col position-relative text-center">
-          <a href="/app/" className="btn btn-outline-secondary btn-lg">Start Analysis</a>
+          <a href="/app/" className="btn btn-outline-secondary btn-lg">
+            Start Analysis
+          </a>
         </div>
       </div>
     </section>
