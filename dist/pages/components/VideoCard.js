@@ -38,7 +38,7 @@ export function VideoCard({ openInNewWindow }) {
             React.createElement("p", { className: "card-text" },
                 "You can find more detailed information about the main features",
                 ' ',
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/features" }), "here"),
+                React.createElement(Link, { ...newWindowProps, className: "card-link", to: "/features" }, "here"),
                 "."),
             React.createElement("h5", { className: "card-title mt-4" },
                 React.createElement("i", { className: "me-2 fas fa-database" }),
@@ -51,7 +51,7 @@ export function VideoCard({ openInNewWindow }) {
             React.createElement("p", { className: "card-text" },
                 "You can find more detailed information about the datasets",
                 ' ',
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/datasets" }), "here"),
+                React.createElement(Link, { ...newWindowProps, className: "card-link", to: "/datasets" }, "here"),
                 "."),
             React.createElement("h5", { className: "card-title mt-4" },
                 React.createElement("i", { className: "me-2 fas fa-mouse-pointer" }),
@@ -61,7 +61,7 @@ export function VideoCard({ openInNewWindow }) {
                 React.createElement("br", null),
                 "You can find them",
                 ' ',
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/tours" }), "here"),
+                React.createElement(Link, { ...newWindowProps, className: "card-link", to: "/tours" }, "here"),
                 "."),
             React.createElement("h5", { className: "card-title mt-4" },
                 React.createElement("i", { className: "me-2 fas fa-book-open" }),
@@ -89,7 +89,7 @@ export function VideoCard({ openInNewWindow }) {
             React.createElement("p", { className: "card-text" },
                 "You can find more information about the publications",
                 ' ',
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/publications" }), "here"),
+                React.createElement(Link, { ...newWindowProps, className: "card-link", to: "/publications" }, "here"),
                 "."))));
 }
 //# sourceMappingURL=VideoCard.js.map
