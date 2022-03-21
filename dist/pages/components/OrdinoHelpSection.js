@@ -11,7 +11,7 @@ const cards = [
         id: 'ordino-at-a-glance',
         name: 'Ordino at a glance',
         icon: 'fas fa-mountain',
-        factory: (props) => React.createElement(VideoCard, Object.assign({}, props)),
+        factory: (props) => React.createElement(VideoCard, { ...props }),
     },
     {
         id: 'team',
@@ -37,7 +37,7 @@ const cards = [
         id: 'terms-of-use',
         name: 'Terms of use',
         icon: 'fas fa-smile',
-        factory: (props) => React.createElement(TermsOfUseCard, Object.assign({}, props)),
+        factory: (props) => React.createElement(TermsOfUseCard, { ...props }),
     },
     {
         id: 'source-code-licenses',
@@ -59,7 +59,7 @@ export function OrdinoHelpSection(props) {
                                 React.createElement("i", { className: `me-2 ordino-icon-2 ${item.icon}` }),
                                 " ",
                                 item.name),
-                            React.createElement(item.factory, Object.assign({}, { openInNewWindow: props.openInNewWindow })))));
+                            React.createElement(item.factory, { ...{ openInNewWindow: props.openInNewWindow } }))));
                 })))),
         props.children))));
 }
