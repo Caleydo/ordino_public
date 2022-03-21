@@ -74,8 +74,7 @@ export function DatasetsPage() {
                   <p className="card-text">RNAi depletion screen data (RSA and ATARiS)</p>
                   <a className="card-link" href="https://doi.org/10.1016/j.cell.2017.07.005" target="_blank" rel="noopener noreferrer">
                     {' '}
-                    McDonald III, E. R. et. al. Project DRIVE: A Compen- dium of Cancer Dependencies and Synthetic Lethal Relationships Uncovered by
-                    Large-Scale, Deep RNAi Screening. Cell 170, Pages 577-592.e10 (2017).
+                    McDonald III, E. R. et. al. Project DRIVE: A Compendium of Cancer Dependencies and Synthetic Lethal Relationships Uncovered by (2017).
                   </a>
                 </DatasetPageCard>
               </div>
