@@ -35,7 +35,7 @@ const sections = [
                 React.createElement("li", null, "Display list of uploaded data sets in reverse order"),
                 React.createElement("li", null, "Side panel input field for filtering a text column lost focus while typing"),
                 React.createElement("li", null, "Dialogs in rankings are now confirmed with click on background (previously it canceled the dialog)"),
-                React.createElement("li", null, "Ranking: Display a dash (i.e., missing value indicator) for combined columns when at least one value of the nested columns is missing"))))
+                React.createElement("li", null, "Ranking: Display a dash (i.e., missing value indicator) for combined columns when at least one value of the nested columns is missing")))),
     },
     {
         id: 'v9-0',
@@ -53,7 +53,8 @@ const sections = [
             React.createElement("p", null, "With this release we provide a dedicated homepage for Ordino to welcome new and recurring users. The modern pages provide an overview of the Ordino features, loaded datasets, and publications. We also inform about the most recent changes and developments on this page."),
             React.createElement("img", { className: "img-fluid mb-4", src: v900_homepage, alt: "The new Ordino Hompage welcomes its user." }),
             React.createElement("p", null,
-                "The application itself was moved to the ",
+                "The application itself was moved to the",
+                ' ',
                 React.createElement("a", { href: "./app", target: "_blank", rel: "noopener noreferrer", "data-testid": "app-directory-link" },
                     React.createElement("code", null, "/app"),
                     " directory"),
@@ -67,7 +68,7 @@ const sections = [
             React.createElement("img", { className: "img-fluid mb-4", src: v900_application_help, alt: "Ordino at a glance integrated in the application." }),
             React.createElement("h4", { className: "my-4" }, "A new look"),
             React.createElement("p", null, "We have improved the design and usability of the whole application in general and the ranking views in specific to make the usage easier and more appealing."),
-            React.createElement("img", { className: "img-fluid mb-4", src: v900_ranking_redesign, alt: "Face-lift of the ranking views and application user interface." })))
+            React.createElement("img", { className: "img-fluid mb-4", src: v900_ranking_redesign, alt: "Face-lift of the ranking views and application user interface." }))),
     },
     {
         id: 'v8-0',
@@ -102,7 +103,7 @@ const sections = [
             React.createElement("h5", { className: "mt-4" }, "Data download"),
             React.createElement("ul", { className: "mt-2" },
                 React.createElement("li", null, "The data download dialog has been improved")),
-            React.createElement("img", { className: "img-fluid border border-gray-300", src: v800_data_download, alt: "Download Data" })))
+            React.createElement("img", { className: "img-fluid border border-gray-300", src: v800_data_download, alt: "Download Data" }))),
     },
     {
         id: 'v7-0',
@@ -127,7 +128,7 @@ const sections = [
                 React.createElement("li", null, "Now, HLA-A type, Mutational Burden and MSI Status data is available for many cell line and tissue samples."),
                 React.createElement("li", null,
                     React.createElement("i", null, " How to access"),
-                    ": Open a list of cell lines \t\u2192 click on \u201C+\u201D to open the \u201Cadd column\u201D dialog \t\u2192 select \"Annotation Columns\" \t\u2192 select the data of interest.")),
+                    ": Open a list of cell lines \u2192 click on \u201C+\u201D to open the \u201Cadd column\u201D dialog \u2192 select \"Annotation Columns\" \u2192 select the data of interest.")),
             React.createElement("h4", { className: "my-4" }, "Completely new features"),
             React.createElement("h5", { className: "mt-4" }, "Basic statistical analyses"),
             React.createElement("img", { className: "img-fluid mb-2", src: v700_tourdino, alt: "Tourdino" }),
@@ -147,11 +148,13 @@ const sections = [
                 React.createElement("li", null, "The column dialogs were harmonized."),
                 React.createElement("li", null, "There is now a live preview. For instance, if you modify the filter setting of a column, you can see in the background how this will affect your list of genes, cell lines, and tissue samples."),
                 React.createElement("li", null,
-                    "It is now possible to reset all filters at once in the right side-panel. ",
+                    "It is now possible to reset all filters at once in the right side-panel.",
+                    ' ',
                     React.createElement("i", null, "Access side-panel by clicking on the left-facing arrow in the menu on the right"),
                     "."),
                 React.createElement("li", null,
-                    "The grouping of text columns (like mutations) is now working much better (e.g., allowing you to split your cell lines by specific mutations). ",
+                    "The grouping of text columns (like mutations) is now working much better (e.g., allowing you to split your cell lines by specific mutations).",
+                    ' ',
                     React.createElement("i", null, "How to access: click the \u201C\u2026\u201D in the column header and then select \u201CGroup By\u201D"),
                     ".")),
             React.createElement("h5", { className: "mt-4" }, "Interactive help tours"),
@@ -165,7 +168,7 @@ const sections = [
                 React.createElement("li", null, "Improved look and feel of the list of cell lines, genes, and tissue samples."),
                 React.createElement("li", null, "Collapsing and expanding of sample / gene groups is now recorded in the session history."),
                 React.createElement("li", null, "The columns \"AA mutated\" and \"DNA mutated\" have been harmonized. There is now no category \"Unknown\" anymore, but missing values are handled the same way as in all other columns."),
-                React.createElement("li", null, "File upload has been improved and now supports boolean (i.e., true/false) columns."))))
+                React.createElement("li", null, "File upload has been improved and now supports boolean (i.e., true/false) columns.")))),
     },
     {
         id: 'v6-0',
@@ -189,7 +192,7 @@ const sections = [
                 React.createElement("li", null, "To do so, click on \"Advanced\" in the \"Save Session\" menu. The same is now possible for sharing uploaded data sets.")),
             React.createElement("h5", { className: "mt-4" }, "Download data"),
             React.createElement("ul", null,
-                React.createElement("li", null, "The \"Download Data\" menu has been simplified."))))
+                React.createElement("li", null, "The \"Download Data\" menu has been simplified.")))),
     },
     {
         id: 'v5-1',
@@ -213,7 +216,7 @@ const sections = [
                     "More detailed tours will follow. Let us know if you have specific wishes."),
                 React.createElement("li", null, "You can now copy gene and cell line lists from almost everywhere (e.g., comma or line separated) and paste them into the text field on the welcome page."),
                 React.createElement("li", null, "The overview mode (last button on the right site) is now working for very large lists."),
-                React.createElement("li", null, "Spearman correlation computation has been added to the \"Co-expression\" Detail View."))))
+                React.createElement("li", null, "Spearman correlation computation has been added to the \"Co-expression\" Detail View.")))),
     },
     {
         id: 'v5-0',
@@ -259,15 +262,15 @@ const sections = [
                 React.createElement("li", null,
                     React.createElement("p", null, " A few external detail views have been added.")),
                 React.createElement("li", null,
-                    React.createElement("p", null, " Extended \"Data download\" functionality.")))))
-    }
+                    React.createElement("p", null, " Extended \"Data download\" functionality."))))),
+    },
 ];
 export function NewsPage() {
     useScrollToSlug();
     return (React.createElement(React.Fragment, null,
         React.createElement(HeaderNavigation, null),
         React.createElement("div", { className: "position-relative py-6", "data-testid": "newspage" },
-            React.createElement(OrdinoScrollspy, { items: sections.map((section) => ({ id: section.id, name: section.name })) }, (handleOnChange) => React.createElement(React.Fragment, null,
+            React.createElement(OrdinoScrollspy, { items: sections.map((section) => ({ id: section.id, name: section.name })) }, (handleOnChange) => (React.createElement(React.Fragment, null,
                 React.createElement("div", { className: "container pb-6" },
                     React.createElement("div", { className: "row" },
                         React.createElement("div", { className: "col" }, sections.map((item, index) => {
@@ -282,6 +285,6 @@ export function NewsPage() {
                                     React.createElement("div", { className: "card shadow-sm h-100" },
                                         React.createElement("div", { className: "card-body" }, item.markup())))));
                         })))),
-                React.createElement(OrdinoFooter, { testId: "news-page" }))))));
+                React.createElement(OrdinoFooter, { testId: "news-page" })))))));
 }
 //# sourceMappingURL=NewsPage.js.map

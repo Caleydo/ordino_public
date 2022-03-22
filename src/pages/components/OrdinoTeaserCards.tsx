@@ -13,7 +13,11 @@ export function OrdinoTeaserCards() {
             <div className="card-body">
               <p className="card-text">With Ordino v9.0 we have launched a whole new homepage, start menu, and various usability improvements.</p>
               <p className="card-text">
-                The new homepage welcomes new and recurring users and provides an overview of the Ordino <Link to="/features" data-testid="features-link">features</Link>,{' '}
+                The new homepage welcomes new and recurring users and provides an overview of the Ordino{' '}
+                <Link to="/features" data-testid="features-link">
+                  features
+                </Link>
+                ,{' '}
                 <Link to="/datasets" data-testid="datasets-link">
                   loaded datasets
                 </Link>

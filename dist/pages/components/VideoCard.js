@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 export function VideoCard({ openInNewWindow }) {
-    const newWindowProps = openInNewWindow ? {
-        target: '_blank',
-        rel: 'noopener noreferrer'
-    } : {};
+    const newWindowProps = openInNewWindow
+        ? {
+            target: '_blank',
+            rel: 'noopener noreferrer',
+        }
+        : {};
     return (React.createElement("div", { style: { overflow: 'hidden' }, className: "card p-2 shadow-sm ordino-video-card", "data-testid": "videocard" },
         React.createElement("div", { className: "card-body" },
             React.createElement("p", { className: "card-text lead" }, "Ordino is a browser-based visual data analysis solution to flexibly rank, filter, and explore genes, cell lines, and tissue samples based on a rich set of experimental and metadata. Ordino contains a large set of cancer genomics data allowing to readily address a multitude of use cases as, for instance, identifying genes that could serve as potential drug targets or biomarkers, or finding the most appropriate cell line for an experiment."),
@@ -30,12 +32,13 @@ export function VideoCard({ openInNewWindow }) {
                 React.createElement("i", null, "Detail Views"),
                 " include:"),
             React.createElement("ul", null,
-                React.createElement("li", null, "Specialized visualizations (e.g., a co-expression plot for comparing multiple genes, an expression vs. copy number plot, or an OncoPrint)                        "),
+                React.createElement("li", null, "Specialized visualizations (e.g., a co-expression plot for comparing multiple genes, an expression vs. copy number plot, or an OncoPrint) "),
                 React.createElement("li", null, "Another ranked table (e.g., a list of all cell lines plus their gene expression for the selected genes)"),
                 React.createElement("li", null, "Embedded external resources (e.g., Ensembl and Open Targets)")),
             React.createElement("p", { className: "card-text" },
-                "You can find more detailed information about the main features ",
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/features", "data-testid": "features-link" }), "here"),
+                "You can find more detailed information about the main features",
+                ' ',
+                React.createElement(Link, { ...newWindowProps, className: "card-link", to: "/features", "data-testid": "features-link" }, "here"),
                 "."),
             React.createElement("h5", { className: "card-title mt-4" },
                 React.createElement("i", { className: "me-2 fas fa-database" }),
@@ -46,8 +49,9 @@ export function VideoCard({ openInNewWindow }) {
                 " and The Cancer Genome Atlas (TCGA). Furthermore, two CRISPR / RNAi loss-of-function screen data sets (DRIVE and Avana) are included."),
             React.createElement("p", { className: "card-text" }, "Additionally, users can upload their own tabular data to explore it within Ordino."),
             React.createElement("p", { className: "card-text" },
-                "You can find more detailed information about the datasets ",
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/datasets", "data-testid": "datasets-link" }), "here"),
+                "You can find more detailed information about the datasets",
+                ' ',
+                React.createElement(Link, { ...newWindowProps, className: "card-link", to: "/datasets", "data-testid": "datasets-link" }, "here"),
                 "."),
             React.createElement("h5", { className: "card-title mt-4" },
                 React.createElement("i", { className: "me-2 fas fa-mouse-pointer" }),
@@ -55,8 +59,9 @@ export function VideoCard({ openInNewWindow }) {
             React.createElement("p", { className: "card-text" },
                 "To learn more about the main features of Ordino and how to use them we provide several interactive help tours that guide you through the application.",
                 React.createElement("br", null),
-                "You can find them ",
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/tours", "data-testid": "tours-link" }), "here"),
+                "You can find them",
+                ' ',
+                React.createElement(Link, { ...newWindowProps, className: "card-link", to: "/tours", "data-testid": "tours-link" }, "here"),
                 "."),
             React.createElement("h5", { className: "card-title mt-4" },
                 React.createElement("i", { className: "me-2 fas fa-book-open" }),
@@ -82,8 +87,9 @@ export function VideoCard({ openInNewWindow }) {
                 React.createElement("i", null, "Information Visualization, 19(2): 114-136, 2019.")),
             React.createElement("p", { className: "card-text" }, "Please cite the first article when using Ordino and publishing your results."),
             React.createElement("p", { className: "card-text" },
-                "You can find more information about the publications ",
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/publications", "data-testid": "publications-link" }), "here"),
+                "You can find more information about the publications",
+                ' ',
+                React.createElement(Link, { ...newWindowProps, className: "card-link", to: "/publications", "data-testid": "publications-link" }, "here"),
                 "."))));
 }
 //# sourceMappingURL=VideoCard.js.map

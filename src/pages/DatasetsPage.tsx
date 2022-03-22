@@ -54,7 +54,13 @@ export function DatasetsPage() {
               <div className="col">
                 <DatasetPageCard title="Gene Annotation">
                   <p className="card-text">Based on Ensembl 86</p>
-                  <a className="card-link" href=" http://oct2016.archive.ensembl.org/index.html" data-testid="gene-annotation-link" target="_blank" rel="noopener">
+                  <a
+                    className="card-link"
+                    href=" http://oct2016.archive.ensembl.org/index.html"
+                    data-testid="gene-annotation-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
                     oct2016.archive.ensembl.org
                   </a>
                 </DatasetPageCard>
@@ -89,6 +95,9 @@ export function DatasetsPage() {
               </div>
             </div>
           </div>
-          <OrdinoFooter testId="datasets-page" />
+          <OrdinoFooter />
+        </div>
       </div>
+    </>
   );
+}

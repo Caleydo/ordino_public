@@ -1,8 +1,8 @@
 import * as React from 'react';
+import { OrdinoFooter } from 'ordino';
 import { OrdinoHero } from './components/OrdinoHero';
 import { GettingStarted } from './components/GettingStarted';
 import { DevelopedByAffiliations } from './components/DevelopedByAffiliations';
-import { OrdinoFooter } from 'ordino';
 import { OrdinoTeaserCards } from './components/OrdinoTeaserCards';
 export function HomePage() {
     return (React.createElement(React.Fragment, null,

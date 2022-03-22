@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { HeaderNavigation, OrdinoFooter } from 'ordino';
+import { HeaderNavigation, OrdinoFooter, useScrollToSlug } from 'ordino';
 import { OrdinoHelpSection } from './components/OrdinoHelpSection';
-import { useScrollToSlug } from 'ordino';
 export function HelpPage() {
     useScrollToSlug();
     return (React.createElement(React.Fragment, null,
