@@ -13,13 +13,19 @@ export function DevelopedByAffiliations() {
       </div>
       <div className="row">
         <div className="col position-relative text-center">
-          <a href="https://jku.at" target="_blank" rel="noopener noreferrer" data-testid="jku-link"><img src={logoJKU} alt="Johannes Kepler University Linz" style={{height: '45px'}} /></a>
+          <a href="https://jku.at" target="_blank" rel="noopener noreferrer" data-testid="jku-link">
+            <img src={logoJKU} alt="Johannes Kepler University Linz" style={{ height: '45px' }} />
+          </a>
         </div>
         <div className="col position-relative text-center">
-          <a href="https://www.boehringer-ingelheim.com" target="_blank" rel="noopener noreferrer" data-testid="boehringer-ingelheim-link"><img src={logoBI} alt="Boehringer Ingelheim" style={{height: '45px'}} /></a>
+          <a href="https://www.boehringer-ingelheim.com" target="_blank" rel="noopener noreferrer" data-testid="boehringer-ingelheim-link">
+            <img src={logoBI} alt="Boehringer Ingelheim" style={{ height: '45px' }} />
+          </a>
         </div>
         <div className="col position-relative text-center">
-          <a href="https://www.datavisyn.io" target="_blank" rel="noopener noreferrer" data-testid="datavisyn-link"><img src={logoDatavisyn} alt="datavisyn" style={{height: '35px'}} /></a>
+          <a href="https://www.datavisyn.io" target="_blank" rel="noopener noreferrer" data-testid="datavisyn-link">
+            <img src={logoDatavisyn} alt="datavisyn" style={{ height: '35px' }} />
+          </a>
         </div>
       </div>
     </section>

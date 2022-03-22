@@ -9,3 +9,4 @@ interface IFeatureCardProps {
 }
 export declare function FeatureCard({ image, title, children }: IFeatureCardProps): JSX.Element;
 export {};
+//# sourceMappingURL=FeatureCard.d.ts.map
