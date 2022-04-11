@@ -1,1 +1,1 @@
-{"version":3,"file":"TermsOfUseCard.d.ts","sourceRoot":"","sources":["../../../src/pages/components/TermsOfUseCard.tsx"],"names":[],"mappings":"AAGA,OAAO,KAAK,EAAE,kBAAkB,EAAE,MAAM,qBAAqB,CAAC;AAE9D,wBAAgB,cAAc,CAAC,EAAE,eAAuB,EAAE,EAAE,kBAAkB,eAmD7E"}
+{"version":3,"file":"TermsOfUseCard.d.ts","sourceRoot":"","sources":["../../../src/pages/components/TermsOfUseCard.tsx"],"names":[],"mappings":";AAGA,OAAO,KAAK,EAAE,kBAAkB,EAAE,MAAM,qBAAqB,CAAC;AAE9D,wBAAgB,cAAc,CAAC,EAAE,eAAuB,EAAE,EAAE,kBAAkB,eAmD7E"}
