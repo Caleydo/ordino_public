@@ -11,7 +11,31 @@ import v900_application_help from 'ordino_public/dist/assets/pages/news/v900_app
 import v900_ranking_redesign from 'ordino_public/dist/assets/pages/news/v900_ranking_redesign.png';
 import v910_auto_complete from 'ordino_public/dist/assets/pages/news/v910_auto_complete.png';
 import v910_usability_improvements from 'ordino_public/dist/assets/pages/news/v910_usability_improvements.png';
+import v920_drug_scientific_name from 'ordino_public/dist/assets/pages/news/v920_drug_scientific_name.png';
 const sections = [
+    {
+        id: 'v9-2',
+        name: 'Version 9.2 (2022-04-28)',
+        markup: () => (React.createElement(React.Fragment, null,
+            React.createElement("p", { className: "lead text-muted" },
+                "This update contains various ",
+                React.createElement("b", null, "usability improvements"),
+                " and several ",
+                React.createElement("b", null, "bug fixes"),
+                ". The most important changes are:"),
+            React.createElement("h5", { className: "mt-4" }, "Usability improvements"),
+            React.createElement("p", null, "When adding a drug screen score column to a cell line ranking, we now show the scientific name if it differs from the drug id."),
+            React.createElement("img", { className: " img-fluid border border-gray-300", src: v920_drug_scientific_name, alt: "Additional scientific name for drugs." }),
+            React.createElement("h5", { className: "mt-4" }, "Briefly noted"),
+            React.createElement("ul", null,
+                React.createElement("li", null,
+                    "Predefined set ",
+                    React.createElement("i", null, "All"),
+                    " for mouse was sometimes not available"),
+                React.createElement("li", null,
+                    "Show creator of a session in the tab ",
+                    React.createElement("i", null, "Other sessions"))))),
+    },
     {
         id: 'v9-1',
         name: 'Version 9.1 (2021-10-06)',

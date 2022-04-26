@@ -14,8 +14,33 @@ import v900_application_help from 'ordino_public/dist/assets/pages/news/v900_app
 import v900_ranking_redesign from 'ordino_public/dist/assets/pages/news/v900_ranking_redesign.png';
 import v910_auto_complete from 'ordino_public/dist/assets/pages/news/v910_auto_complete.png';
 import v910_usability_improvements from 'ordino_public/dist/assets/pages/news/v910_usability_improvements.png';
+import v920_drug_scientific_name from 'ordino_public/dist/assets/pages/news/v920_drug_scientific_name.png';
 
 const sections = [
+  {
+    id: 'v9-2',
+    name: 'Version 9.2 (2022-04-28)',
+    markup: () => (
+      <>
+        <p className="lead text-muted">
+          This update contains various <b>usability improvements</b> and several <b>bug fixes</b>. The most important changes are:
+        </p>
+        <h5 className="mt-4">Usability improvements</h5>
+        <p>When adding a drug screen score column to a cell line ranking, we now show the scientific name if it differs from the drug id.</p>
+        <img className=" img-fluid border border-gray-300" src={v920_drug_scientific_name} alt="Additional scientific name for drugs." />
+
+        <h5 className="mt-4">Briefly noted</h5>
+        <ul>
+          <li>
+            Predefined set <i>All</i> for mouse was sometimes not available
+          </li>
+          <li>
+            Show creator of a session in the tab <i>Other sessions</i>
+          </li>
+        </ul>
+      </>
+    ),
+  },
   {
     id: 'v9-1',
     name: 'Version 9.1 (2021-10-06)',
