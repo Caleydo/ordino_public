@@ -1,23 +1,22 @@
-import { PluginRegistry } from 'phovea_core';
-import { EP_PHOVEA_CORE_LOCALE } from 'phovea_core';
-import { EP_ORDINO_START_MENU_TAB, EStartMenuSection, EP_ORDINO_FOOTER_MENU, EP_ORDINO_START_MENU_TAB_SHORTCUT, EP_ORDINO_HEADER_MENU } from 'ordino';
+import { PluginRegistry, EP_PHOVEA_CORE_LOCALE } from 'tdp_core';
+import { EP_ORDINO_START_MENU_TAB, EStartMenuSection, EP_ORDINO_FOOTER_MENU, EP_ORDINO_START_MENU_TAB_SHORTCUT, EP_ORDINO_HEADER_MENU, } from 'ordino';
 export default function (registry) {
-    //registry.push('extension-type', 'extension-id', function() { return import('./extension_impl'); }, {});
+    // registry.push('extension-type', 'extension-id', function() { return import('./extension_impl'); }, {});
     // generator-phovea:begin
     registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_dataset_tab', () => import('ordino/dist/internal/menu/tabs/DatasetsTab'), {
         text: 'Datasets',
         menu: EStartMenuSection.MAIN,
-        priority: 10
+        priority: 10,
     });
     registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_sessions_tab', () => import('ordino/dist/internal/menu/tabs/SessionsTab'), {
         text: 'Analysis Sessions',
         menu: EStartMenuSection.MAIN,
-        priority: 20
+        priority: 20,
     });
     registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_tours_tab', () => import('ordino/dist/internal/menu/tabs/ToursTab'), {
         text: 'Onboarding Tours',
         menu: EStartMenuSection.MAIN,
-        priority: 30
+        priority: 30,
     });
     registry.push(EP_ORDINO_START_MENU_TAB_SHORTCUT, 'ordino_sessions_shortcut', () => ({}), {
         text: 'Current Analysis Session',
@@ -34,25 +33,30 @@ export default function (registry) {
         links: [
             {
                 faIcon: 'fas fa-newspaper fa-fw',
-                text: 'What\'s new?',
-                page: '/news'
+                text: "What's new?",
+                page: '/news',
             },
             {
                 faIcon: 'fas fa-check fa-fw',
                 text: 'Features',
-                page: '/features'
+                page: '/features',
             },
             {
                 faIcon: 'fas fa-database fa-fw',
                 text: 'Datasets',
-                page: '/datasets'
+                page: '/datasets',
+            },
+            {
+                page: '/publications',
+                faIcon: 'fas fa-book-open fa-fw',
+                text: `Publications`,
             },
             {
                 faIcon: 'fas fa-question-circle fa-fw',
                 text: 'Help',
-                page: '/help'
-            }
-        ]
+                page: '/help',
+            },
+        ],
     });
     registry.push(EP_ORDINO_FOOTER_MENU, 'ordino_footer_menu', () => ({}), {
         lists: [
@@ -85,6 +89,11 @@ export default function (registry) {
                     text: `Ordino at a glance`,
                 },
                 {
+                    page: '/help/team',
+                    faIcon: 'fas fa-fw fa-users',
+                    text: `Team`,
+                },
+                {
                     page: '/help/contact-us',
                     faIcon: 'fas fa-fw fa-at',
                     text: `Contact us`,
@@ -104,8 +113,8 @@ export default function (registry) {
                     faIcon: 'fas fa-fw fa-code',
                     text: `Source code & licenses`,
                 },
-            ]
-        ]
+            ],
+        ],
     });
     registry.push(EP_PHOVEA_CORE_LOCALE, 'ordinoPublicTdpLocaleEN', function () {
         return import('./locales/en/tdp.json').then(PluginRegistry.getInstance().asResource);

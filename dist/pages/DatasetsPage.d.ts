@@ -6,3 +6,4 @@ interface IDatasetPageCardProps {
 export declare function DatasetPageCard({ title, children }: IDatasetPageCardProps): JSX.Element;
 export declare function DatasetsPage(): JSX.Element;
 export {};
+//# sourceMappingURL=DatasetsPage.d.ts.map

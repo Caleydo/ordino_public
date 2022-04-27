@@ -1,4 +1,7 @@
 import React from 'react';
+export interface IHelpPageCardProps {
+    openInNewWindow?: boolean;
+}
 interface IOrdinoHelpSectionProps {
     /**
      * Whether to open the links to other pages in a new tab
@@ -8,3 +11,4 @@ interface IOrdinoHelpSectionProps {
 }
 export declare function OrdinoHelpSection(props: IOrdinoHelpSectionProps): JSX.Element;
 export {};
+//# sourceMappingURL=OrdinoHelpSection.d.ts.map
