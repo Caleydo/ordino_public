@@ -54,8 +54,8 @@
     "dist"
   ],
   "dependencies": {
-    "ordino": "github:Caleydo/ordino#develop",
-    "tdp_core": "github:datavisyn/tdp_core#develop",
+    "ordino": "git+ssh://git@github.com:Caleydo/ordino#develop",
+    "tdp_core": "git+ssh://git@github.com:datavisyn/tdp_core#develop",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0"
