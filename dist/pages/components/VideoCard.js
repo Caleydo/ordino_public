@@ -7,7 +7,7 @@ export function VideoCard({ openInNewWindow }) {
             rel: 'noopener noreferrer',
         }
         : {};
-    return (React.createElement("div", { style: { overflow: 'hidden' }, className: "card p-2 shadow-sm ordino-video-card", "data-testid": "videocard" },
+    return (React.createElement("div", { style: { overflow: 'hidden' }, className: "card p-2 shadow-sm ordino-video-card", "data-testid": "video-card" },
         React.createElement("div", { className: "card-body" },
             React.createElement("p", { className: "card-text lead" }, "Ordino is a browser-based visual data analysis solution to flexibly rank, filter, and explore genes, cell lines, and tissue samples based on a rich set of experimental and metadata. Ordino contains a large set of cancer genomics data allowing to readily address a multitude of use cases as, for instance, identifying genes that could serve as potential drug targets or biomarkers, or finding the most appropriate cell line for an experiment."),
             React.createElement("iframe", { className: "w-100 pt-2 pb-1", src: "https://www.youtube-nocookie.com/embed/JZIIf-k852g?autoplay=0", frameBorder: "0", allow: "autoplay; clipboard-write; encrypted-media; picture-in-picture", allowFullScreen: true }),

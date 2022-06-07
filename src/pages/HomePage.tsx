@@ -17,7 +17,7 @@ export function HomePage() {
         </div>
       </div>
       <OrdinoTeaserCards />
-      <OrdinoFooter testId="homepage" />
+      <OrdinoFooter testId="home-page" />
     </>
   );
 }

@@ -6,7 +6,7 @@ export function FeaturesPage() {
   return (
     <>
       <HeaderNavigation />
-      <div className="position-relative pt-6" data-testid="featurespage">
+      <div className="position-relative pt-6" data-testid="features-page">
         <div className="ordino-container">
           <div className="p-6 container">
             <div className="row">

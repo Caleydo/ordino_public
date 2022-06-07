@@ -8,7 +8,7 @@ export function HelpPage() {
   return (
     <>
       <HeaderNavigation />
-      <div className="container-fluid ordino-help-page h-100 position-relative pt-6" data-testid="helppage">
+      <div className="container-fluid ordino-help-page h-100 position-relative pt-6" data-testid="help-page">
         <OrdinoHelpSection>
           <OrdinoFooter testid="help-page" />
         </OrdinoHelpSection>

@@ -25,7 +25,7 @@ export function ToursPage() {
   return (
     <>
       <HeaderNavigation />
-      <div className="position-relative pt-6" data-testid="tourspage">
+      <div className="position-relative pt-6" data-testid="tours-page">
         <div className="ordino-container">
           {status === 'success' ? (
             <div className="mt-9 mb-6 container tours-tab">

@@ -12,7 +12,7 @@ export function VideoCard({ openInNewWindow }: IHelpPageCardProps) {
     : {};
 
   return (
-    <div style={{ overflow: 'hidden' }} className="card p-2 shadow-sm ordino-video-card" data-testid="videocard">
+    <div style={{ overflow: 'hidden' }} className="card p-2 shadow-sm ordino-video-card" data-testid="video-card">
       <div className="card-body">
         <p className="card-text lead">
           Ordino is a browser-based visual data analysis solution to flexibly rank, filter, and explore genes, cell lines, and tissue samples based on a rich

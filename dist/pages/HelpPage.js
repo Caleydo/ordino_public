@@ -5,7 +5,7 @@ export function HelpPage() {
     useScrollToSlug();
     return (React.createElement(React.Fragment, null,
         React.createElement(HeaderNavigation, null),
-        React.createElement("div", { className: "container-fluid ordino-help-page h-100 position-relative pt-6", "data-testid": "helppage" },
+        React.createElement("div", { className: "container-fluid ordino-help-page h-100 position-relative pt-6", "data-testid": "help-page" },
             React.createElement(OrdinoHelpSection, null,
                 React.createElement(OrdinoFooter, { testid: "help-page" })))));
 }

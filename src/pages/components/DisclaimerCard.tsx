@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export function DisclaimerCard() {
   return (
-    <div className="card shadow-sm p-2" data-testid="disclaimercard">
+    <div className="card shadow-sm p-2" data-testid="disclaimer-card">
       <div className="card-body">
         <p className="card-text">
           The information provided by Johannes Kepler University Linz, Boehringer Ingelheim RCV GmbH & Co KG, and datavisyn GmbH (“we,” “us” or “our”) on{' '}

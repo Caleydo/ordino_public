@@ -21,7 +21,7 @@ export function OrdinoContactForm() {
   }, []);
 
   return (
-    <div className="card shadow-sm p-2" data-testid="contactform">
+    <div className="card shadow-sm p-2" data-testid="contact-form">
       <div className="card-body">
         <p className="card-text">
           {'Do you have questions or found a bug, do not hesitate to contact us using the contact form below. You can also contact us by writing an email to '}
