@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export function GettingStarted() {
   return (
-    <section className="container ordino-getting-started py-5">
+    <section className="container ordino-getting-started py-5" data-testid="ordino-getting-started">
       <div className="row">
         <div className="col position-relative text-center">
           <h1>Getting started with Ordino</h1>
@@ -24,7 +24,7 @@ export function GettingStarted() {
       </ol>
       <div className="row">
         <div className="col position-relative text-center">
-          <a href="/app/" className="btn btn-outline-secondary btn-lg">
+          <a href="/app/" className="btn btn-outline-secondary btn-lg" data-testid="start-analysis-button">
             Start Analysis
           </a>
         </div>

@@ -6,7 +6,7 @@ export function FeaturesPage() {
   return (
     <>
       <HeaderNavigation />
-      <div className="position-relative pt-6">
+      <div className="position-relative pt-6" data-testid="features-page">
         <div className="ordino-container">
           <div className="p-6 container">
             <div className="row">
@@ -35,7 +35,7 @@ export function FeaturesPage() {
               <div className="col">
                 <p className="lead text-gray-600">
                   A core component of the Ordino system is the interactive visualization technique{' '}
-                  <a href="http://lineup.js.org" target="_blank" rel="noopener noreferrer">
+                  <a href="http://lineup.js.org" target="_blank" rel="noopener noreferrer" data-testid="lineup-link">
                     LineUp
                   </a>
                   , which allows users to flexibly create and explore rankings of items based on a set of heterogeneous attributes. The exploration is
@@ -184,7 +184,7 @@ export function FeaturesPage() {
                 <p>
                   Expression view, Copy Number view, and Mutation view visualizing experimental data for the currently selected items with the ranking
                   visualization technique{' '}
-                  <a href="http://lineup.js.org" target="_blank" rel="noopener noreferrer">
+                  <a href="http://lineup.js.org" target="_blank" rel="noopener noreferrer" data-testid="featurecard-lineup-link">
                     LineUp
                   </a>
                   .
@@ -218,27 +218,27 @@ export function FeaturesPage() {
               <FeatureCard title="External resource views">
                 <p>
                   External resource views loading the content of external websites. For selected genes, the user can look at the information available on{' '}
-                  <a href="https://ensembl.org/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://ensembl.org/" target="_blank" rel="noopener noreferrer" data-testid="ensembl-link">
                     Ensembl
                   </a>
                   ,{' '}
-                  <a href="https://proteinatlas.org/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://proteinatlas.org/" target="_blank" rel="noopener noreferrer" data-testid="proteinatlas-link">
                     Human Protein Atlas
                   </a>
                   ,{' '}
-                  <a href="https://www.targetvalidation.org/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.targetvalidation.org/" target="_blank" rel="noopener noreferrer" data-testid="targets-link">
                     Open Targets
                   </a>
                   ,{' '}
-                  <a href="https://www.ncbi.nlm.nih.gov/pubmed" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.ncbi.nlm.nih.gov/pubmed" target="_blank" rel="noopener noreferrer" data-testid="pubmed-link">
                     PubMed
                   </a>
                   , and{' '}
-                  <a href="https://www.ncbi.nlm.nih.gov/pubmed" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.ncbi.nlm.nih.gov/pubmed" target="_blank" rel="noopener noreferrer" data-testid="uniprot-link">
                     UniProt
                   </a>
                   . For cell lines, the analyst can load the information available on{' '}
-                  <a href="https://cancer.sanger.ac.uk/cosmic/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://cancer.sanger.ac.uk/cosmic/" target="_blank" rel="noopener noreferrer" data-testid="cosmic-link">
                     COSMIC
                   </a>{' '}
                   (Catalogue Of Somatic Mutations In Cancer).
@@ -247,7 +247,7 @@ export function FeaturesPage() {
             </div>
           </div>
 
-          <OrdinoFooter />
+          <OrdinoFooter testId="features-page" />
         </div>
       </div>
     </>

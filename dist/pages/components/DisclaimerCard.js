@@ -1,11 +1,11 @@
 import * as React from 'react';
 export function DisclaimerCard() {
-    return (React.createElement("div", { className: "card shadow-sm p-2" },
+    return (React.createElement("div", { className: "card shadow-sm p-2", "data-testid": "disclaimer-card" },
         React.createElement("div", { className: "card-body" },
             React.createElement("p", { className: "card-text" },
                 "The information provided by Johannes Kepler University Linz, Boehringer Ingelheim RCV GmbH & Co KG, and datavisyn GmbH (\u201Cwe,\u201D \u201Cus\u201D or \u201Cour\u201D) on",
                 ' ',
-                React.createElement("a", { href: "https://ordino.calyedoapp.org", target: "_blank", rel: "noopener noreferrer" }, "https://ordino.calyedoapp.org"),
+                React.createElement("a", { href: "https://ordino.calyedoapp.org", target: "_blank", rel: "noopener noreferrer", "data-testid": "ordino-link" }, "https://ordino.calyedoapp.org"),
                 ' ',
                 "(the \u201CSite\u201D) is for general research purposes and non-commercial use only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, expressed or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the Site."),
             React.createElement("p", { className: "card-text" }, "Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the Site or reliance on any information provided on the Site. Your use of the Site and your reliance on any information on the Site is solely at your own risk."),
