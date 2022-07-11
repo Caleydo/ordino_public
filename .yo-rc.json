@@ -29,7 +29,6 @@
       "file-loader": "404|robots"
     },
     "libraryAliases": {
-      "d3": "d3/d3"
     },
     "libraryExternals": [],
     "name": "ordino_public",
