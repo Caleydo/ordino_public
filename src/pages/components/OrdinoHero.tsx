@@ -21,7 +21,7 @@ export function OrdinoHero() {
     <>
       <div className="ordino-hero">
         <HeaderNavigation bg="transparent" />
-        <div className="container">
+        <div className="container" data-testid="ordino-hero">
           <div className="row ordino-hero-claim my-4">
             <div className="col text-center">
               <p>
@@ -35,6 +35,7 @@ export function OrdinoHero() {
               <button
                 type="button"
                 className="btn btn-link btn-lg"
+                data-testid="play-button"
                 onClick={() => setModalIsClosed(false)}
                 data-bs-toggle="modal"
                 data-bs-target={`#${INTRO_VIDEO_MODAL_ID}`}
@@ -44,7 +45,7 @@ export function OrdinoHero() {
               </button>
             </div>
             <div className="col text-center">
-              <Link to="/help" className="btn btn-link btn-lg">
+              <Link to="/help" className="btn btn-link btn-lg" data-testid="info-link">
                 <i className="fas fa-question" />
                 Learn more about Ordino
               </Link>
@@ -57,12 +58,26 @@ export function OrdinoHero() {
           </div>
         </div>
       </div>
-      <div className="modal" id={INTRO_VIDEO_MODAL_ID} onClick={handleCloseModal} aria-labelledby="ordino-intro-video-modal-title" aria-hidden="true">
+      <div
+        className="modal"
+        id={INTRO_VIDEO_MODAL_ID}
+        data-testid="ordino-intro-video-modal"
+        onClick={handleCloseModal}
+        aria-labelledby="ordino-intro-video-modal-title"
+        aria-hidden="true"
+      >
         <div className="modal-dialog ordino-intro-video-modal">
           <div className="modal-content">
             <div className="modal-header">
               <div className="modal-title h4">Introduction to Ordino</div>
-              <button type="button" className="btn-close" onClick={() => setModalIsClosed(true)} data-bs-dismiss="modal" aria-label="Close" />
+              <button
+                type="button"
+                className="btn-close"
+                data-testid="close-button"
+                onClick={() => setModalIsClosed(true)}
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              />
             </div>
             <div className="modal-body">
               {!modalIsClosed && (

@@ -91,7 +91,7 @@ const sections = [
 
         <p>
           The application itself was moved to the{' '}
-          <a href="./app" target="_blank" rel="noopener noreferrer">
+          <a href="./app" target="_blank" rel="noopener noreferrer" data-testid="app-directory-link">
             <code>/app</code> directory
           </a>
           . Please update your bookmarks if you want to access Ordino directly and to skip the homepage.
@@ -379,7 +379,7 @@ export function NewsPage() {
   return (
     <>
       <HeaderNavigation />
-      <div className="position-relative py-6">
+      <div className="position-relative py-6" data-testid="news-page">
         <OrdinoScrollspy items={sections.map((section) => ({ id: section.id, name: section.name }))}>
           {(handleOnChange) => (
             <>
@@ -404,7 +404,7 @@ export function NewsPage() {
                   </div>
                 </div>
               </div>
-              <OrdinoFooter />
+              <OrdinoFooter testId="news-page" />
             </>
           )}
         </OrdinoScrollspy>

@@ -25,12 +25,14 @@ export function ToursPage() {
   return (
     <>
       <HeaderNavigation />
-      <div className="position-relative pt-6">
+      <div className="position-relative pt-6" data-testid="tours-page">
         <div className="ordino-container">
           {status === 'success' ? (
             <div className="mt-9 mb-6 container tours-tab">
               <p className="lead text-gray-600">Learn more about Ordino by taking an interactive guided tour</p>
-              {beginnerTours ? <ToursSection level="beginner" tours={beginnerTours} hrefBase="/app/#tour={id}" /> : null}
+              {beginnerTours ? (
+                <ToursSection level="beginner" tours={beginnerTours} hrefBase="/app/#tour={id}" data-testid={`${beginnerTours}-tour-{id}`} />
+              ) : null}
               {advancedTours ? <ToursSection level="advanced" tours={advancedTours} hrefBase="/app/#tour={id}" /> : null}
             </div>
           ) : null}
