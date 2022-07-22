@@ -13,25 +13,16 @@
 
 // -- This is a parent command --
 Cypress.Commands.add('login', () => {
-    // Define network requests to intercept
-    cy.intercept('/loggedinas').as('loggedinas');
-    cy.intercept('/api/tdp/security_store_generated/generated_username').as('generated_username');
-    cy.intercept('https://freegeoip.app/json/').as('freegeoip');
-
-    // wait for network requests to finish before logging in
-    cy.wait('@loggedinas')
-    cy.wait('@generated_username')
-    cy.wait('@freegeoip')
 
     // Check if form is visible and the two inputs are not empty (so not to click too fast on the button)
-    cypress.cy.get('.form-signin').should('be.visible');
-    cypress.cy.get('.form-signin #login_username').invoke('val').should('not.be.empty');
-    cypress.cy.get('.form-signin #login_password').invoke('val').should('not.be.empty');
+    cy.get('.form-signin').should('be.visible');
+    cy.get('.form-signin #login_username').invoke('val').should('not.be.empty');
+    cy.get('.form-signin #login_password').invoke('val').should('not.be.empty');
     // Add a small wait just for safety
-    cypress.cy.wait(1000);
-    cypress.cy.get('.form-signin button[type="submit"]').click();
+    cy.wait(1000);
+    cy.get('.form-signin button[type="submit"]').click();
     // Check that login disappears
-    cypress.cy.get('.form-signin button[type=submit]').should('not.be.visible');
+    cy.get('.form-signin button[type=submit]').should('not.be.visible');
 });
 
 // -- This is a child command --
