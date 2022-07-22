@@ -47,7 +47,8 @@
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
     "predist": "npm run build && npm run docs",
     "dist": "mkdir lib && cd dist && tar cvzf ../lib/ordino_public.tar.gz *",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "files": [
     "src",
