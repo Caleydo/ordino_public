@@ -11,5 +11,7 @@ const _ = new Ordino({
     showCookieDisclaimer: true,
     showResearchDisclaimer: false,
     showClueModeButtons: false,
+    cluePropertyHandler: 'query',
+    clueRewriteOtherProperty: true,
 });
 //# sourceMappingURL=initialize.app.js.map
