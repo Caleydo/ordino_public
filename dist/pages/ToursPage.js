@@ -16,11 +16,11 @@ export function ToursPage() {
     const advancedTours = tours === null || tours === void 0 ? void 0 : tours.filter((tour) => tour.desc.level === 'advanced');
     return (React.createElement(React.Fragment, null,
         React.createElement(HeaderNavigation, null),
-        React.createElement("div", { className: "position-relative pt-6" },
+        React.createElement("div", { className: "position-relative pt-6", "data-testid": "tours-page" },
             React.createElement("div", { className: "ordino-container" },
                 status === 'success' ? (React.createElement("div", { className: "mt-9 mb-6 container tours-tab" },
                     React.createElement("p", { className: "lead text-gray-600" }, "Learn more about Ordino by taking an interactive guided tour"),
-                    beginnerTours ? React.createElement(ToursSection, { level: "beginner", tours: beginnerTours, hrefBase: "/app/#tour={id}" }) : null,
+                    beginnerTours ? (React.createElement(ToursSection, { level: "beginner", tours: beginnerTours, hrefBase: "/app/#tour={id}", "data-testid": `${beginnerTours}-tour-{id}` })) : null,
                     advancedTours ? React.createElement(ToursSection, { level: "advanced", tours: advancedTours, hrefBase: "/app/#tour={id}" }) : null)) : null,
                 React.createElement(OrdinoFooter, null)))));
 }

@@ -79,7 +79,7 @@ const sections = [
             React.createElement("p", null,
                 "The application itself was moved to the",
                 ' ',
-                React.createElement("a", { href: "./app", target: "_blank", rel: "noopener noreferrer" },
+                React.createElement("a", { href: "./app", target: "_blank", rel: "noopener noreferrer", "data-testid": "app-directory-link" },
                     React.createElement("code", null, "/app"),
                     " directory"),
                 ". Please update your bookmarks if you want to access Ordino directly and to skip the homepage."),
@@ -293,7 +293,7 @@ export function NewsPage() {
     useScrollToSlug();
     return (React.createElement(React.Fragment, null,
         React.createElement(HeaderNavigation, null),
-        React.createElement("div", { className: "position-relative py-6" },
+        React.createElement("div", { className: "position-relative py-6", "data-testid": "news-page" },
             React.createElement(OrdinoScrollspy, { items: sections.map((section) => ({ id: section.id, name: section.name })) }, (handleOnChange) => (React.createElement(React.Fragment, null,
                 React.createElement("div", { className: "container pb-6" },
                     React.createElement("div", { className: "row" },
@@ -309,6 +309,6 @@ export function NewsPage() {
                                     React.createElement("div", { className: "card shadow-sm h-100" },
                                         React.createElement("div", { className: "card-body" }, item.markup())))));
                         })))),
-                React.createElement(OrdinoFooter, null)))))));
+                React.createElement(OrdinoFooter, { testId: "news-page" })))))));
 }
 //# sourceMappingURL=NewsPage.js.map

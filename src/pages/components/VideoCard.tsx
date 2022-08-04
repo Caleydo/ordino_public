@@ -12,7 +12,7 @@ export function VideoCard({ openInNewWindow }: IHelpPageCardProps) {
     : {};
 
   return (
-    <div style={{ overflow: 'hidden' }} className="card p-2 shadow-sm ordino-video-card">
+    <div style={{ overflow: 'hidden' }} className="card p-2 shadow-sm ordino-video-card" data-testid="video-card">
       <div className="card-body">
         <p className="card-text lead">
           Ordino is a browser-based visual data analysis solution to flexibly rank, filter, and explore genes, cell lines, and tissue samples based on a rich
@@ -56,7 +56,7 @@ export function VideoCard({ openInNewWindow }: IHelpPageCardProps) {
         </ul>
         <p className="card-text">
           You can find more detailed information about the main features{' '}
-          <Link {...newWindowProps} className="card-link" to="/features">
+          <Link {...newWindowProps} className="card-link" to="/features" data-testid="features-link">
             here
           </Link>
           .
@@ -73,7 +73,7 @@ export function VideoCard({ openInNewWindow }: IHelpPageCardProps) {
         <p className="card-text">Additionally, users can upload their own tabular data to explore it within Ordino.</p>
         <p className="card-text">
           You can find more detailed information about the datasets{' '}
-          <Link {...newWindowProps} className="card-link" to="/datasets">
+          <Link {...newWindowProps} className="card-link" to="/datasets" data-testid="datasets-link">
             here
           </Link>
           .
@@ -86,7 +86,7 @@ export function VideoCard({ openInNewWindow }: IHelpPageCardProps) {
           To learn more about the main features of Ordino and how to use them we provide several interactive help tours that guide you through the application.
           <br />
           You can find them{' '}
-          <Link {...newWindowProps} className="card-link" to="/tours">
+          <Link {...newWindowProps} className="card-link" to="/tours" data-testid="tours-link">
             here
           </Link>
           .
@@ -120,7 +120,7 @@ export function VideoCard({ openInNewWindow }: IHelpPageCardProps) {
         <p className="card-text">Please cite the first article when using Ordino and publishing your results.</p>
         <p className="card-text">
           You can find more information about the publications{' '}
-          <Link {...newWindowProps} className="card-link" to="/publications">
+          <Link {...newWindowProps} className="card-link" to="/publications" data-testid="publications-link">
             here
           </Link>
           .
