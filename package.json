@@ -49,7 +49,7 @@
     "dist": "mkdir lib && cd dist && tar cvzf ../lib/ordino_public.tar.gz *",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "sorry:cy2:run": "CYPRESS_API_URL='http://localhost:1234/' npx cy2 run --record --key XXX --config projectId=TestProj2 --parallel --ci-build-id `date +%s`"
+    "sorry_cy:run": "CYPRESS_API_URL='http://localhost:1234/' npx cy2 run --parallel --record --key XXX --config projectId=ordino_public --ci-build-id `date +%F`+`date +%R`"
   },
   "files": [
     "src",
