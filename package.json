@@ -48,7 +48,8 @@
     "predist": "npm run build && npm run docs",
     "dist": "mkdir lib && cd dist && tar cvzf ../lib/ordino_public.tar.gz *",
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "sorry:cy2:run": "CYPRESS_API_URL='http://localhost:1234/' npx cy2 run --record --key XXX --config projectId=TestProj2 --parallel --ci-build-id `date +%s`"
   },
   "files": [
     "src",
