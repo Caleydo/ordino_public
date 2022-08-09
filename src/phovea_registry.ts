@@ -4,12 +4,13 @@
  * Licensed under the new BSD license, available at http://caleydo.org/license
  **************************************************************************** */
 
-import {PluginRegistry} from 'tdp_core';
-import reg from './src/phovea';
+import { PluginRegistry } from 'tdp_core';
+import reg from './phovea';
 /**
  * build a registry by registering all phovea modules
  */
-//other modules
-import 'ordino/phovea_registry.js';
-//self
+// other modules
+import 'tdp_core/dist/phovea_registry';
+import 'ordino/dist/phovea_registry';
+// self
 PluginRegistry.getInstance().register('ordino_public', reg);

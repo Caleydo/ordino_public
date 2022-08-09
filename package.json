@@ -39,8 +39,7 @@
     "docs": "visyn_scripts docs",
     "lint:fix": "visyn_scripts lint --fix",
     "lint": "visyn_scripts lint",
-    "prepack": "npm run build",
-    "prepare": "echo \"dummy prepare since prepack has no dev dependencies\"",
+    "prepare": "npm run build",
     "start": "visyn_scripts start --env workspace_mode=single",
     "storybook:build": "NODE_OPTIONS=--max_old_space_size=4096 build-storybook",
     "storybook": "NODE_OPTIONS=--max_old_space_size=4096 start-storybook -p 6006",
@@ -50,7 +49,6 @@
   },
   "files": [
     "src",
-    "index.js",
     "dist"
   ],
   "dependencies": {
@@ -69,8 +67,8 @@
   "visyn": {
     "entries": {
       "app": {
-        "js": "dist/initialize.app.js",
-        "template": "dist/app.template.ejs",
+        "js": "src/initialize.app.ts",
+        "template": "src/app.template.ejs",
         "html": "app/index.html",
         "chunkName": "app",
         "excludeChunks": [
@@ -78,8 +76,8 @@
         ]
       },
       "welcome": {
-        "js": "dist/initialize.welcome.js",
-        "template": "dist/welcome.template.ejs",
+        "js": "src/initialize.welcome.tsx",
+        "template": "src/welcome.template.ejs",
         "html": "index.html",
         "chunkName": "welcome",
         "excludeChunks": [
