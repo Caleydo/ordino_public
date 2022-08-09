@@ -1,7 +1,6 @@
 import { defineConfig } from 'cypress'
 
 export default defineConfig({
-  // experimentalStudio: true, //not required to specify in Cypress 10 anymore
   viewportWidth: 1920,
   viewportHeight: 1080,
   defaultCommandTimeout: 100000,
