@@ -4,6 +4,6 @@ on: workflow_dispatch
           
 jobs:
   release:
-    uses: datavisyn/github-workflows/.github/workflows/release-source.yml@main
+    uses: datavisyn/github-workflows/.github/workflows/release-source.yml@node16
     secrets: 
       DV_DEVOPS: ${{ secrets.DV_DEVOPS }}
