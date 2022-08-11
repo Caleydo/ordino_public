@@ -13,3 +13,8 @@ node_modules/
 /.awcache
 /.cache-loader
 package-lock.json
+
+# ignore local cypress artifacts
+/cypress/videos/
+/cypress/screenshots/
+
