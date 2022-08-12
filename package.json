@@ -18,8 +18,8 @@
     "url": "https://github.com/Caleydo/ordino_public.git"
   },
   "engines": {
-    "npm": ">= 6.12",
-    "node": ">= 12.13"
+    "npm": ">=8",
+    "node": ">=16"
   },
   "private": true,
   "main": "dist/index.js",
