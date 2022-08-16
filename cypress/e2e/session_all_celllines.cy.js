@@ -1,10 +1,19 @@
+// describe('Load all Celllines with Auth0', () => {
+//     beforeEach(() => {
+//         cy.loginByAuth0Api(Cypress.env('auth0_username'), Cypress.env('auth0_password')); // use Cypress command registerd in Ordino app
+//     })
+
+//     it
+// })
+
 it('Load all Celllines', function() {
     cy.visit(Cypress.env('host'));
 
     // Login
     cy.get('[data-testid=ordino-navbar] [data-testid=start-analysis-button]').click();
     
-    cy.login(); // use Cypress command registerd in Ordino app
+    cy.loginAuth0(); // use Cypress command registerd in Ordino app
+    cy.wait(5000);
 
     // Show you can select single genes if you wanted
     cy.scrollElementIntoCenter('[data-testid=dataset-card-cellline-dataset] [data-testid=human-tab] [data-testid=ordino-dataset-searchbox] [data-testid=async-paginate-input]').click()
