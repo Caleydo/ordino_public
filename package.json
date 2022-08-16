@@ -39,7 +39,7 @@
     "docs": "visyn_scripts docs",
     "lint:fix": "visyn_scripts lint --fix",
     "lint": "visyn_scripts lint",
-    "prepare": "npm run build",
+    "prepack": "npm run build",
     "start": "visyn_scripts start --env workspace_mode=single",
     "storybook:build": "NODE_OPTIONS=--max_old_space_size=4096 build-storybook",
     "storybook": "NODE_OPTIONS=--max_old_space_size=4096 start-storybook -p 6006",
@@ -55,7 +55,7 @@
     "ordino": "git+ssh://git@github.com:Caleydo/ordino#visyn_scripts",
     "tdp_core": "git+ssh://git@github.com:datavisyn/tdp_core#visyn_scripts",
     "react-router-dom": "^5.2.0",
-    "visyn_scripts": "git+ssh://git@github.com:datavisyn/visyn_scripts.git#develop"
+    "visyn_scripts": "git+ssh://git@github.com/datavisyn/visyn_scripts#develop"
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.7"
@@ -99,5 +99,6 @@
         ]
       ]
     }
-  }
+  },
+  "packageManager": "yarn@3.2.2"
 }
