@@ -4,24 +4,6 @@
     "modules": [
       "phovea_server"
     ],
-    "registry": {
-      "exclude": [
-        "dTiles",
-        "bob",
-        [
-          "datatype",
-          "(table|matrix|stratification|vector|atom)"
-        ],
-        [
-          "clue",
-          "multiform"
-        ],
-        [
-          "tdpView",
-          "kegg"
-        ]
-      ]
-    },
     "vendors": {
       "others": "phovea.*|tdp_.*|tdp-.*|datavisyn.*"
     },
@@ -45,7 +27,9 @@
         "template": "dist/app.template.ejs",
         "html": "index.html",
         "chunkName": "app",
-        "excludeChunks": ["welcome"]
+        "excludeChunks": [
+          "welcome"
+        ]
       }
     },
     "__welcome_entries": {
@@ -55,23 +39,9 @@
         "template": "dist/welcome.template.ejs",
         "html": "index.html",
         "chunkName": "welcome",
-        "excludeChunks": ["app"]
-      }
-    },
-    "entries": {
-      "app": {
-        "js": "dist/initialize.app.js",
-        "template": "dist/app.template.ejs",
-        "html": "app/index.html",
-        "chunkName": "app",
-        "excludeChunks": ["welcome"]
-      },
-      "welcome": {
-        "js": "dist/initialize.welcome.js",
-        "template": "dist/welcome.template.ejs",
-        "html": "index.html",
-        "chunkName": "welcome",
-        "excludeChunks": ["app"]
+        "excludeChunks": [
+          "app"
+        ]
       }
     },
     "unknown": {
@@ -79,8 +49,7 @@
       "dockerPackages": []
     },
     "ignores": [],
-    "extensions": [
-    ],
+    "extensions": [],
     "libraries": [
       "d3"
     ],
