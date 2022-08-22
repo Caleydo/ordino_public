@@ -1,0 +1,9 @@
+name: release
+
+on: workflow_dispatch
+          
+jobs:
+  release:
+    uses: datavisyn/github-workflows/.github/workflows/release-source.yml@main
+    secrets: 
+      DV_DEVOPS: ${{ secrets.DV_DEVOPS }}
