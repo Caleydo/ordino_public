@@ -133,8 +133,11 @@ Cypress.Commands.add('loginCustom', () => {
         }
   
         window.localStorage.setItem('auth0Cypress', JSON.stringify(item))
-  
-        cy.visit('localhost:8080/app/')
+        cy.intercept('/**/*', (req) => {
+            req.headers['Authorization'] = `Bearer ${body.access_token}`;
+        })
+        cy.wait(2000);
+        cy.visit('localhost:8080/')
       })
     }
   )

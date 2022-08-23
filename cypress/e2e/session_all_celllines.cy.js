@@ -9,12 +9,12 @@
 it('Load all Celllines', function() {
     cy.visit(Cypress.env('host'));
 
+    cy.loginAuth0(); // use Cypress command registerd in Ordino app
+    //cy.wait(2000);
+
     // Login
     cy.get('[data-testid=ordino-navbar] [data-testid=start-analysis-button]').click();
     
-    cy.loginAuth0(); // use Cypress command registerd in Ordino app
-    cy.wait(5000);
-
     // Show you can select single genes if you wanted
     cy.scrollElementIntoCenter('[data-testid=dataset-card-cellline-dataset] [data-testid=human-tab] [data-testid=ordino-dataset-searchbox] [data-testid=async-paginate-input]').click()
     cy.get('[data-testid=dataset-card-cellline-dataset] [data-testid=human-tab] [data-testid=ordino-dataset-searchbox] [data-testid=async-paginate-input]').click()
