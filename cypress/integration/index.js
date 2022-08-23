@@ -1,1 +1,0 @@
-import 'tdp_publicdb/cypress/integration/';
