@@ -1,20 +1,20 @@
 import * as React from 'react';
 import { HeaderNavigation, OrdinoFooter, OrdinoScrollspy, OrdinoScrollspyItem, useScrollToSlug } from 'ordino';
 
-import v700_tourdino from 'ordino_public/dist/assets/pages/news/v700_tourdino.jpg';
+import v700_tourdino from '../assets/pages/news/v700_tourdino.jpg';
 
-import v800_gene_signature from 'ordino_public/dist/assets/pages/news/v800_gene_signature.jpg';
-import v800_annotation_column from 'ordino_public/dist/assets/pages/news/v800_annotation_column.png';
-import v800_data_download from 'ordino_public/dist/assets/pages/news/v800_data_download.png';
+import v800_gene_signature from '../assets/pages/news/v800_gene_signature.jpg';
+import v800_annotation_column from '../assets/pages/news/v800_annotation_column.png';
+import v800_data_download from '../assets/pages/news/v800_data_download.png';
 
-import v900_homepage from 'ordino_public/dist/assets/pages/news/v900_homepage.png';
-import v900_start_menu from 'ordino_public/dist/assets/pages/news/v900_start_menu.png';
-import v900_start_menu_tabs from 'ordino_public/dist/assets/pages/news/v900_start_menu_tabs.png';
-import v900_application_help from 'ordino_public/dist/assets/pages/news/v900_application_help.png';
-import v900_ranking_redesign from 'ordino_public/dist/assets/pages/news/v900_ranking_redesign.png';
-import v910_auto_complete from 'ordino_public/dist/assets/pages/news/v910_auto_complete.png';
-import v910_usability_improvements from 'ordino_public/dist/assets/pages/news/v910_usability_improvements.png';
-import v920_drug_scientific_name from 'ordino_public/dist/assets/pages/news/v920_drug_scientific_name.png';
+import v900_homepage from '../assets/pages/news/v900_homepage.png';
+import v900_start_menu from '../assets/pages/news/v900_start_menu.png';
+import v900_start_menu_tabs from '../assets/pages/news/v900_start_menu_tabs.png';
+import v900_application_help from '../assets/pages/news/v900_application_help.png';
+import v900_ranking_redesign from '../assets/pages/news/v900_ranking_redesign.png';
+import v910_auto_complete from '../assets/pages/news/v910_auto_complete.png';
+import v910_usability_improvements from '../assets/pages/news/v910_usability_improvements.png';
+import v920_drug_scientific_name from '../assets/pages/news/v920_drug_scientific_name.png';
 
 const sections = [
   {

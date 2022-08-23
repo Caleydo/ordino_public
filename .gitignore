@@ -12,9 +12,18 @@ node_modules/
 *.log
 /.awcache
 /.cache-loader
-package-lock.json
-
+/.env
 # ignore local cypress artifacts
 /cypress/videos/
 /cypress/screenshots/
-
+package-lock.json
+/dist/
+/yarn.lock
+# yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

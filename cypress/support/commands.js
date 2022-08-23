@@ -83,14 +83,16 @@ Cypress.Commands.add('loginCustom', () => {
       const client_secret = Cypress.env('auth0_client_secret')
       const audience = Cypress.env('auth0_audience')
       const scope = Cypress.env('auth0_scope')
+      const username = Cypress.env('auth0_username')
+      const password = Cypress.env('auth0_password')
   
       cy.request({
         method: 'POST',
         url: `https://${Cypress.env('auth0_domain')}/oauth/token`,
         body: {
           grant_type: 'password',
-          username: Cypress.env('auth0_username'),
-          password: Cypress.env('auth0_password'),
+          username, 
+          password,
           audience,
           scope,
           client_id,
