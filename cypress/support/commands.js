@@ -48,33 +48,8 @@ Cypress.Commands.add('loginCustom', () => {
 });
 
 
-// Login command using Auth0 authentication
-// Cypress.Commands.add(
-//     'loginAuth0',
-//     (username, password) => {
-//       cy.log(`Logging in as ${username}`)
-//       const client_id = Cypress.env('auth0_client_id')
-//       const client_secret = Cypress.env('auth0_client_secret')
-//       const audience = Cypress.env('auth0_audience')
-//       const scope = Cypress.env('auth0_scope')
-  
-//       cy.request({
-//         method: 'POST',
-//         url: `https://${Cypress.env('auth0_domain')}/oauth/token`,
-//         body: {
-//           grant_type: 'password',
-//           username,
-//           password,
-//           audience,
-//           scope,
-//           client_id,
-//           client_secret,
-//         },
-//       }).then (({body}) => {cy.log('The response token: ' + body['access_token'])})
-//         // cy.visit('http://localhost:8080/app/')
-//   });
-
-//Auth0 Testing
+  //Login using Auth0 user details (saved in .env file)
+  //NB: When using Auth0 login, ..auth0_store.enable must be set to true in the config.json
   Cypress.Commands.add(
     'loginAuth0',
     () => {
@@ -136,8 +111,12 @@ Cypress.Commands.add('loginCustom', () => {
         cy.intercept('/**/*', (req) => {
             req.headers['Authorization'] = `Bearer ${body.access_token}`;
         })
-        cy.wait(2000);
-        cy.visit('localhost:8080/')
+        
+        cy.visit(Cypress.env('host') + '/app');
+        cy.visit(Cypress.env('host') + '/app');
+        //Requires a second page reload to ensure that Auth0 is properly logged in, potentially due to how cy.intercept() works, only intercepting
+        //after the first revisit has occurred, resulting in the default login prompt still showing up sometimes with only one page reload
+
       })
     }
   )
