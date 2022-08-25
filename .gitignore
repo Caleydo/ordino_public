@@ -12,6 +12,7 @@ node_modules/
 *.log
 /.awcache
 /.cache-loader
+/.env
 # ignore local cypress artifacts
 /cypress/videos/
 /cypress/screenshots/
