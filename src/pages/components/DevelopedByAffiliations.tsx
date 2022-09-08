@@ -1,7 +1,7 @@
 import * as React from 'react';
-import logoBI from 'ordino_public/dist/assets/logos/boehringer-ingelheim.svg';
-import logoJKU from 'ordino_public/dist/assets/logos/johannes-kepler-university-linz.svg';
-import logoDatavisyn from 'ordino_public/dist/assets/logos/datavisyn.svg';
+import logoBI from '../../assets/logos/boehringer-ingelheim.svg';
+import logoJKU from '../../assets/logos/johannes-kepler-university-linz.svg';
+import logoDatavisyn from '../../assets/logos/datavisyn.svg';
 
 export function DevelopedByAffiliations() {
   return (

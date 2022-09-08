@@ -1,4 +1,4 @@
-import 'ordino/dist/robots.txt';
+import './robots.txt';
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
