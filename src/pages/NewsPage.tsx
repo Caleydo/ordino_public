@@ -16,7 +16,52 @@ import v910_auto_complete from '../assets/pages/news/v910_auto_complete.png';
 import v910_usability_improvements from '../assets/pages/news/v910_usability_improvements.png';
 import v920_drug_scientific_name from '../assets/pages/news/v920_drug_scientific_name.png';
 
+import v1010_depletion_screen_scores from '../assets/pages/news/v1010_depletion_screen_scores.png';
+import v1010_ranking_selection from '../assets/pages/news/v1010_ranking_selection.png';
+
 const sections = [
+  {
+    id: 'v10-1',
+    name: 'Version 10.1 (2022-11-23)',
+    markup: () => (
+      <>
+        <p className="lead text-muted">
+          This update contains various <b>usability improvements</b> and several <b>bug fixes</b>. The most important changes are:
+        </p>
+
+        <h5 className="mt-4">Additional depletion screen scores</h5>
+        <p>
+          The depletion screen scores for <i>AVANA Chronos (DepMap.org)</i> and <i>Sanger E-score (Fiona M. Behan et al., Nature 2019)</i> are now available for
+          cell lines. The scores can be added using the <i>Add Column</i> dialog and then selecting the respective data type in the dialog.
+        </p>
+        <img className=" img-fluid border border-gray-300" src={v1010_depletion_screen_scores} alt="Additional depletion screen scores for cell lines." />
+
+        <h5 className="mt-4">Minimum value of scores set to zero</h5>
+        <p>
+          Previously, the minimum was automatically derived from the loaded score data. With this Ordino version, the minimum value for the following scores has
+          been set to zero:
+        </p>
+        <ul>
+          <li>Normalized Gene Expression (TPM Values)</li>
+          <li>Raw Counts</li>
+          <li>Relative Copy Number</li>
+          <li>Total Absolute Copy Number</li>
+          <li>Zygosity</li>
+        </ul>
+
+        <h5 className="mt-4">Ranking usability improvements</h5>
+        <p>
+          The ranking highlights selected rows with a background color for better distinction. An orange indicator next to the scrollbar shows the position of
+          selected rows in the ranking and facilitates scrolling to these rows.
+        </p>
+        <img
+          className=" img-fluid border border-gray-300"
+          src={v1010_ranking_selection}
+          alt="Highlight selected rows and indicate the position next to the scrollbar."
+        />
+      </>
+    ),
+  },
   {
     id: 'v9-2',
     name: 'Version 9.2 (2022-04-28)',

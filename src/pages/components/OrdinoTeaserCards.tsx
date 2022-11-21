@@ -11,25 +11,14 @@ export function OrdinoTeaserCards() {
           </h4>
           <div className="card shadow-sm h-100">
             <div className="card-body">
-              <p className="card-text">With Ordino v9.0 we have launched a whole new homepage, start menu, and various usability improvements.</p>
               <p className="card-text">
-                The new homepage welcomes new and recurring users and provides an overview of the Ordino{' '}
-                <Link to="/features" data-testid="features-link">
-                  features
-                </Link>
-                ,{' '}
-                <Link to="/datasets" data-testid="datasets-link">
-                  loaded datasets
-                </Link>
-                , and{' '}
-                <Link to="/publications" data-testid="publications-link">
-                  publications
-                </Link>
-                .
+                Ordino v10.1 contains various <b>usability improvements</b> and several <b>bug fixes</b>. The most important changes are:
               </p>
-              <p className="card-text">
-                In addition to the new homepage we designed an entirely new Ordino start menu which provides quick access to datasets, sessions and tours.
-              </p>
+              <ul>
+                <li>Additional depletion screen scores</li>
+                <li>Minimum value of scores set to zero</li>
+                <li>Ranking usability improvements</li>
+              </ul>
             </div>
             <div className="card-footer">
               <Link to="/news" className="btn btn-light" data-testid="release-notes-link">
