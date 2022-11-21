@@ -31,7 +31,7 @@ const sections = [
 
         <h5 className="mt-4">Additional depletion screen scores</h5>
         <p>
-          The depletion screen scores for <i>AVANA Chronos (DepMap.org)</i> and <i>Sanger E-score (Fiona M. Behan et al., Nature 2019)</i> are now available for
+          The depletion screen scores for <i>Avana Chronos (DepMap.org)</i> and <i>Sanger E-score (Fiona M. Behan et al., Nature 2019)</i> are now available for
           cell lines. The scores can be added using the <i>Add Column</i> dialog and then selecting the respective data type in the dialog.
         </p>
         <img className=" img-fluid border border-gray-300" src={v1010_depletion_screen_scores} alt="Additional depletion screen scores for cell lines." />
