@@ -25,7 +25,7 @@ export function OrdinoContactForm() {
       <div className="card-body">
         <p className="card-text">
           {'Do you have questions or found a bug, do not hesitate to contact us using the contact form below. You can also contact us by writing an email to '}
-          <a className="card-link" href="mailto:ordino@caleydo.org." data-testid="ordino-email">
+          <a className="card-link" href="mailto:ordino@caleydo.org" data-testid="ordino-email">
             ordino@caleydo.org
           </a>
           . We are glad to help you.
