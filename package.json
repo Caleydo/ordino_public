@@ -2,7 +2,7 @@
   "name": "ordino_public",
   "displayName": "Ordino",
   "description": "",
-  "version": "13.1.1-SNAPSHOT",
+  "version": "13.1.1",
   "author": {
     "name": "datavisyn",
     "email": "contact@datavisyn.io",
@@ -52,10 +52,10 @@
     "dist"
   ],
   "dependencies": {
-    "ordino": "git+ssh://git@github.com:Caleydo/ordino#develop",
-    "tdp_core": "git+ssh://git@github.com:datavisyn/tdp_core#develop",
+    "ordino": "git+ssh://git@github.com:Caleydo/ordino#semver:^13.0.1",
+    "tdp_core": "^17.0.0",
     "react-router-dom": "^5.2.0",
-    "visyn_scripts": "git+ssh://git@github.com/datavisyn/visyn_scripts#develop"
+    "visyn_scripts": "^1.1.1"
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.7"
