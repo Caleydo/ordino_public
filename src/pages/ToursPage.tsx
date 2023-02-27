@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { HeaderNavigation, OrdinoFooter, ToursSection } from 'ordino';
-import { PluginRegistry, I18nextManager, TourUtils, ITDPTourExtensionDesc, useAsync } from 'tdp_core';
+import { PluginRegistry, I18nextManager, useAsync } from 'visyn_core';
+import { TourUtils, ITDPTourExtensionDesc } from 'tdp_core';
 
 export function ToursPage() {
   const loadTours = React.useMemo(
