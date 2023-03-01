@@ -1,4 +1,4 @@
-import { IRegistry, PluginRegistry, ILocaleEPDesc, EP_PHOVEA_CORE_LOCALE } from 'tdp_core';
+import { IRegistry, PluginRegistry, ILocaleEPDesc, EP_PHOVEA_CORE_LOCALE } from 'visyn_core';
 import {
   EP_ORDINO_START_MENU_TAB,
   EStartMenuSection,
@@ -32,7 +32,7 @@ export default function (registry: IRegistry) {
     priority: 30,
   });
 
-  registry.push(EP_ORDINO_START_MENU_TAB_SHORTCUT, 'ordino_sessions_shortcut', () => ({}), <IStartMenuTabShortcutDesc>{
+  registry.push(EP_ORDINO_START_MENU_TAB_SHORTCUT, 'ordino_sessions_shortcut', () => ({}), <Partial<IStartMenuTabShortcutDesc>>{
     text: 'Current Analysis Session',
     icon: 'fas fa-history',
     tabId: 'ordino_sessions_tab',

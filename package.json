@@ -53,8 +53,8 @@
   ],
   "dependencies": {
     "ordino": "git+ssh://git@github.com:Caleydo/ordino#develop",
-    "tdp_core": "git+ssh://git@github.com:datavisyn/tdp_core#develop",
     "react-router-dom": "^5.2.0",
+    "tdp_core": "git+ssh://git@github.com:datavisyn/tdp_core#develop",
     "visyn_scripts": "git+ssh://git@github.com/datavisyn/visyn_scripts#develop"
   },
   "devDependencies": {
