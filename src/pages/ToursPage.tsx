@@ -32,9 +32,9 @@ export function ToursPage() {
             <div className="mt-9 mb-6 container tours-tab">
               <p className="lead text-gray-600">Learn more about Ordino by taking an interactive guided tour</p>
               {beginnerTours ? (
-                <ToursSection level="beginner" tours={beginnerTours} hrefBase="/app/#tour={id}" data-testid={`${beginnerTours}-tour-{id}`} />
+                <ToursSection level="beginner" tours={beginnerTours} hrefBase="/app/?tour={id}" data-testid={`${beginnerTours}-tour-{id}`} />
               ) : null}
-              {advancedTours ? <ToursSection level="advanced" tours={advancedTours} hrefBase="/app/#tour={id}" /> : null}
+              {advancedTours ? <ToursSection level="advanced" tours={advancedTours} hrefBase="/app/?tour={id}" /> : null}
             </div>
           ) : null}
           <OrdinoFooter />
