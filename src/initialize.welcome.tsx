@@ -1,13 +1,13 @@
 import './robots.txt';
 
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import { HomePage, FeaturesPage, NewsPage, Error404Page, PublicationPage, HelpPage, DatasetsPage } from './pages';
 import { RouterScrollToTop } from './utils';
 import { ToursPage } from './pages/ToursPage';
 
-ReactDOM.render(
+createRoot(document.querySelector('#welcome')).render(
   <HashRouter>
     <RouterScrollToTop />
     {/* A <Switch> looks through its children <Route>s and
@@ -49,5 +49,4 @@ ReactDOM.render(
       </Route>
     </Switch>
   </HashRouter>,
-  document.querySelector('#welcome'),
 );

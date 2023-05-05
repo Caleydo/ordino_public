@@ -1,4 +1,4 @@
-import { IRegistry, PluginRegistry, ILocaleEPDesc, EP_PHOVEA_CORE_LOCALE } from 'visyn_core';
+import { IRegistry, PluginRegistry, ILocaleEPDesc, EP_PHOVEA_CORE_LOCALE } from 'visyn_core/plugin';
 import {
   EP_ORDINO_START_MENU_TAB,
   EStartMenuSection,

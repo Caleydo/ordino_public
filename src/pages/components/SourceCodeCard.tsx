@@ -1,4 +1,4 @@
-import { useAsync } from 'visyn_core';
+import { useAsync } from 'visyn_core/hooks';
 import { AppMetaDataUtils } from 'tdp_core';
 import React from 'react';
 
