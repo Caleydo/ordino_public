@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { HeaderNavigation, OrdinoFooter, ToursSection } from 'ordino';
-import { PluginRegistry, I18nextManager, useAsync } from 'visyn_core';
+import { I18nextManager } from 'visyn_core/i18n';
+import { useAsync } from 'visyn_core/hooks';
+import { PluginRegistry } from 'visyn_core/plugin';
 import { TourUtils, ITDPTourExtensionDesc } from 'tdp_core';
 
 export function ToursPage() {
