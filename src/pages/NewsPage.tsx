@@ -33,7 +33,7 @@ const sections = [
 
         <h5 className="mt-4">Additional onboarding tours</h5>
         <p>
-          We have added three new onboarding tours to help novice users to get started with Ordino. The tours are based on the{' '}
+          We have added four new onboarding tours to help novice users to get started with Ordino. The tours are based on the{' '}
           <a href="#/publications">Ordino and Taggle publication</a> and demonstrate the features and capabilities using a real-world examples. Select a tour
           from the <a href="#/tours">list of onboarding tours</a> and follow the step by step instructions.
         </p>
