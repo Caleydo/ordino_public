@@ -38,7 +38,7 @@ const sections = [
           from the <a href="#/tours">list of onboarding tours</a> and follow the step by step instructions.
         </p>
         <a href="#/tours">
-          <img className="img-fluid border border-gray-300" src={v1100_new_onboarding_tours} alt="New onboarding tours available" />
+          <img className="img-fluid border border-gray-300" width="750" src={v1100_new_onboarding_tours} alt="New onboarding tours available" />
         </a>
 
         <h5 className="mt-4">Briefly noted</h5>
