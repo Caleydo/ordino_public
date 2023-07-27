@@ -19,7 +19,35 @@ import v920_drug_scientific_name from '../assets/pages/news/v920_drug_scientific
 import v1010_depletion_screen_scores from '../assets/pages/news/v1010_depletion_screen_scores.png';
 import v1010_ranking_selection from '../assets/pages/news/v1010_ranking_selection.png';
 
+import v1100_new_onboarding_tours from '../assets/pages/news/v1100_new_onboarding_tours.png';
+
 const sections = [
+  {
+    id: 'v11-0',
+    name: 'Version 11.0 (2023-07-28)',
+    markup: () => (
+      <>
+        <p className="lead text-muted">
+          This update contains new <b>onboarding tours</b> and several <b>bug fixes</b>. The most important changes are:
+        </p>
+
+        <h5 className="mt-4">Additional onboarding tours</h5>
+        <p>
+          We have added four new onboarding tours to help novice users to get started with Ordino. The tours are based on the{' '}
+          <a href="#/publications">Ordino and Taggle publication</a> and demonstrate the features and capabilities using a real-world examples. Select a tour
+          from the <a href="#/tours">list of onboarding tours</a> and follow the step by step instructions.
+        </p>
+        <a href="#/tours">
+          <img className="img-fluid border border-gray-300" width="750" src={v1100_new_onboarding_tours} alt="New onboarding tours available" />
+        </a>
+
+        <h5 className="mt-4">Briefly noted</h5>
+        <ul>
+          <li>Sometimes saved sessions did not load correctly. We have fixed this issue and all saved sessions should load correctly.</li>
+        </ul>
+      </>
+    ),
+  },
   {
     id: 'v10-1',
     name: 'Version 10.1 (2022-11-23)',
@@ -34,7 +62,7 @@ const sections = [
           The depletion screen scores for <i>Avana Chronos (DepMap.org)</i> and <i>Sanger E-score (Fiona M. Behan et al., Nature 2019)</i> are now available for
           cell lines. The scores can be added using the <i>Add Column</i> dialog and then selecting the respective data type in the dialog.
         </p>
-        <img className=" img-fluid border border-gray-300" src={v1010_depletion_screen_scores} alt="Additional depletion screen scores for cell lines." />
+        <img className="img-fluid border border-gray-300" src={v1010_depletion_screen_scores} alt="Additional depletion screen scores for cell lines." />
 
         <h5 className="mt-4">Minimum value of scores set to zero</h5>
         <p>
@@ -55,7 +83,7 @@ const sections = [
           selected rows in the ranking and facilitates scrolling to these rows.
         </p>
         <img
-          className=" img-fluid border border-gray-300"
+          className="img-fluid border border-gray-300"
           src={v1010_ranking_selection}
           alt="Highlight selected rows and indicate the position next to the scrollbar."
         />
@@ -72,7 +100,7 @@ const sections = [
         </p>
         <h5 className="mt-4">Usability improvements</h5>
         <p>When adding a drug screen score column to a cell line ranking, we now show the scientific name if it differs from the drug id.</p>
-        <img className=" img-fluid border border-gray-300" src={v920_drug_scientific_name} alt="Additional scientific name for drugs." />
+        <img className="img-fluid border border-gray-300" src={v920_drug_scientific_name} alt="Additional scientific name for drugs." />
 
         <h5 className="mt-4">Briefly noted</h5>
         <ul>
@@ -99,10 +127,10 @@ const sections = [
           We have continued with our design and usability improvements of the whole application. The overall appearance of the application changed slightly.
           Additionally, the add column button is now more prominent and easier to find.
         </p>
-        <img className=" img-fluid border border-gray-300" src={v910_usability_improvements} alt="Usability Improvements" />
+        <img className="img-fluid border border-gray-300" src={v910_usability_improvements} alt="Usability Improvements" />
         <h5 className="mt-4">Auto-complete when filtering text columns</h5>
         <p>When filtering a text column, a list of items is now suggested while typing.</p>
-        <img className=" img-fluid border border-gray-300" src={v910_auto_complete} alt="Auto Complete" />
+        <img className="img-fluid border border-gray-300" src={v910_auto_complete} alt="Auto Complete" />
 
         <h5 className="mt-4">Briefly noted</h5>
         <ul>
@@ -187,7 +215,7 @@ const sections = [
             the <i>Add Column</i> dialog:
           </li>
         </ul>
-        <img className=" img-fluid border border-gray-300" src={v800_gene_signature} alt="Gene Signature Score" />
+        <img className="img-fluid border border-gray-300" src={v800_gene_signature} alt="Gene Signature Score" />
 
         <p className="card-text mt-2">Currently, the following gene signature scores are available:</p>
         <ul>
