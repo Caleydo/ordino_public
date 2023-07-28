@@ -1,4 +1,5 @@
-import { AppMetaDataUtils, useAsync } from 'tdp_core';
+import { useAsync } from 'visyn_core/hooks';
+import { AppMetaDataUtils } from 'tdp_core';
 import React from 'react';
 
 export function SourceCodeCard() {
