@@ -12,13 +12,8 @@ export function OrdinoTeaserCards() {
           <div className="card shadow-sm h-100">
             <div className="card-body">
               <p className="card-text">
-                Ordino v10.1 contains various <b>usability improvements</b> and several <b>bug fixes</b>. The most important changes are:
+                Ordino v11 contains new <b>onboarding tours</b> and several <b>bug fixes</b>.
               </p>
-              <ul>
-                <li>Additional depletion screen scores</li>
-                <li>Minimum value of scores set to zero</li>
-                <li>Ranking usability improvements</li>
-              </ul>
             </div>
             <div className="card-footer">
               <Link to="/news" className="btn btn-light" data-testid="release-notes-link">
