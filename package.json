@@ -84,7 +84,7 @@
     "dist"
   ],
   "dependencies": {
-    "ordino": "git+ssh://git@github.com:Caleydo/ordino#semver:^14.0.0",
+    "ordino": "git+ssh://git@github.com:Caleydo/ordino#semver:^15.0.0",
     "react-router-dom": "^5.2.0",
     "visyn_scripts": "^7.0.1"
   },
