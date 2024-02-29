@@ -17,7 +17,7 @@ node_modules/
 /cypress/screenshots/
 package-lock.json
 /dist/
-/yarn.lock
+!yarn.lock
 # yarn
 .pnp.*
 .yarn/*
