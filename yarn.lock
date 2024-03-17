@@ -9391,12 +9391,12 @@ __metadata:
   linkType: hard
 
 "follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.14.0":
-  version: 1.15.5
-  resolution: "follow-redirects@npm:1.15.5"
+  version: 1.15.6
+  resolution: "follow-redirects@npm:1.15.6"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: 5ca49b5ce6f44338cbfc3546823357e7a70813cecc9b7b768158a1d32c1e62e7407c944402a918ea8c38ae2e78266312d617dc68783fac502cbb55e1047b34ec
+  checksum: a62c378dfc8c00f60b9c80cab158ba54e99ba0239a5dd7c81245e5a5b39d10f0c35e249c3379eae719ff0285fff88c365dd446fab19dee771f1d76252df1bbf5
   languageName: node
   linkType: hard
 
@@ -13442,8 +13442,8 @@ __metadata:
   linkType: hard
 
 "ordino@git+ssh://git@github.com:Caleydo/ordino#semver:^15.0.0":
-  version: 14.0.1-SNAPSHOT
-  resolution: "ordino@git+ssh://git@github.com:Caleydo/ordino#commit=bd6ee350bc07b6f9f10b0dc4b3947d3e69198dc8"
+  version: 15.0.1
+  resolution: "ordino@git+ssh://git@github.com:Caleydo/ordino.git#commit=6d8506bfd14a3b8ad11f7a923e4513fd5ba7caf1"
   dependencies:
     html-react-parser: ^4.2.0
     react-dropzone: ^11.3.1
@@ -13455,7 +13455,7 @@ __metadata:
     react-virtualized: ^9.22.3
     tdp_core: ^23.0.2
     visyn_scripts: ^7.0.1
-  checksum: 3315b246c797038776f42ba6a9d2899767a12a2376ffff59ce457ceeaec2bee12efa265b2d3bfc406f65f8f67b92c263b31a30fb50456a294fd0c9318151d787
+  checksum: 2954b030fcac01a5c87cc1ca6b1c6c2b3f0b334408aa28204bf0a00392ec20a612cab63ac407aea4567f053518ea86b795a1c0497b751f28a22b05b5ee73cc67
   languageName: node
   linkType: hard
 
