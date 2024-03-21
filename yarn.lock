@@ -13442,8 +13442,8 @@ __metadata:
   linkType: hard
 
 "ordino@git+ssh://git@github.com:Caleydo/ordino#semver:^15.0.0":
-  version: 14.0.1-SNAPSHOT
-  resolution: "ordino@git+ssh://git@github.com:Caleydo/ordino#commit=bd6ee350bc07b6f9f10b0dc4b3947d3e69198dc8"
+  version: 15.0.1
+  resolution: "ordino@git+ssh://git@github.com:Caleydo/ordino.git#commit=6d8506bfd14a3b8ad11f7a923e4513fd5ba7caf1"
   dependencies:
     html-react-parser: ^4.2.0
     react-dropzone: ^11.3.1
@@ -13455,7 +13455,7 @@ __metadata:
     react-virtualized: ^9.22.3
     tdp_core: ^23.0.2
     visyn_scripts: ^7.0.1
-  checksum: 3315b246c797038776f42ba6a9d2899767a12a2376ffff59ce457ceeaec2bee12efa265b2d3bfc406f65f8f67b92c263b31a30fb50456a294fd0c9318151d787
+  checksum: 2954b030fcac01a5c87cc1ca6b1c6c2b3f0b334408aa28204bf0a00392ec20a612cab63ac407aea4567f053518ea86b795a1c0497b751f28a22b05b5ee73cc67
   languageName: node
   linkType: hard
 
@@ -18484,8 +18484,8 @@ __metadata:
   linkType: hard
 
 "webpack-dev-middleware@npm:^5.3.1":
-  version: 5.3.3
-  resolution: "webpack-dev-middleware@npm:5.3.3"
+  version: 5.3.4
+  resolution: "webpack-dev-middleware@npm:5.3.4"
   dependencies:
     colorette: ^2.0.10
     memfs: ^3.4.3
@@ -18494,7 +18494,7 @@ __metadata:
     schema-utils: ^4.0.0
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
-  checksum: dd332cc6da61222c43d25e5a2155e23147b777ff32fdf1f1a0a8777020c072fbcef7756360ce2a13939c3f534c06b4992a4d659318c4a7fe2c0530b52a8a6621
+  checksum: 90cf3e27d0714c1a745454a1794f491b7076434939340605b9ee8718ba2b85385b120939754e9fdbd6569811e749dee53eec319e0d600e70e0b0baffd8e3fb13
   languageName: node
   linkType: hard
 
